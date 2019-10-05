@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Fifthteenth_Question extends AppCompatActivity {
+public class FifthteenthQuestionActivity extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);

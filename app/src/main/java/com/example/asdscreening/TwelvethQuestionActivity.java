@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Twelveth_Question extends AppCompatActivity {
+public class TwelvethQuestionActivity extends AppCompatActivity {
     ImageView btnq121;
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -17,7 +17,7 @@ public class Twelveth_Question extends AppCompatActivity {
         btnq121.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(Twelveth_Question.this,Thirteenth_Question.class);
+                Intent intent= new Intent(TwelvethQuestionActivity.this, ThirteenthQuestionActivity.class);
                 startActivity(intent);
             }
         });

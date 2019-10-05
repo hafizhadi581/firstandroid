@@ -17,7 +17,7 @@ public class EighthQuestionActivity extends AppCompatActivity {
         btnq81.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(EighthQuestionActivity.this,Ninth_Question.class);
+                Intent intent= new Intent(EighthQuestionActivity.this, NinthQuestionActivity.class);
                 startActivity(intent);
             }
         });
