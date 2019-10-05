@@ -207,17 +207,6 @@
                     app:layout_constraintStart_toEndOf="@+id/cb_nq1y7"
                     app:layout_constraintTop_toBottomOf="@+id/cb_nq1n6" />
 
-                <ImageView
-                    android:id="@+id/iv_yq11"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="20dp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq12"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_nq1n7"
-                    app:srcCompat="@drawable/buttonnext" />
-
                 <TextView
                     android:id="@+id/tv_nq11"
                     android:layout_width="0dp"
