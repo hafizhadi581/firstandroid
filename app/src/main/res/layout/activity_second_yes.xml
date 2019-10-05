@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <CheckBox
         android:id="@+id/cb_yq2y1"
         android:layout_width="0dp"
@@ -45,7 +44,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/cb_yq2y2"
         app:layout_constraintTop_toBottomOf="@+id/cb_yq2n1" />
-
 
     <ImageView
         android:id="@+id/iv_yq21"
@@ -115,8 +113,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="395dp" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
