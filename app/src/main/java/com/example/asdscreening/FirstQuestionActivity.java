@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class First_Question extends AppCompatActivity {
+public class FirstQuestionActivity extends AppCompatActivity {
 
     ImageView btnq11;
     TextView testresult;
@@ -28,7 +28,7 @@ public class First_Question extends AppCompatActivity {
 
         btnq11.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-                Intent intent= new Intent(First_Question.this,Second_Question.class); //go to page 2
+                Intent intent= new Intent(FirstQuestionActivity.this, SecondQuestionActivity.class); //go to page 2
                 startActivity(intent);
             }
         });
