@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraint"
@@ -7,86 +7,310 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/tv_q31"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#82B1FF"
-        android:text="THIRD QUESTION"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_q32"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:fontFamily="monospace"
-        android:text="Does your child play pretend or make-believe?"
-        android:textAlignment="textStart"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q31" />
+            <TextView
+                android:id="@+id/tv_q31"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#82B1FF"
+                android:text="THIRD QUESTION"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_q33"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="332dp"
-        android:background="#80D8FF"
-        android:fontFamily="monospace"
-        android:text="FOR EXAMPLE, pretend to drink from an empty cup, pretend to talk on a phone, or pretend to feed a doll or stuffed animal?"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+            <TextView
+                android:id="@+id/tv_q32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:fontFamily="monospace"
+                android:text="Does your child play pretend or make-believe?"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_q31" />
 
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q32"
-        app:layout_constraintVertical_bias="0.0" />
+            <ImageView
+                android:id="@+id/iv_q31"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/buttonnext" />
 
-    <RadioButton
-        android:id="@+id/rb_q31"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="TRUE"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q33" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linear_nq1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-    <RadioButton
-        android:id="@+id/rb_q32"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.273"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q31" />
 
-    <ImageView
-        android:id="@+id/iv_q31"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="390dp"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q32"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/buttonnext" />
+                <CheckBox
+                    android:id="@+id/cb_yq3y1"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq32" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <CheckBox
+                    android:id="@+id/cb_yq3y2"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq3y1" />
+
+                <CheckBox
+                    android:id="@+id/cb_yq3y3"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq3y2" />
+
+                <CheckBox
+                    android:id="@+id/cb_yq3y4"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq3y3" />
+
+                <CheckBox
+                    android:id="@+id/cb_yq3y5"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq3y4" />
+
+                <CheckBox
+                    android:id="@+id/cb_yq3y6"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq3y5" />
+
+                <CheckBox
+                    android:id="@+id/cb_yq3y7"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq3y6" />
+
+                <CheckBox
+                    android:id="@+id/cb_yq3y8"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq3y7" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_yq3y9"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq3y8" />
+
+                <CheckBox
+                    android:id="@+id/cb_yq3y10"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq3y9" />
+
+                <TextView
+                    android:id="@+id/tv_yq31"
+                    android:layout_width="375dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="48dp"
+                    android:text="Please give an example of his/her pretend play"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq33"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_yq32"
+                    android:layout_width="375dp"
+                    android:layout_height="43dp"
+                    android:gravity="center|left"
+                    android:text="Does he/she ..."
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.062"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq31" />
+
+                <TextView
+                    android:id="@+id/tv_yq33"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="Pretend to drink from a toy cup?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq32" />
+
+                <TextView
+                    android:id="@+id/tv_yq34"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Pretend to eat from a toy spoon or fork?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq33" />
+
+                <TextView
+                    android:id="@+id/tv_yq35"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Pretend to talk on the telephone?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq34" />
+
+                <TextView
+                    android:id="@+id/tv_yq36"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Pretend to feed a doll or stuffed animal with real or imaginary food?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq35" />
+
+                <TextView
+                    android:id="@+id/tv_yq37"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Push a car as if it is going along a pretend road?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq36" />
+
+                <TextView
+                    android:id="@+id/tv_yq38"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Pretend to be a robot, an airplane, a ballerina, or any other favorite character?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq37" />
+
+                <TextView
+                    android:id="@+id/tv_yq310"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Put a toy pot on a pretend stove?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq38" />
+
+                <TextView
+                    android:id="@+id/tv_yq311"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Stir imaginary food?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq310" />
+
+                <TextView
+                    android:id="@+id/tv_yq312"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Put an action figure or doll into a car or truck as if it is the driver or passenger?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq311" />
+                <TextView
+                    android:id="@+id/tv_yq313"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Pretend to vacuum the rug, sweep the floor, or the mow lawn?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq312" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_nq31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_nq32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="281dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_nq33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="395dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

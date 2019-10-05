@@ -17,21 +17,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/btn3" />
 
-    <TextView
-        android:id="@+id/tv_q41"
+    <ImageView
+        android:id="@+id/iv_q42"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_q42"
+        app:layout_constraintVertical_bias="0.042"
+        app:srcCompat="@drawable/buttonnext" />
+
+    <RadioButton
+        android:id="@+id/rb_q42"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:background="#FFD180"
-        android:fontFamily="monospace"
-        android:text="Does your child like climbing on things?"
-        android:textAlignment="textStart"
-        android:textColor="#000000"
+        android:text="FALSE"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_q41" />
+        app:layout_constraintTop_toBottomOf="@+id/rb_q41" />
+
+    <RadioButton
+        android:id="@+id/rb_q41"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TRUE"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q42" />
 
     <TextView
         android:id="@+id/tv_q42"
@@ -64,36 +80,175 @@
         app:layout_constraintStart_toStartOf="@+id/iv_q41"
         app:layout_constraintTop_toTopOf="@+id/iv_q41" />
 
-    <RadioButton
-        android:id="@+id/rb_q41"
+    <TextView
+        android:id="@+id/tv_q41"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TRUE"
+        android:layout_marginTop="25dp"
+        android:background="#FFD180"
+        android:fontFamily="monospace"
+        android:text="Does your child like climbing on things?"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q42" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_q41" />
 
-    <RadioButton
-        android:id="@+id/rb_q42"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FALSE"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q41" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="377dp" />
 
-    <ImageView
-        android:id="@+id/iv_q42"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q42"
-        app:layout_constraintVertical_bias="0.042"
-        app:srcCompat="@drawable/buttonnext" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:layout_editor_absoluteX="0dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linear_nq1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/cb_yq4y1"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq42"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq42" />
+
+                <CheckBox
+                    android:id="@+id/cb_yq4y2"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq42"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq4y1" />
+
+                <CheckBox
+                    android:id="@+id/cb_yq4y3"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq42"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq4y2" />
+
+                <CheckBox
+                    android:id="@+id/cb_yq4y4"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="Yes"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq42"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq4y3" />
+
+
+                <TextView
+                    android:id="@+id/tv_yq41"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="center|left"
+                    android:text="Does he/she enjoy climbing on…"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq41"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_yq42"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="Object"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq41"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq41" />
+
+                <TextView
+                    android:id="@+id/tv_yq43"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Stairs?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq42"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq41"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq42" />
+
+                <TextView
+                    android:id="@+id/tv_yq44"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Chairs?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq42"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq41"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq43" />
+
+                <TextView
+                    android:id="@+id/tv_yq45"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Furniture?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq42"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq41"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq44" />
+
+                <TextView
+                    android:id="@+id/tv_yq46"
+                    android:layout_width="0dp"
+                    android:layout_height="37dp"
+                    android:gravity="center|left"
+                    android:text="Playground equipment?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq42"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq41"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq45" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_nq41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_nq42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="281dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_nq43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="395dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
