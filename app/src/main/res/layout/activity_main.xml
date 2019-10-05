@@ -55,7 +55,7 @@
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Start"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start"
         app:layout_constraintEnd_toStartOf="@+id/logo_1"
         app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +65,7 @@
         tools:layout_conversion_absoluteWidth="411dp" />
 
     <ImageButton
-        android:id="@+id/btn_Start"
+        android:id="@+id/btn_start"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="40dp"
@@ -96,7 +96,7 @@
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Start"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start"
         app:layout_constraintEnd_toStartOf="@+id/logo_1"
         app:layout_constraintHorizontal_bias="0.724"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,7 +115,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Start"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start"
         tools:layout_editor_absoluteX="16dp" />
 
     <ImageButton
