@@ -7,17 +7,17 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Third_Question extends AppCompatActivity {
-    ImageView btnq31;
+public class FourthQuestionActivity extends AppCompatActivity {
+    ImageView btnq41;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third_question);
+        setContentView(R.layout.activity_fourth_question);
 
-        btnq31 = findViewById(R.id.btnq31);
-        btnq31.setOnClickListener(new View.OnClickListener(){
+        btnq41 = findViewById(R.id.btnq41);
+        btnq41.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(Third_Question.this,Fourth_Question.class);
+                Intent intent= new Intent(FourthQuestionActivity.this,Fifth_Question.class);
                 startActivity(intent);
             }
         });

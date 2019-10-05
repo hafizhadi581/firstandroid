@@ -16,21 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".First_Question" />
-        <activity android:name=".Second_Question" />
-        <activity android:name=".Third_Question" />
-        <activity android:name=".Fourth_Question" />
-        <activity android:name=".Sixth_Question" />
-        <activity android:name=".Seventh_Question" />
+        <activity android:name=".FirstQuestionActivity" />
+        <activity android:name=".SecondQuestionActivity" />
+        <activity android:name=".ThirdQuestionActivity" />
+        <activity android:name=".FourthQuestionActivity" />
+        <activity android:name=".SixthQuestionActivity" />
+        <activity android:name=".SeventhQuestionActivity" />
         <activity android:name=".EighthQuestionActivity" />
         <activity android:name=".Fifth_Question" />
-        <activity android:name=".Ninth_Question" />
-        <activity android:name=".Tenth_Question" />
-        <activity android:name=".Eleventh_Question" />
-        <activity android:name=".Twelveth_Question" />
-        <activity android:name=".Thirteenth_Question" />
-        <activity android:name=".Fourteenth_Question" />
-        <activity android:name=".Fifthteenth_Question" />
+        <activity android:name=".NinthQuestionActivity" />
+        <activity android:name=".TenthQuestionActivity" />
+        <activity android:name=".EleventhQuestionActivity" />
+        <activity android:name=".TwelvethQuestionActivity" />
+        <activity android:name=".ThirteenthQuestionActivity" />
+        <activity android:name=".FourteenthQuestionActivity" />
+        <activity android:name=".FifthteenthQuestionActivity" />
         <activity android:name=".Rules" />
 
         <meta-data
