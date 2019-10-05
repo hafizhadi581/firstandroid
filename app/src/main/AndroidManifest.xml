@@ -31,7 +31,7 @@
         <activity android:name=".ThirteenthQuestionActivity" />
         <activity android:name=".FourteenthQuestionActivity" />
         <activity android:name=".FifthteenthQuestionActivity" />
-        <activity android:name=".Rules" />
+        <activity android:name=".rules.Rules" />
 
         <meta-data
             android:name="preloaded_fonts"
