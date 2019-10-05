@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_q21"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#C0CA33"
+        android:text="SECOND QUESTION"
+        android:textAlignment="center"
+        android:textColor="#030303"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_q22"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#A8E49F"
+        android:fontFamily="monospace"
+        android:text="Have you ever wondered if your child might be deaf? "
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q21" />
+
+    <RadioButton
+        android:id="@+id/rb_q21"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TRUE"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q22" />
+
+    <RadioButton
+        android:id="@+id/rb_q22"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="FALSE"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_q21" />
+
+    <ImageView
+        android:id="@+id/iv_q21"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_q22"
+        app:layout_constraintVertical_bias="0.137"
+        app:srcCompat="@drawable/buttonnext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

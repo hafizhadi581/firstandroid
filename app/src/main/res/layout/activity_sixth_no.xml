@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_nq1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <CheckBox
+        android:id="@+id/cb_nq6y1"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="Yes"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <CheckBox
+        android:id="@+id/cb_nq6y2"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="Yes"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <CheckBox
+        android:id="@+id/cb_nq6y3"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="Yes"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <CheckBox
+        android:id="@+id/cb_nq6y4"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="Yes"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <CheckBox
+        android:id="@+id/cb_nq6y5"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="Yes"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <CheckBox
+        android:id="@+id/cb_nq6n1"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        android:text="No"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <CheckBox
+        android:id="@+id/cb_nq6n2"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        android:text="No"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <CheckBox
+        android:id="@+id/cb_nq6n3"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        android:text="No"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="301dp" />
+    <CheckBox
+        android:id="@+id/cb_nq6n4"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        android:text="No"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <CheckBox
+        android:id="@+id/cb_nq6n5"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        android:text="No"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+
+    <!--
+    <TextView
+        android:id="@+id/txt_yq52"
+        android:layout_width="375dp"
+        android:layout_height="43dp"
+        android:gravity="center|left"
+        android:text="Object"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="91dp" />
+    -->
+
+    <ImageView
+        android:id="@+id/iv_nq61"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/buttonnext"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="526dp" />
+
+    <TextView
+        android:id="@+id/tv_yq61"
+        android:layout_width="375dp"
+        android:layout_height="43dp"
+        android:gravity="center|left"
+        android:text="Does he/she usually… "
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/tv_yq63"
+        android:layout_width="261dp"
+        android:layout_height="35dp"
+        android:gravity="center|left"
+        android:text="Look at hands?"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:id="@+id/tv_yq54"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="Move fingers when playing peek-a-boo?"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <TextView
+        android:id="@+id/tv_yq55"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="Wiggle his/her fingers near his/her eyes?"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <TextView
+        android:id="@+id/tv_yq57"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="Hold his/her hands off to the side of his/her eyes?"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+    <TextView
+        android:id="@+id/tv_yq56"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="Hold his/her hands up close to his/her eyes?"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+
+    <TextView
+        android:id="@+id/txt_yq510"
+        android:layout_width="375dp"
+        android:layout_height="37dp"
+        android:gravity="center|left"
+        android:text="Category Pass"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <TextView
+        android:id="@+id/txt_yq511"
+        android:layout_width="375dp"
+        android:layout_height="37dp"
+        android:gravity="center|left"
+        android:text="Category Fail"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_nq51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_nq52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="281dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_nq53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
