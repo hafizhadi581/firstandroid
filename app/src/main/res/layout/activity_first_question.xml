@@ -76,9 +76,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rb_q11" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+            <androidx.constraintlayout.widget.ConstraintLayout
+
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -86,139 +85,70 @@
 
 
                 <CheckBox
-                    android:id="@+id/cb_nq1y1"
+                    android:id="@+id/cb_look_at_object"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
-                    android:text="Yes"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq12"
                     app:layout_constraintTop_toBottomOf="@+id/tv_ncq12" />
 
                 <CheckBox
-                    android:id="@+id/cb_nq1y2"
+                    android:id="@+id/cb_point_at_object"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq12"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_at_object" />
+
+                <CheckBox
+                    android:id="@+id/cb_look_and_comment_to_object"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq12"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_point_at_object" />
+
+                <CheckBox
+                    android:id="@+id/cb_parrent_commant_look"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:text="Yes"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq12"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_nq1y1" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_and_comment_to_object" />
 
                 <CheckBox
-                    android:id="@+id/cb_nq1y3"
+                    android:id="@+id/cb_ignore_parent"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
-                    android:text="Yes"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq12"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_nq1y2" />
-
-                <CheckBox
-                    android:id="@+id/cb_nq1y4"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:text="Yes"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq12"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_nq1y3" />
-
-                <CheckBox
-                    android:id="@+id/cb_nq1y5"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:text="Yes"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq12"
                     app:layout_constraintTop_toBottomOf="@+id/tv_ncq11" />
                 <CheckBox
-                    android:id="@+id/cb_nq1y6"
+                    android:id="@+id/cb_look_around_randomly"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:text="Yes"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq12"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_nq1y5" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_ignore_parent" />
                 <CheckBox
-                    android:id="@+id/cb_nq1y7"
+                    android:id="@+id/cd_look_at_parent_finger"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:text="Yes"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq12"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_nq1y6" />
-
-                <CheckBox
-                    android:id="@+id/cb_nq1n1"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:text="No"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/cb_nq1y1"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_ncq12" />
-
-                <CheckBox
-                    android:id="@+id/cb_nq1n2"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:text="No"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/cb_nq1y1"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_nq1n1" />
-
-                <CheckBox
-                    android:id="@+id/cb_nq1n3"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:text="No"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/cb_nq1y1"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_nq1n2" />
-
-                <CheckBox
-                    android:id="@+id/cb_nq1n4"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:text="No"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/cb_nq1y1"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_nq1n3" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_around_randomly" />
 
 
-                <CheckBox
-                    android:id="@+id/cb_nq1n5"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:text="No"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
-                    app:layout_constraintStart_toEndOf="@+id/cb_nq1y5"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_ncq11" />
 
-                <CheckBox
-                    android:id="@+id/cb_nq1n6"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:text="No"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
-                    app:layout_constraintStart_toEndOf="@+id/cb_nq1y6"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_nq1n5" />
-
-                <CheckBox
-                    android:id="@+id/cb_nq1n7"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:text="No"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
-                    app:layout_constraintStart_toEndOf="@+id/cb_nq1y7"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_nq1n6" />
 
                 <TextView
                     android:id="@+id/tv_nq11"
                     android:layout_width="0dp"
                     android:layout_height="43dp"
                     android:layout_marginTop="48dp"
-                    android:text="If you point at something, what does your child typically do?"
+                    android:text="If you point at something, what does your child typically do?
+                        tick for yes"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq11"
                     app:layout_constraintTop_toTopOf="parent" />
-
 
                 <TextView
                     android:id="@+id/tv_ncq11"
