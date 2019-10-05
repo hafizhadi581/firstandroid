@@ -11,29 +11,33 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class FirstQuestionActivity extends AppCompatActivity {
+public class FirstQuestionActivity extends AppCompatActivity implements View.OnClickListener {
 
-    ImageView btnq11;
-    TextView testresult;
-    RadioButton rbq11;
+   private ImageView ivQ11;
+   private TextView testresult;
+ private    RadioButton rbq11;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_question);
 
-        btnq11 = findViewById(R.id.btnq11); //next button
-        testresult = findViewById(R.id.testresult); //textView test result
-        rbq11 = findViewById(R.id.rbq11);  //radiobutton question 1 , 1
+        ivQ11 = findViewById(R.id.iv_q11); //next button
+//        testresult = findViewById(R.id.tv_t); //textView test result
+//        rbq11 = findViewById(R.id.rbq11);  //radiobutton question 1 , 1
 
 
-        btnq11.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                Intent intent= new Intent(FirstQuestionActivity.this, SecondQuestionActivity.class); //go to page 2
-                startActivity(intent);
-            }
-        });
+        ivQ11.setOnClickListener(this);
 
 
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v == ivQ11){
+            Intent intent= new Intent(FirstQuestionActivity.this, SecondQuestionActivity.class); //go to page 2
+            startActivity(intent);
+        }
 
     }
 }
