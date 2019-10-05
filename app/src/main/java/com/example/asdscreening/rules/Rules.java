@@ -7,6 +7,7 @@ public class Rules {
     private Rule1 rule1;
     private Rule2 rule2;
     private Rule3 rule3;
+    private Rule4 rule4;
 
 
     private Rules() {
@@ -61,6 +62,9 @@ public class Rules {
             score++;
         }
         if(rule3!= null &&!rule3.isPass()){
+            score++;
+        }
+        if(rule4!= null &&!rule4.isPass()){
             score++;
         }
 
