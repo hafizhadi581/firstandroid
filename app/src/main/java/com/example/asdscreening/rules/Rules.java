@@ -8,11 +8,13 @@ public class Rules {
     private Rule2 rule2;
     private Rule3 rule3;
     private Rule4 rule4;
+    private Rule5 rule5;
 
 
     private Rules() {
 
     }
+
     public static Rules newInstance() {
         return new Rules();
     }
@@ -30,7 +32,6 @@ public class Rules {
         this.rule1 = rule1;
     }
 
-    ;
 
     public Rule1 getRule1() {
         return rule1;
@@ -44,41 +45,45 @@ public class Rules {
         return rule2;
     }
 
-    public Rule3 getRule3() {
-        return rule3;
-    }
-
     public void setRule3(Rule3 rule3) {
         this.rule3 = rule3;
     }
 
-    public Rule4 getRule4() {
-        return rule4;
+    public Rule3 getRule3() {
+        return rule3;
     }
 
-    public void setRule4(Rule4 rule4) {
-        this.rule4 = rule4;
-    }
+    public void setRule4(Rule4 rule4) { this.rule4 = rule4; }
 
-    public int getScore(){
+    public Rule4 getRule4() { return rule4; }
+
+    public Rule5 getRule5() { return rule5; }
+
+    public void setRule5(Rule5 rule5) { this.rule5 = rule5; }
+
+
+
+    public int getScore() {
 
         score = 0;
-        if(rule1!=null && !rule1.isPass()){
+        if (rule1 != null && !rule1.isPass()) {
             score++;
         }
-        if(rule2!= null && rule2.isPass()){
+        if (rule2 != null && rule2.isPass()) {
             score++;
         }
-        if(rule3!= null &&!rule3.isPass()){
+        if (rule3 != null && !rule3.isPass()) {
             score++;
         }
-        if(rule4!= null &&!rule4.isPass()){
+        if (rule4 != null && !rule4.isPass()) {
+            score++;
+        }
+        if (rule5 != null && !rule5.isPass()) {
             score++;
         }
 
         return score;
     }
-
 
 
     //    public void calculateFirstRules(boolean checked, boolean checked1, boolean checked2, boolean checked3, boolean checked4, boolean checked5) {

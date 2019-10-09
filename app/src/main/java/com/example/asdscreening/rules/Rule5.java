@@ -11,7 +11,7 @@ public class Rule5 {
     private boolean isHoldHandSideEye;
     private boolean isFlapHandNearFace;
 
-    public Rule5(boolean isLookAtHand, boolean isMoveAFinger, boolean isWiggleFingerNearEye, boolean isHoldHandCloseEye, boolean isHoldHandSideEye, boolean isFlapHandNearFace) {
+    public Rule5(boolean checked, boolean cbYq5y2Checked, boolean cbYq5y3Checked, boolean cbYq5y4Checked, boolean cbYq5y5Checked, boolean cbYq5y6Checked, boolean cbYq5y7Checked) {
         this.isLookAtHand = isLookAtHand;
         this.isMoveAFinger = isMoveAFinger;
         this.isWiggleFingerNearEye = isWiggleFingerNearEye;
@@ -67,4 +67,20 @@ public class Rule5 {
     public void setFlapHandNearFace(boolean flapHandNearFace) {
         isFlapHandNearFace = flapHandNearFace;
     }
+
+    public boolean isPass() {
+        if (isLookAtHand) {
+            return true;
+        } else {
+            if (isMoveAFinger) {
+                return true;
+            } else {
+                if (isWiggleFingerNearEye || isHoldHandCloseEye || isHoldHandSideEye || isFlapHandNearFace) {
+                    return false;
+                }
+                return true;
+            }
+        }
+    }
 }
+//  isWiggleFingerNearEye || isHoldHandCloseEye || isHoldHandSideEye ||isFlapHandNearFace
