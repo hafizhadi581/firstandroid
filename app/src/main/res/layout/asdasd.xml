@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_nq1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <CheckBox
+        android:id="@+id/cb_yq5y1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq510" />
+
+    <CheckBox
+        android:id="@+id/cb_yq5y2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
+        app:layout_constraintTop_toBottomOf="@+id/cb_yq5y1" />
+
+    <CheckBox
+        android:id="@+id/cb_yq5y3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq511" />
+
+    <CheckBox
+        android:id="@+id/cb_yq5y6"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
+        app:layout_constraintTop_toBottomOf="@+id/cb_yq5y5" />
+
+
+    <CheckBox
+        android:id="@+id/cb_yq5y7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
+        app:layout_constraintTop_toBottomOf="@+id/cb_yq5y6" />
+
+    <CheckBox
+        android:id="@+id/cb_yq5y4"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
+        app:layout_constraintTop_toBottomOf="@+id/cb_yq5y3" />
+
+    <CheckBox
+        android:id="@+id/cb_yq5y5"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
+        app:layout_constraintTop_toBottomOf="@+id/cb_yq5y4" />
+
+
+    <TextView
+        android:id="@+id/tv_yq51"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center|left"
+        android:text="Does he/she usually… "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_yq53"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:gravity="center|left"
+        android:text="Look at hands?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq510" />
+
+    <TextView
+        android:id="@+id/tv_yq54"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:gravity="center|left"
+        android:text="Move fingers when playing peek-a-boo?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq53" />
+
+    <TextView
+        android:id="@+id/tv_yq55"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:gravity="center|left"
+        android:text="Wiggle his/her fingers near his/her eyes?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq511" />
+
+    <TextView
+        android:id="@+id/tv_yq56"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="Hold his/her hands up close to his/her eyes?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq55" />
+
+    <TextView
+        android:id="@+id/tv_yq57"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="Hold his/her hands off to the side of his/her eyes?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq56" />
+
+    <TextView
+        android:id="@+id/tv_yq58"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:gravity="center|left"
+        android:text="Flap his/her hands near his/her face?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq57" />
+
+
+    <TextView
+        android:id="@+id/tv_yq59"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|left"
+        android:text="Playground equipment?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq58" />
+
+    <TextView
+        android:id="@+id/tv_yq510"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center|left"
+        android:text="Category Pass"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq51" />
+
+    <TextView
+        android:id="@+id/tv_yq511"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center|left"
+        android:text="Category Fail"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_nq51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_nq52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="330dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_nq53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

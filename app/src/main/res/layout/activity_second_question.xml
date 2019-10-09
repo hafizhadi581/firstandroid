@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tv_q21"
                 android:layout_width="match_parent"
@@ -54,17 +55,18 @@
 
                 <CheckBox
                     android:id="@+id/cb_yq2y1"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_yq23"
                     app:layout_constraintStart_toStartOf="@+id/guide_yq22"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq21" />
 
                 <CheckBox
                     android:id="@+id/cb_yq2y2"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="35dp"
-
+                    app:layout_constraintEnd_toStartOf="@+id/guide_yq23"
                     app:layout_constraintStart_toStartOf="@+id/guide_yq22"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq2y1" />
 
@@ -80,7 +82,7 @@
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_yq22"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq2y2"
-                    app:layout_constraintVertical_bias="1.0"
+                    app:layout_constraintVertical_bias="0.433"
                     app:srcCompat="@drawable/buttonnext" />
 
                 <TextView
@@ -125,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="281dp" />
+                    app:layout_constraintGuide_begin="330dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_yq23"
@@ -148,7 +150,6 @@
 
 
     </ScrollView>
-
 
 
 </RelativeLayout>

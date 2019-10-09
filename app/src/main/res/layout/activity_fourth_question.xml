@@ -18,23 +18,6 @@
         app:srcCompat="@drawable/btn3" />
 
     <TextView
-        android:id="@+id/tv_q42"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="340dp"
-        android:background="#FFD180"
-        android:fontFamily="monospace"
-        android:text="FOR EXAMPLE, furniture, playground  equipment, or stairs?"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q41"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
         android:id="@+id/tv_q43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,9 +52,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="264dp" />
+        app:layout_constraintGuide_begin="196dp" />
 
     <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
@@ -120,19 +104,6 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_nq42"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq4y3" />
 
-
-                <ImageView
-                    android:id="@+id/iv_q42"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:scaleType="centerInside"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
-                    app:layout_constraintHorizontal_bias="0.515"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq42"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_yq4y4"
-                    app:layout_constraintVertical_bias="0.384"
-                    app:srcCompat="@drawable/buttonnext" />
 
                 <TextView
                     android:id="@+id/tv_yq41"
@@ -216,7 +187,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="281dp" />
+                    app:layout_constraintGuide_begin="330dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq43"
@@ -232,5 +203,17 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_q42"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4"
+        app:srcCompat="@drawable/buttonnext" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,32 +11,12 @@
         android:id="@+id/iv_q91"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q92"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q93"
         app:srcCompat="@drawable/buttonnext" />
-
-    <RadioButton
-        android:id="@+id/rb_q92"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q91" />
-
-    <RadioButton
-        android:id="@+id/rb_q91"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="TRUE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q93" />
 
     <TextView
         android:id="@+id/tv_q91"
