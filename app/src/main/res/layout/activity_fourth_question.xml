@@ -17,38 +17,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/btn3" />
 
-    <ImageView
-        android:id="@+id/iv_q42"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q42"
-        app:layout_constraintVertical_bias="0.042"
-        app:srcCompat="@drawable/buttonnext" />
-
-    <RadioButton
-        android:id="@+id/rb_q42"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q41" />
-
-    <RadioButton
-        android:id="@+id/rb_q41"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="TRUE"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q42" />
-
     <TextView
         android:id="@+id/tv_q42"
         android:layout_width="0dp"
@@ -101,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="377dp" />
+        app:layout_constraintGuide_begin="264dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -122,36 +90,49 @@
 
                 <CheckBox
                     android:id="@+id/cb_yq4y1"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:text="Yes"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq42"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq42" />
 
                 <CheckBox
                     android:id="@+id/cb_yq4y2"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:text="Yes"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq42"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq4y1" />
 
                 <CheckBox
                     android:id="@+id/cb_yq4y3"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:text="Yes"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq42"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq4y2" />
 
                 <CheckBox
                     android:id="@+id/cb_yq4y4"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:text="Yes"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq42"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq4y3" />
 
+
+                <ImageView
+                    android:id="@+id/iv_q42"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
+                    app:layout_constraintHorizontal_bias="0.515"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq42"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq4y4"
+                    app:layout_constraintVertical_bias="0.384"
+                    app:srcCompat="@drawable/buttonnext" />
 
                 <TextView
                     android:id="@+id/tv_yq41"
@@ -169,12 +150,12 @@
                     android:id="@+id/tv_yq42"
                     android:layout_width="0dp"
                     android:layout_height="43dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="28dp"
                     android:gravity="center|left"
                     android:text="Object"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq41"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq41" />
 
@@ -251,4 +232,5 @@
         </LinearLayout>
 
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

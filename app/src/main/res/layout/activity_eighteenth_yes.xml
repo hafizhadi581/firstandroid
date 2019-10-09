@@ -1,0 +1,162 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_nq1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <CheckBox
+        android:id="@+id/cb_situation"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/guide_q182"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq181" />
+
+    <CheckBox
+        android:id="@+id/cb_dinnertime"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_q182"
+        app:layout_constraintTop_toBottomOf="@+id/cb_situation" />
+
+    <CheckBox
+        android:id="@+id/cb_shoe"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_q182"
+        app:layout_constraintTop_toBottomOf="@+id/cb_dinnertime" />
+
+    <CheckBox
+        android:id="@+id/cb_blanket"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_q182"
+        app:layout_constraintTop_toBottomOf="@+id/cb_shoe" />
+
+
+    <CheckBox
+        android:id="@+id/cb_book"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_q182"
+        app:layout_constraintTop_toBottomOf="@+id/cb_blanket" />
+
+    <TextView
+        android:id="@+id/tv_yq181"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center|left"
+        android:text="Can he/she follow a command? For example when you are dressed to go out and you tell him/her to get his/her shoes, does he/sheunderstand?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+        app:layout_constraintStart_toStartOf="@+id/guide_q181"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_yq182"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center|left"
+        android:text="When the situation does not give any clues, can he/she follow a command? For example, when you are dressed to go out and you tell him/her to get his/her shoes, does he/she understand?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q182"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_q181"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq181" />
+
+    <TextView
+        android:id="@+id/tv_yq183"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:gravity="center|left"
+        android:text="(1) If you say, “Show me your shoe” without pointing, making gestures, or giving hints (when you are not going out or getting dressed), does your child show you his/her shoe? "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q182"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_q181"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq182" />
+
+    <TextView
+        android:id="@+id/tv_yq184"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="(2) If you say, “Bring me the blanket” or ask for another object without pointing, making gestures, or giving hints, does your child bring it to you?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q182"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_q181"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq183" />
+
+    <TextView
+        android:id="@+id/tv_yq185"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="(3) If you say, “Put the book on the chair”without pointing, making gestures, or giving any other hints , does your child put the book on the chair?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q182"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_q181"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq184" />
+
+
+    <TextView
+        android:id="@+id/tv_yq186"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center|left"
+        android:text="If it is dinnertime and food is on the table, and you tell the child to sit down, will he/she come sit at the table?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q182"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_q181"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq182" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_q181"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_q182"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="330dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_q183"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

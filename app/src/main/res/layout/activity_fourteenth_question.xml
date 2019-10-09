@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/iv_q141"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q142"
+        app:srcCompat="@drawable/buttonnext" />
+
     <TextView
         android:id="@+id/tv_q141"
         android:layout_width="0dp"
@@ -24,42 +35,256 @@
         android:id="@+id/tv_q142"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Does your child look you in the eye when you are talking to him or her, playing with him Pass Fail or her, or dressing him or her?"
+        android:layout_marginTop="30dp"
+        android:text="Does your child look you in the eye when you are talking to him or her, playing with him/her, or dressing him/her?"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_q141" />
 
-    <RadioButton
-        android:id="@+id/rb_q141"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_mq141"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="260dp" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TRUE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q142" />
+        app:layout_constraintTop_toTopOf="@+id/guide_mq141">
 
-    <RadioButton
-        android:id="@+id/rb_q142"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q141" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q141"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q142"
-        app:srcCompat="@drawable/buttonnext" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linear_nq1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/cb_look_need"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q143"
+                    app:layout_constraintHorizontal_bias="0.484"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q142"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq141" />
+
+                <CheckBox
+                    android:id="@+id/cb_look_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q143"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q142"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_need" />
+
+                <CheckBox
+                    android:id="@+id/cb_look_feeding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q143"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q142"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_play" />
+
+                <CheckBox
+                    android:id="@+id/cb_look_diaper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q143"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q142"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_feeding" />
+
+                <CheckBox
+                    android:id="@+id/cb_look_reading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q143"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q142"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_diaper" />
+
+                <CheckBox
+                    android:id="@+id/cb_look_talk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q143"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q142"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_reading" />
+
+                <CheckBox
+                    android:id="@+id/cb_look_eye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="60dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q143"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q142"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_talk" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_look_5times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q143"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q142"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_eye" />
+
+                <TextView
+                    android:id="@+id/tv_yq141"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="For Example,Does he/she look you in the eye…"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q143"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q141"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_yq142"
+                    android:layout_width="310dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="When he/she needs something?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q142"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q141"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq141" />
+
+                <TextView
+                    android:id="@+id/tv_yq143"
+                    android:layout_width="310dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="When you are playing with him/her?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q142"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q141"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq142" />
+
+                <TextView
+                    android:id="@+id/tv_yq144"
+                    android:layout_width="310dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="During feeding?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q142"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q141"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq143" />
+
+                <TextView
+                    android:id="@+id/tv_yq145"
+                    android:layout_width="310dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="During diaper changes?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q142"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q141"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq144" />
+
+                <TextView
+                    android:id="@+id/tv_yq146"
+                    android:layout_width="310dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="When you are reading him/her a story?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q142"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q141"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq145" />
+
+                <TextView
+                    android:id="@+id/tv_yq147"
+                    android:layout_width="310dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="When you are talking to him/her?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q142"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q141"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq146" />
+
+                <TextView
+                    android:id="@+id/tv_yq148"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center|left"
+                    android:text="Does your child look you in the eye every day?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q142"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q141"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq147" />
+
+                <TextView
+                    android:id="@+id/tv_yq149"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="On a day when you are together all day, does he/she look you in the eye at least 5 times?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q142"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q141"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq148" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q142"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="330dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q143"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="395dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

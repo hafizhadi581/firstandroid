@@ -46,42 +46,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_q21" />
 
-            <RadioButton
-                android:id="@+id/rb_q21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TRUE"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_q22" />
-
-            <RadioButton
-                android:id="@+id/rb_q22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="FALSE"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rb_q21" />
-
-            <ImageView
-                android:id="@+id/iv_q21"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="16dp"
-                android:scaleType="centerInside"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rb_q22"
-                app:layout_constraintVertical_bias="0.137"
-                app:srcCompat="@drawable/buttonnext" />
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="334dp"
                 android:orientation="vertical">
 
                 <CheckBox
@@ -101,26 +69,19 @@
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq2y1" />
 
                 <ImageView
-                    android:id="@+id/iv_yq21"
+                    android:id="@+id/iv_q21"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_yq23"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_yq22"
-                    app:srcCompat="@drawable/buttonnext"
-                    tools:layout_editor_absoluteY="245dp" />
-
-                <TextView
-                    android:id="@+id/tv_yq21"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="48dp"
-                    android:text="You reported that you have wondered if you child is deaf. What led you to wonder that? Does he/she .."
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_yq23"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_yq21"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq2y2"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/buttonnext" />
 
                 <TextView
                     android:id="@+id/tv_yq22"
@@ -147,12 +108,17 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_yq21"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq22" />
 
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guide_yq21"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/tv_yq21"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="20dp" />
+                    android:layout_marginTop="48dp"
+                    android:text="You reported that you have wondered if you child is deaf. What led you to wonder that? Does he/she .."
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_yq23"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_yq21"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_yq22"
@@ -167,6 +133,13 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="395dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_yq21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

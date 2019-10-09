@@ -19,48 +19,112 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_q132"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_m131"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Does your child walk? "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q131" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="105dp" />
 
-    <RadioButton
-        android:id="@+id/rb_q131"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TRUE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q132" />
+        app:layout_constraintTop_toTopOf="@+id/guide_m131"
+        tools:layout_editor_absoluteX="65dp">
 
-    <RadioButton
-        android:id="@+id/rb_q132"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q131" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q131"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q132"
-        app:srcCompat="@drawable/buttonnext" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linear_nq1"
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/cb_walk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q133"
+                    app:layout_constraintHorizontal_bias="0.484"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q132"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/cb_walk_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q133"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q132"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_walk" />
+
+
+                <ImageView
+                    android:id="@+id/iv_q131"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q133"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q132"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_walk_on"
+                    app:srcCompat="@drawable/buttonnext" />
+
+                <TextView
+                    android:id="@+id/tv_yq132"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Does he/she walk without holding on to anything?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q132"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/tv_yq131"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq131" />
+
+                <TextView
+                    android:id="@+id/tv_yq131"
+                    android:layout_width="310dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center|left"
+                    android:text="Does he/she walk?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q132"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q131"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q132"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="330dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q133"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="395dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q131"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

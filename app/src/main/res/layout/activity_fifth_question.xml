@@ -17,38 +17,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/btn4" />
 
+
     <ImageView
         android:id="@+id/iv_q52"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="52dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guide_q51"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q52"
-        app:layout_constraintVertical_bias="0.066"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q53"
+        app:layout_constraintVertical_bias="0.169"
         app:srcCompat="@drawable/buttonnext" />
-
-    <RadioButton
-        android:id="@+id/rb_q52"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q51" />
-
-    <RadioButton
-        android:id="@+id/rb_q51"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="TRUE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q53" />
-
 
     <TextView
         android:id="@+id/tv_q53"

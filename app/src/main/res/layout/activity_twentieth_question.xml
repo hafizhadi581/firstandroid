@@ -7,6 +7,31 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/iv_q201"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/buttonnext" />
+
+    <TextView
+        android:id="@+id/tv_q202"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:text="Does your child like movement activities? "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q201" />
+
     <TextView
         android:id="@+id/tv_q201"
         android:layout_width="0dp"
@@ -20,56 +45,174 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_q202"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Does your child like movement activities? "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q201" />
-
-    <TextView
-        android:id="@+id/tv_q203"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_mq201"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:text="FOR EXAMPLE, being swung or bounced on your knee"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q202" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="119dp" />
 
-    <RadioButton
-        android:id="@+id/rb_q201"
+    <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TRUE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q203" />
+        app:layout_constraintTop_toTopOf="@+id/guide_mq201">
 
-    <RadioButton
-        android:id="@+id/rb_q202"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q201" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q201"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q202"
-        app:srcCompat="@drawable/buttonnext" />
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/linear_nq1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/cb_move_bounced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q203"
+                    app:layout_constraintHorizontal_bias="0.484"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q202"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq201" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_laugh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q203"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q202"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq203" />
+
+                <CheckBox
+                    android:id="@+id/cb_babble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q203"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q202"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_laugh" />
+
+                <CheckBox
+                    android:id="@+id/cb_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q203"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q202"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_babble" />
+
+                <TextView
+                    android:id="@+id/tv_yq201"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="For Example..."
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q203"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q201"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_yq202"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="Does he/she enjoy being bounced or swung?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q202"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q201"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq201" />
+
+                <TextView
+                    android:id="@+id/tv_yq203"
+                    android:layout_width="375dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="When you swing or bounce  him/her, how does he/she react? Does he/she..."
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q203"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q201"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq202" />
+
+                <TextView
+                    android:id="@+id/tv_yq204"
+                    android:layout_width="310dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="Laugh or smile?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q202"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q201"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq203" />
+
+                <TextView
+                    android:id="@+id/tv_yq205"
+                    android:layout_width="310dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Talk or babble?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q202"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q201"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq204" />
+
+                <TextView
+                    android:id="@+id/tv_yq206"
+                    android:layout_width="310dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Request more by holding out his/her arms?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q202"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q201"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq205" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q201"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q202"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="330dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q203"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="395dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
