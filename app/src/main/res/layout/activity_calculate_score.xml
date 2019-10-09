@@ -8,30 +8,42 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tv_highrisk"
+        android:id="@+id/tv_final_score"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginTop="100dp"
-        android:text="FINAL SCORE"
+        android:layout_marginTop="156dp"
+        android:text="FINAL SCORE :"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tv_risk_type"
+        android:layout_width="159dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:text="RISK TYPE  :D"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_final_score" />
+
+    <TextView
         android:id="@+id/tv_score"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="32dp"
-        android:text="Score"
-        android:textStyle="bold"
+        android:layout_height="35dp"
+        android:text="0"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_final_score"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_highrisk"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toEndOf="@+id/tv_final_score"
+        app:layout_constraintTop_toTopOf="@+id/tv_final_score"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

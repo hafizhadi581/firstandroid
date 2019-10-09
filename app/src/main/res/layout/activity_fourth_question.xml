@@ -17,42 +17,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/btn3" />
 
-    <TextView
-        android:id="@+id/tv_q43"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FOURTH QUESTION"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_q41"
-        app:layout_constraintEnd_toEndOf="@+id/iv_q41"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/iv_q41"
-        app:layout_constraintTop_toTopOf="@+id/iv_q41" />
-
-    <TextView
-        android:id="@+id/tv_q41"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:background="#FFD180"
-        android:fontFamily="monospace"
-        android:text="Does your child like climbing on things?"
-        android:textAlignment="textStart"
-        android:textColor="#000000"
-        android:textSize="18sp"
+    <ImageView
+        android:id="@+id/iv_q42"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.939"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_q41" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="196dp" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4"
+        app:srcCompat="@drawable/buttonnext" />
 
     <ScrollView
         android:id="@+id/scrollView4"
@@ -125,6 +100,7 @@
                     android:gravity="center|left"
                     android:text="Object"
                     android:textSize="18sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq41"
@@ -204,16 +180,41 @@
 
     </ScrollView>
 
-    <ImageView
-        android:id="@+id/iv_q42"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:scaleType="centerInside"
+    <TextView
+        android:id="@+id/tv_q43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FOURTH QUESTION"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_q41"
+        app:layout_constraintEnd_toEndOf="@+id/iv_q41"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/iv_q41"
+        app:layout_constraintTop_toTopOf="@+id/iv_q41" />
+
+    <TextView
+        android:id="@+id/tv_q41"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#FFD180"
+        android:fontFamily="monospace"
+        android:text="Does your child like climbing on things?"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView4"
-        app:srcCompat="@drawable/buttonnext" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_q41" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="196dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
