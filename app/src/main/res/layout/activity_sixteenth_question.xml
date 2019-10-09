@@ -13,7 +13,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_q162"
         app:srcCompat="@drawable/buttonnext" />
@@ -60,9 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -83,9 +81,7 @@
                     android:id="@+id/cb_point_toward"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q163"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q162"
                     app:layout_constraintTop_toBottomOf="@+id/cb_look_toward" />
 
@@ -93,9 +89,7 @@
                     android:id="@+id/cb_look_around"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q163"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q162"
                     app:layout_constraintTop_toBottomOf="@+id/cb_point_toward" />
 
@@ -103,10 +97,8 @@
                     android:id="@+id/cb_ignore"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     android:layout_marginTop="30dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q163"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q162"
                     app:layout_constraintTop_toBottomOf="@+id/cb_look_around" />
 
@@ -114,9 +106,7 @@
                     android:id="@+id/cb_look_face"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q163"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q162"
                     app:layout_constraintTop_toBottomOf="@+id/cb_ignore" />
 
@@ -134,7 +124,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq162"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -147,7 +137,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq163"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Point toward the thing you are looking at? "
@@ -159,7 +149,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq164"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Look around to see what you are looking at?"
@@ -171,7 +161,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq165"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -184,7 +174,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq166"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Look at your face?"
@@ -206,14 +196,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q163"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

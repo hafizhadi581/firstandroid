@@ -126,7 +126,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq61"
-                    android:layout_width="375dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -207,14 +207,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq63"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

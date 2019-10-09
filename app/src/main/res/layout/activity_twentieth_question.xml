@@ -14,7 +14,7 @@
         android:layout_marginTop="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3"
         app:layout_constraintVertical_bias="0.0"
@@ -65,9 +65,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -89,10 +87,8 @@
                     android:id="@+id/cb_laugh"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="36dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q203"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q202"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq203" />
 
@@ -100,9 +96,7 @@
                     android:id="@+id/cb_babble"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q203"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q202"
                     app:layout_constraintTop_toBottomOf="@+id/cb_laugh" />
 
@@ -110,9 +104,7 @@
                     android:id="@+id/cb_request"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q203"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q202"
                     app:layout_constraintTop_toBottomOf="@+id/cb_babble" />
 
@@ -130,7 +122,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq202"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -143,7 +135,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq203"
-                    android:layout_width="375dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -155,7 +147,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq204"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -168,7 +160,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq205"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Talk or babble?"
@@ -180,7 +172,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq206"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Request more by holding out his/her arms?"
@@ -202,14 +194,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q203"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

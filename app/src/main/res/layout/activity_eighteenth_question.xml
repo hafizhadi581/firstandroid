@@ -92,10 +92,8 @@
                     android:id="@+id/cb_dinnertime"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="52dp"
+                    android:layout_marginTop="68dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q183"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q182"
                     app:layout_constraintTop_toBottomOf="@+id/cb_situation" />
 
@@ -103,41 +101,35 @@
                     android:id="@+id/cb_shoe"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     android:layout_marginTop="68dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q183"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q182"
                     app:layout_constraintTop_toBottomOf="@+id/cb_dinnertime" />
+
 
                 <CheckBox
                     android:id="@+id/cb_blanket"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="68dp"
+                    android:layout_marginTop="56dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q183"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q182"
                     app:layout_constraintTop_toBottomOf="@+id/cb_shoe" />
-
 
                 <CheckBox
                     android:id="@+id/cb_book"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="48dp"
+                    android:layout_marginTop="44dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q183"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q182"
                     app:layout_constraintTop_toBottomOf="@+id/cb_blanket" />
 
                 <TextView
                     android:id="@+id/tv_yq181"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="28dp"
+                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="Can he/she follow a command? For example when you are dressed to go out and you tell him/her to get his/her shoes, does he/sheunderstand?"
                     android:textSize="16sp"
@@ -147,7 +139,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq182"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -160,7 +152,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq183"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="116dp"
                     android:gravity="center|left"
@@ -173,7 +165,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq184"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:gravity="center|left"
                     android:text="(2) If you say, “Bring me the blanket” or ask for another object without pointing, making gestures, or giving hints, does your child bring it to you?"
@@ -185,7 +177,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq185"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:gravity="center|left"
                     android:text="(3) If you say, “Put the book on the chair”without pointing, making gestures, or giving any other hints , does your child put the book on the chair?"
@@ -198,7 +190,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq186"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:gravity="center|left"
@@ -221,14 +213,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q183"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

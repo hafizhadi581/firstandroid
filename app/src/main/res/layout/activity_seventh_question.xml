@@ -114,9 +114,9 @@
                     android:id="@+id/cb_attention"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="40dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
-                    app:layout_constraintHorizontal_bias="0.545"
+                    app:layout_constraintHorizontal_bias="0.555"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_animal" />
 
@@ -124,16 +124,16 @@
                     android:id="@+id/cb_show_interest"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
-                    app:layout_constraintHorizontal_bias="0.545"
+                    app:layout_constraintHorizontal_bias="0.555"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_attention" />
 
                 <TextView
                     android:id="@+id/tv_yq71"
-                    android:layout_width="375dp"
-                    android:layout_height="43dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="Does your child sometimes want you to see something interesting such as…."
@@ -224,14 +224,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq63"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

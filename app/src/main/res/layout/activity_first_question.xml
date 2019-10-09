@@ -133,7 +133,7 @@
                 <TextView
                     android:id="@+id/tv_nq11"
                     android:layout_width="0dp"
-                    android:layout_height="43dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="48dp"
                     android:text="If you point at something, what does your child typically do?"
                     android:textSize="18sp"
@@ -254,24 +254,24 @@
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq11"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="20dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq12"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq13"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

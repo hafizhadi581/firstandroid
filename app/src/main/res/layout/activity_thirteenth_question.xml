@@ -54,16 +54,14 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_q132"
                     app:layout_constraintTop_toTopOf="parent" />
 
+
                 <CheckBox
                     android:id="@+id/cb_walk_on"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q133"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q132"
                     app:layout_constraintTop_toBottomOf="@+id/cb_walk" />
-
 
                 <ImageView
                     android:id="@+id/iv_q131"
@@ -78,7 +76,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq132"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:gravity="center|left"
                     android:text="Does he/she walk without holding on to anything?"
@@ -90,7 +88,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq131"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="0dp"
                     android:gravity="center|left"
@@ -106,14 +104,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q133"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q131"

@@ -22,67 +22,15 @@
         android:id="@+id/iv_q52"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="320dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="31dp"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/guide_q51"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_q53"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/buttonnext" />
-
-    <TextView
-        android:id="@+id/tv_q53"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FFE57F"
-        android:fontFamily="monospace"
-        android:text="FOR EXAMPLE, does your child wiggle his or her fingers close to his or her eyes?"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q52" />
-
-    <TextView
-        android:id="@+id/tv_q52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FFE57F"
-        android:fontFamily="monospace"
-        android:text="Does your child make unusual finger movements near his or her eyes? "
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_q51" />
-
-    <TextView
-        android:id="@+id/tv_q51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
-        android:text="FIFTH QUESTION"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_q51"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.978"
-        app:layout_constraintStart_toStartOf="@+id/iv_q51"
-        app:layout_constraintTop_toTopOf="@+id/iv_q51"
-        app:layout_constraintVertical_bias="0.271" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_q51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="330dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -299,19 +247,70 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq53"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_q52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFE57F"
+        android:fontFamily="monospace"
+        android:text="Does your child make unusual finger movements near his or her eyes? "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_q51" />
+
+    <TextView
+        android:id="@+id/tv_q51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="88dp"
+        android:text="FIFTH QUESTION"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_q51"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="@+id/iv_q51"
+        app:layout_constraintTop_toTopOf="@+id/iv_q51"
+        app:layout_constraintVertical_bias="0.271" />
+
+    <TextView
+        android:id="@+id/tv_q53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFE57F"
+        android:fontFamily="monospace"
+        android:text="FOR EXAMPLE, does your child wiggle his or her fingers close to his or her eyes?"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_q51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="330dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

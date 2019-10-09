@@ -62,9 +62,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -75,21 +73,17 @@
                     android:id="@+id/cb_hear_scary"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="44dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q193"
-                    app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q192"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq191" />
-
 
                 <CheckBox
                     android:id="@+id/cb_approach"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="44dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q193"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q192"
                     app:layout_constraintTop_toBottomOf="@+id/cb_hear_scary" />
 
@@ -97,10 +91,8 @@
                     android:id="@+id/cb_unfamiliar"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="40dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q193"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q192"
                     app:layout_constraintTop_toBottomOf="@+id/cb_approach" />
 
@@ -118,7 +110,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq192"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -131,8 +123,9 @@
 
                 <TextView
                     android:id="@+id/tv_yq193"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="Does your child look at you when someone new approaches?"
                     android:textSize="16sp"
@@ -143,8 +136,9 @@
 
                 <TextView
                     android:id="@+id/tv_yq144"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="Does your child look at you when he/she is faced with something unfamiliar or a little scary?"
                     android:textSize="16sp"
@@ -165,14 +159,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q193"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

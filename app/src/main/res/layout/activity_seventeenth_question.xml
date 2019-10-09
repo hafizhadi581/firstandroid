@@ -61,9 +61,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -84,9 +82,7 @@
                     android:id="@+id/cb_watch_babble"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q173"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q172"
                     app:layout_constraintTop_toBottomOf="@+id/cb_watch_me" />
 
@@ -94,9 +90,7 @@
                     android:id="@+id/cb_praise"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q173"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q172"
                     app:layout_constraintTop_toBottomOf="@+id/cb_watch_babble" />
 
@@ -104,9 +98,7 @@
                     android:id="@+id/cb_watch_look"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q173"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q172"
                     app:layout_constraintTop_toBottomOf="@+id/cb_praise" />
 
@@ -124,7 +116,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq172"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -137,7 +129,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq173"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Babble or make a noise to get you to watch what he/she is doing?"
@@ -149,7 +141,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq174"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Look at you to get praise or comment?"
@@ -161,7 +153,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq165"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Keep looking to see if you are looking?"
@@ -183,14 +175,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q173"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

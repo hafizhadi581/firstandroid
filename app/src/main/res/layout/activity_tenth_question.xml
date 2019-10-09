@@ -69,9 +69,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -120,9 +118,7 @@
                     android:id="@+id/cb_bring_block"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q103"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q102"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_bug" />
 
@@ -139,7 +135,7 @@
                     android:id="@+id/cb_respond_touch"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q103"
                     app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q102"
@@ -147,9 +143,9 @@
 
                 <TextView
                     android:id="@+id/tv_yq100"
-                    android:layout_width="375dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="If he/she is not involved in something fun or interesting, what does he/she do when you call his/her name? Does he/she..."
                     android:textSize="18sp"
@@ -160,8 +156,8 @@
 
                 <TextView
                     android:id="@+id/tv_yq101"
-                    android:layout_width="375dp"
-                    android:layout_height="40dp"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="For Example, Does he/she..."
@@ -174,7 +170,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq102"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="41dp"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -187,7 +183,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq103"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Talk or babble?"
@@ -199,19 +195,18 @@
 
                 <TextView
                     android:id="@+id/tv_yq104"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Stop what he/she is doing?"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q102"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_q91"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q101"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq103" />
 
                 <TextView
                     android:id="@+id/tv_yq105"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="37dp"
                     android:gravity="center|left"
@@ -224,7 +219,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq106"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="37dp"
                     android:gravity="center|left"
                     android:text="Seem to hear but ignores parent?"
@@ -236,7 +231,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq107"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="45dp"
                     android:gravity="center|left"
                     android:text="Respond only if parent is right in front of the child’s face?"
@@ -248,7 +243,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq108"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="45dp"
                     android:gravity="center|left"
                     android:text="Respond only if touched?"
@@ -270,14 +265,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q103"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

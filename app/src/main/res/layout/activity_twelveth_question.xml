@@ -14,7 +14,7 @@
         android:layout_marginBottom="548dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintHorizontal_bias="0.886"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/buttonnext" />
 
@@ -94,9 +94,7 @@
                     android:id="@+id/cb_sound_babies"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q122"
                     app:layout_constraintTop_toBottomOf="@+id/cb_sounds_washing" />
 
@@ -198,7 +196,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq122"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -210,7 +208,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq123"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Babies crying?"
@@ -221,7 +219,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq124"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Vacuum cleaner?"
@@ -232,7 +230,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq125"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Hairdryer?"
@@ -243,7 +241,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq126"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Traffic?"
@@ -254,7 +252,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq127"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Babies squealing or screeching?"
@@ -265,7 +263,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq128"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Loud music?"
@@ -276,7 +274,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq129"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Telephone/ doorbell ringing?"
@@ -287,7 +285,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq1211"
-                    android:layout_width="375dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:gravity="center|left"
@@ -299,7 +297,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq1213"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Scream?"
@@ -345,7 +343,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq1210"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:gravity="center|left"
                     android:text="Noisy places such as a supermarket or restaurant?"
@@ -357,7 +355,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq120"
-                    android:layout_width="375dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
@@ -371,8 +369,9 @@
 
                 <TextView
                     android:id="@+id/tv_yq121"
-                    android:layout_width="375dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="For Example, Does your child have a negative reaction to the sound of…"
                     android:textSize="18sp"
@@ -393,14 +392,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q123"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

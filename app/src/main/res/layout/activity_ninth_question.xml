@@ -73,9 +73,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -122,9 +120,7 @@
                     android:id="@+id/cb_bring_block"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_bug" />
 
@@ -132,7 +128,7 @@
                     android:id="@+id/cb_bring_help"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="64dp"
+                    android:layout_marginTop="30dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
@@ -140,8 +136,8 @@
 
                 <TextView
                     android:id="@+id/tv_yq91"
-                    android:layout_width="375dp"
-                    android:layout_height="40dp"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="Does your child sometimes bring you…"
@@ -154,8 +150,8 @@
 
                 <TextView
                     android:id="@+id/tv_yq92"
-                    android:layout_width="310dp"
-                    android:layout_height="41dp"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="A picture or toy just to show you?"
@@ -167,7 +163,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq93"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="A drawing he/she has done?"
@@ -179,7 +175,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq94"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="A flower he/she has picked?"
@@ -191,7 +187,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq95"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="A bug he/she has found in the grass?"
@@ -203,8 +199,8 @@
 
                 <TextView
                     android:id="@+id/tv_yq96"
-                    android:layout_width="310dp"
-                    android:layout_height="37dp"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="A few blocks he/she has put together?"
                     android:textSize="16sp"
@@ -215,9 +211,9 @@
 
                 <TextView
                     android:id="@+id/tv_yq97"
-                    android:layout_width="310dp"
-                    android:layout_height="45dp"
-                    android:layout_marginTop="64dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="Is this sometimes just to show you, not to get help?"
                     android:textSize="16sp"
@@ -238,14 +234,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q93"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
