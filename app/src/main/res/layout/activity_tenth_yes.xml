@@ -13,17 +13,17 @@
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="36dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q93"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q103"
         app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="@+id/guide_q92"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq91" />
+        app:layout_constraintStart_toStartOf="@+id/guide_q102"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq101" />
 
     <CheckBox
         android:id="@+id/cb_bring_drawing"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q93"
-        app:layout_constraintStart_toStartOf="@+id/guide_q92"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q103"
+        app:layout_constraintStart_toStartOf="@+id/guide_q102"
         app:layout_constraintTop_toBottomOf="@+id/cb_bring_picture" />
 
     <CheckBox
@@ -31,8 +31,8 @@
         android:layout_width="wrap_content"
         android:layout_height="35dp"
 
-        app:layout_constraintEnd_toStartOf="@+id/guide_q93"
-        app:layout_constraintStart_toEndOf="@+id/guide_q92"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q103"
+        app:layout_constraintStart_toEndOf="@+id/guide_q102"
         app:layout_constraintTop_toBottomOf="@+id/cb_bring_drawing" />
 
 
@@ -40,138 +40,174 @@
         android:id="@+id/cb_bring_bug"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q93"
-        app:layout_constraintStart_toStartOf="@+id/guide_q92"
-        app:layout_constraintTop_toBottomOf="@+id/cb_bring_flower" />
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q103"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/guide_q102"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq100" />
 
     <CheckBox
         android:id="@+id/cb_bring_block"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q93"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q103"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_q92"
+        app:layout_constraintStart_toStartOf="@+id/guide_q102"
         app:layout_constraintTop_toBottomOf="@+id/cb_bring_bug" />
 
     <CheckBox
         android:id="@+id/cb_bring_help"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q93"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q103"
         app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="@+id/guide_q92"
+        app:layout_constraintStart_toStartOf="@+id/guide_q102"
         app:layout_constraintTop_toBottomOf="@+id/cb_bring_block" />
 
+    <CheckBox
+        android:id="@+id/cb_respond_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q103"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/guide_q102"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bring_help" />
+
     <TextView
-        android:id="@+id/tv_yq91"
+        android:id="@+id/tv_yq100"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center|left"
+        android:text="If he/she is not involved in something fun or interesting, what does he/she do when you call his/her name? Does he/she..."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q103"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_q101"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq104" />
+
+    <TextView
+        android:id="@+id/tv_yq101"
         android:layout_width="375dp"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
         android:gravity="center|left"
-        android:text="Does your child sometimes bring you…"
+        android:text="For Example, Does he/she..."
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q93"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q103"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_q91"
+        app:layout_constraintStart_toStartOf="@+id/guide_q101"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
-        android:id="@+id/tv_yq92"
+        android:id="@+id/tv_yq102"
         android:layout_width="310dp"
         android:layout_height="41dp"
         android:layout_marginTop="30dp"
         android:gravity="center|left"
-        android:text="A picture or toy just to show you?"
+        android:text="Look up?"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q92"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q102"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_q91"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq91" />
+        app:layout_constraintStart_toStartOf="@+id/guide_q101"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq101" />
 
     <TextView
-        android:id="@+id/tv_yq93"
+        android:id="@+id/tv_yq103"
         android:layout_width="310dp"
         android:layout_height="35dp"
         android:gravity="center|left"
-        android:text="A drawing he/she has done?"
+        android:text="Talk or babble?"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q92"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q102"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_q91"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq92" />
+        app:layout_constraintStart_toStartOf="@+id/guide_q101"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq102" />
 
     <TextView
-        android:id="@+id/tv_yq94"
+        android:id="@+id/tv_yq104"
         android:layout_width="310dp"
         android:layout_height="35dp"
         android:gravity="center|left"
-        android:text="A flower he/she has picked?"
+        android:text="Stop what he/she is doing?"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q92"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q102"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guide_q91"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq93" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq103" />
 
     <TextView
-        android:id="@+id/tv_yq95"
+        android:id="@+id/tv_yq105"
         android:layout_width="310dp"
         android:layout_height="35dp"
+        android:layout_marginTop="37dp"
         android:gravity="center|left"
-        android:text="A bug he/she has found in the grass?"
+        android:text="Make no response?"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q92"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q102"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_q91"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq94" />
+        app:layout_constraintStart_toStartOf="@+id/guide_q101"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq100" />
 
     <TextView
-        android:id="@+id/tv_yq96"
+        android:id="@+id/tv_yq106"
         android:layout_width="310dp"
         android:layout_height="37dp"
         android:gravity="center|left"
-        android:text="A few blocks he/she has put together?"
+        android:text="Seem to hear but ignores parent?"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q92"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q102"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_q91"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq95" />
+        app:layout_constraintStart_toStartOf="@+id/guide_q101"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq105" />
 
     <TextView
-        android:id="@+id/tv_yq97"
+        android:id="@+id/tv_yq107"
         android:layout_width="310dp"
         android:layout_height="45dp"
-        android:layout_marginTop="64dp"
         android:gravity="center|left"
-        android:text="Is this sometimes just to show you, not to get help?"
+        android:text="Respond only if parent is right in front of the child’s face?"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_q92"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q102"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guide_q101"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq106" />
+
+    <TextView
+        android:id="@+id/tv_yq108"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:gravity="center|left"
+        android:text="Respond only if touched?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guide_q102"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_q91"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq96" />
+        app:layout_constraintStart_toStartOf="@+id/guide_q101"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yq107" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_q91"
+        android:id="@+id/guide_q101"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_q92"
+        android:id="@+id/guide_q102"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="330dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_q93"
+        android:id="@+id/guide_q103"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="395dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout> 
+</androidx.constraintlayout.widget.ConstraintLayout>
