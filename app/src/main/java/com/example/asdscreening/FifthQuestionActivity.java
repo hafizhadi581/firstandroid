@@ -15,8 +15,8 @@ public class FifthQuestionActivity extends AppCompatActivity implements View.OnC
 
 
     private Rules rules = Rules.getInstance();
-    private ImageView ivQ52;
 
+    private ImageView ivQ52;
     private CheckBox cbYq5y1;
     private CheckBox cbYq5y2;
     private CheckBox cbYq5y3;
