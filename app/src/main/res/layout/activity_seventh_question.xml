@@ -7,19 +7,37 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_q71"
+    <ImageView
+        android:id="@+id/iv_q71"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_q72"
+        app:srcCompat="@drawable/buttonnext" />
+
+    <RadioButton
+        android:id="@+id/rb_q72"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#C6FF00"
-        android:text="SEVENTH QUESTION"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:text="FALSE"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/rb_q71" />
+
+    <RadioButton
+        android:id="@+id/rb_q71"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TRUE"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q72" />
 
     <TextView
         android:id="@+id/tv_q72"
@@ -49,36 +67,212 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_q71" />
 
-    <RadioButton
-        android:id="@+id/rb_q71"
+    <TextView
+        android:id="@+id/tv_q71"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TRUE"
-        android:textSize="18sp"
+        android:background="#C6FF00"
+        android:text="SEVENTH QUESTION"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q72" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioButton
-        android:id="@+id/rb_q72"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_q71"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FALSE"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q71" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="314dp" />
 
-    <ImageView
-        android:id="@+id/iv_q71"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q72"
-        app:srcCompat="@drawable/buttonnext" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/guide_q71"
+        tools:layout_editor_absoluteX="69dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/linear_nq1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/cb_airplane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq71" />
+
+                <CheckBox
+                    android:id="@+id/cb_truck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_airplane" />
+
+                <CheckBox
+                    android:id="@+id/cb_bug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_truck" />
+
+                <CheckBox
+                    android:id="@+id/cb_animal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_bug" />
+
+                <CheckBox
+                    android:id="@+id/cb_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="52dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_animal" />
+
+                <CheckBox
+                    android:id="@+id/cb_show_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_attention" />
+
+                <TextView
+                    android:id="@+id/tv_yq71"
+                    android:layout_width="375dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="Does your child sometimes want you to see something interesting such as…."
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_yq63"
+                    android:layout_width="261dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center|left"
+                    android:text="An airplane in the sky?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq71" />
+
+                <TextView
+                    android:id="@+id/tv_yq64"
+                    android:layout_width="261dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="A truck on the road?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq63" />
+
+                <TextView
+                    android:id="@+id/tv_yq65"
+                    android:layout_width="261dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="A bug on the ground?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq64" />
+
+                <TextView
+                    android:id="@+id/tv_yq66"
+                    android:layout_width="261dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="An animal in the yard?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq65" />
+
+                <TextView
+                    android:id="@+id/tv_yq62"
+                    android:layout_width="261dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center|left"
+                    android:text="How does your child draw your attention to it? Would he/she point with one finger?"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq66" />
+
+                <TextView
+                    android:id="@+id/tv_yq72"
+                    android:layout_width="261dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Is this to show their interest, not to get help? "
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq62" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_nq61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_nq62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="281dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_nq63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="395dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

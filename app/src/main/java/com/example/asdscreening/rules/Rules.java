@@ -52,6 +52,14 @@ public class Rules {
         this.rule3 = rule3;
     }
 
+    public Rule4 getRule4() {
+        return rule4;
+    }
+
+    public void setRule4(Rule4 rule4) {
+        this.rule4 = rule4;
+    }
+
     public int getScore(){
 
         score = 0;
