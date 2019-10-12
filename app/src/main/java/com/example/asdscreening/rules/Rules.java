@@ -32,7 +32,6 @@ public class Rules {
         this.rule1 = rule1;
     }
 
-
     public Rule1 getRule1() {
         return rule1;
     }
