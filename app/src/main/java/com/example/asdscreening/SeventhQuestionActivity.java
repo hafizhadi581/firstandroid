@@ -113,7 +113,7 @@ public class SeventhQuestionActivity extends AppCompatActivity implements View.O
 
             Log.d(TAG, "current score: " + rules.getScore());
 
-            Intent intent= new Intent(SeventhQuestionActivity.this, CalculateScoreActivity.class);
+            Intent intent= new Intent(SeventhQuestionActivity.this, EighthQuestionActivity.class);
             startActivity(intent);
         }
     }
