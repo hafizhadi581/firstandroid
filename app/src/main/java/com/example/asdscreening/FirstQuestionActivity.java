@@ -7,10 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
-
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.asdscreening.rules.Rule1;
 import com.example.asdscreening.rules.Rules;
 

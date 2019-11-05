@@ -22,7 +22,7 @@
         android:id="@+id/txtq103"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="FOR EXAMPLE, does he or she look up, talk or babble, or stop what he or she is doing when you call his or her name?"
+        android:text="For example, does he or she look up, talk or babble, or stop what he or she is doing when you call his or her name?"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,11 +80,10 @@
                     android:id="@+id/cb_bring_picture"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="36dp"
+                    android:layout_marginTop="28dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q103"
-                    app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q102"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq101" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
                     android:id="@+id/cb_bring_drawing"
@@ -135,9 +134,8 @@
                     android:id="@+id/cb_respond_touch"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q103"
-                    app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q102"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_help" />
 
@@ -154,32 +152,19 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_q101"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq104" />
 
-                <TextView
-                    android:id="@+id/tv_yq101"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
-                    android:gravity="center|left"
-                    android:text="For Example, Does he/she..."
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_q103"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_q101"
-                    app:layout_constraintTop_toTopOf="parent" />
-
 
                 <TextView
                     android:id="@+id/tv_yq102"
                     android:layout_width="0dp"
                     android:layout_height="41dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="28dp"
                     android:gravity="center|left"
                     android:text="Look up?"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q102"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q101"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq101" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/tv_yq103"
