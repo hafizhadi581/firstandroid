@@ -51,7 +51,7 @@ public class FourthQuestionActivity extends AppCompatActivity implements View.On
                     cbyq4y3.isChecked(),
                     cbyq4y4.isChecked()));
             Log.d(TAG, "current score: " + rules.getScore());
-            Intent intent = new Intent(FourthQuestionActivity.this,SixthQuestionActivity.class);
+            Intent intent = new Intent(FourthQuestionActivity.this,FifthQuestionActivity.class);
             startActivity(intent);
         }
     }

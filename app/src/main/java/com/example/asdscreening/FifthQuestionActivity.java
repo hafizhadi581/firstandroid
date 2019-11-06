@@ -53,7 +53,7 @@ public class FifthQuestionActivity extends AppCompatActivity implements View.OnC
                     cbYq5y5.isChecked(),
                     cbYq5y6.isChecked(),
                     cbYq5y7.isChecked()));
-            Intent intent = new Intent(FifthQuestionActivity.this, CalculateScoreActivity.class);
+            Intent intent = new Intent(FifthQuestionActivity.this, SixthQuestionActivity.class);
             startActivity(intent);
 
 

@@ -44,6 +44,7 @@ public class TenthQuestionActivity extends AppCompatActivity implements View.OnC
 
     }
 
+    
     @Override
     public void onClick(View view) {
         if (view == ivq101){
