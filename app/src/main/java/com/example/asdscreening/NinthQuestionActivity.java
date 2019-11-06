@@ -54,7 +54,6 @@ public class NinthQuestionActivity extends AppCompatActivity implements View.OnC
             case R.id.cb_bring_bug:
             case R.id.cb_bring_block:
 
-
                 if (checked)
                     showCbBringHelp();
                     //do things when checked

@@ -85,6 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="36dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
@@ -94,6 +95,7 @@
                     android:id="@+id/cb_bring_drawing"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_picture" />
@@ -102,7 +104,7 @@
                     android:id="@+id/cb_bring_flower"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintStart_toEndOf="@+id/guide_q92"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_drawing" />
@@ -112,6 +114,7 @@
                     android:id="@+id/cb_bring_bug"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_flower" />
@@ -120,6 +123,7 @@
                     android:id="@+id/cb_bring_block"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_bug" />
@@ -129,6 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="30dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
@@ -217,6 +222,7 @@
                     android:gravity="center|left"
                     android:text="Is this sometimes just to show you, not to get help?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q92"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q91"
