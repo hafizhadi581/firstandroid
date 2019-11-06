@@ -2,6 +2,7 @@ package com.example.asdscreening;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
@@ -65,6 +66,7 @@ public class EighthQuestionActivity extends AppCompatActivity implements View.On
                 break;
 
         }
+
 
     }
 
@@ -174,17 +176,13 @@ public class EighthQuestionActivity extends AppCompatActivity implements View.On
     public void onClick(View v) {
         if(v == ivQ81){
 
-            rules.setRule8(new Rule8(cbInterestedNotBrotherSister.isChecked(),
-            cbRespondToOtherChildren.isChecked(),
-            cbPlayingWithOtherChildren.isChecked(),
-            cbTalkingToOtherChildren.isChecked(),
-            cbBabbleOrMakeNoise.isChecked(),
-            cbWatchingOtherChildren.isChecked(),
-            cbSmillingAtOtherChildren.isChecked(),
-            cbActingShyAtOtherChildren.isChecked(),
-            cbGettingExcitedAtOtherChildren.isChecked(),
+            rules.setRule8(new Rule8(cbInterestedNotBrotherSister.isChecked(), cbRespondToOtherChildren.isChecked(), cbPlayingWithOtherChildren.isChecked(), cbTalkingToOtherChildren.isChecked(),
+            cbBabbleOrMakeNoise.isChecked(), cbWatchingOtherChildren.isChecked(), cbSmillingAtOtherChildren.isChecked(), cbActingShyAtOtherChildren.isChecked(), cbGettingExcitedAtOtherChildren.isChecked(),
             cbRespondToOtherChildrenHalfOfTime.isChecked()));
-            Intent intent = new Intent(EighthQuestionActivity.this, CalculateScoreActivity.class);
+
+            Log.d(TAG, "current score: " + rules.getScore());
+
+            Intent intent = new Intent(EighthQuestionActivity.this, NinthQuestionActivity.class);
             startActivity(intent);
         }
     }

@@ -12,6 +12,7 @@ public class Rules {
     private Rule6 rule6;
     private Rule7 rule7;
     private Rule8 rule8;
+    private Rule9 rule9;
 
 
     private Rules() {
@@ -67,13 +68,17 @@ public class Rules {
 
     public Rule6 getRule6() { return rule6; }
 
+    public void setRule7(Rule7 rule7) { this.rule7 = rule7; }
+
     public Rule7 getRule7() { return rule7; }
 
-    public void setRule7(Rule7 rule7) { this.rule7 = rule7; }
+    public void setRule8(Rule8 rule8) { this.rule8 = rule8; }
 
     public Rule8 getRule8() { return rule8; }
 
-    public void setRule8(Rule8 rule8) { this.rule8 = rule8; }
+    public void setRule9(Rule9 rule9) { this.rule9 = rule9; }
+
+    public Rule9 getRule9() { return rule9; }
 
     public int getScore() {
 
@@ -100,6 +105,9 @@ public class Rules {
             score++;
         }
         if (rule8 != null && !rule8.isPass()) {
+            score++;
+        }
+        if (rule9 != null && !rule9.isPass()) {
             score++;
         }
         return score;
