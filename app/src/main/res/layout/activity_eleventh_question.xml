@@ -11,24 +11,12 @@
         android:id="@+id/iv_q111"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="488dp"
+        android:layout_marginBottom="188dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/buttonnext" />
-
-    <TextView
-        android:id="@+id/tv_q112"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="When you smile at your child, does he or she smile back at you?"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q111" />
 
     <TextView
         android:id="@+id/tv_q111"
@@ -48,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="265dp" />
+        app:layout_constraintGuide_begin="94dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -70,12 +58,21 @@
 
 
                 <CheckBox
+                    android:id="@+id/cb_smile_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:onClick="onCheckboxClicked"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q112"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
                     android:id="@+id/cb_smile_smile"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="36dp"
+                    android:layout_marginTop="4dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q113"
-                    app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q112"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq111" />
 
@@ -101,9 +98,8 @@
                     android:id="@+id/cb_always_smile"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="68dp"
+                    android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q113"
-                    app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q112"
                     app:layout_constraintTop_toBottomOf="@+id/cb_smile_return" />
 
@@ -124,25 +120,24 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_q112"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_block" />
 
+
                 <TextView
                     android:id="@+id/tv_yq111"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="32dp"
                     android:gravity="center|left"
                     android:text="What makes he/she smile? Does he/she ..."
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q113"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q111"
-                    app:layout_constraintTop_toTopOf="parent" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q112" />
 
                 <TextView
                     android:id="@+id/tv_yq112"
                     android:layout_width="0dp"
                     android:layout_height="41dp"
-                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="Smile when you smile?"
                     android:textSize="16sp"
@@ -166,7 +161,7 @@
                 <TextView
                     android:id="@+id/tv_yq114"
                     android:layout_width="0dp"
-                    android:layout_height="35dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center|left"
                     android:text="Smile when you return from being away?"
                     android:textSize="16sp"
@@ -179,7 +174,6 @@
                     android:id="@+id/tv_yq115"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
-                    android:layout_marginTop="68dp"
                     android:gravity="center|left"
                     android:text="Always smile?"
                     android:textSize="16sp"
@@ -211,6 +205,18 @@
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q111"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq116" />
+
+                <TextView
+                    android:id="@+id/tv_q112"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="24dp"
+                    android:text="When you smile at your child, does he or she smile back at you?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q112"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q111"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q111"
