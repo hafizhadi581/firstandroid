@@ -17,26 +17,26 @@ public class EleventhQuestionActivity extends AppCompatActivity implements View.
     private final String TAG = EleventhQuestionActivity.class.getSimpleName();
     private Rules rules = Rules.getInstance();
 
-    private CheckBox isSmileBack;
-    private CheckBox isSmileSmile;
-    private CheckBox isSmileEnter;
-    private CheckBox isSmileReturn;
-    private CheckBox isAlwaysSmile;
-    private CheckBox isBringBlock;
-    private CheckBox isSmileRandom;
+    private CheckBox cbSmileBack;
+    private CheckBox cbSmileSmile;
+    private CheckBox cbSmileEnter;
+    private CheckBox cbSmileReturn;
+    private CheckBox cbAlwaysSmile;
+    private CheckBox cbBringBlock;
+    private CheckBox cbSmileRandom;
     private ImageView ivQ111;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eleventh_question);
 
-        isSmileBack = findViewById(R.id.cb_smile_back);
-        isSmileSmile = findViewById(R.id.cb_smile_smile);
-        isSmileEnter = findViewById(R.id.cb_smile_enter);
-        isSmileReturn = findViewById(R.id.cb_smile_return);
-        isAlwaysSmile = findViewById(R.id.cb_always_smile);
-        isBringBlock = findViewById(R.id.cb_bring_block);
-        isSmileRandom = findViewById(R.id.cb_smile_random);
+        cbSmileBack = findViewById(R.id.cb_smile_back);
+        cbSmileSmile = findViewById(R.id.cb_smile_smile);
+        cbSmileEnter = findViewById(R.id.cb_smile_enter);
+        cbSmileReturn = findViewById(R.id.cb_smile_return);
+        cbAlwaysSmile = findViewById(R.id.cb_always_smile);
+        cbBringBlock = findViewById(R.id.cb_bring_block);
+        cbSmileRandom = findViewById(R.id.cb_smile_random);
         ivQ111 = findViewById(R.id.iv_q111);
 
         ivQ111.setOnClickListener(this);
@@ -139,8 +139,8 @@ public class EleventhQuestionActivity extends AppCompatActivity implements View.
     public void onClick(View v) {
         if (v == ivQ111) {
 
-            rules.setRule11(new Rule11(isSmileBack.isChecked(), isSmileSmile.isChecked(), isSmileEnter.isChecked(), isSmileReturn.isChecked(),
-            isAlwaysSmile.isChecked(), isBringBlock.isChecked(), isSmileRandom.isChecked()));
+            rules.setRule11(new Rule11(cbSmileBack.isChecked(), cbSmileSmile.isChecked(), cbSmileEnter.isChecked(), cbSmileReturn.isChecked(),
+            cbAlwaysSmile.isChecked(), cbBringBlock.isChecked(), cbSmileRandom.isChecked()));
 
 
             Log.d(TAG, "current score: " + rules.getScore());

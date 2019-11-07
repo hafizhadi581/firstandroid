@@ -19,46 +19,46 @@ public class FourteenthQuestionActivity extends AppCompatActivity implements Vie
     private final String TAG = "Activity 14: ";
     private Rules rules = Rules.getInstance();
 
-    private CheckBox isLookForNeed;
-    private CheckBox isLookForPlay;
-    private CheckBox isLookForFeed;
-    private CheckBox isLookForDiaper;
-    private CheckBox isLookForRead;
-    private CheckBox isLookForTalk;
-    private CheckBox isLookForEye;
-    private CheckBox isLookFor5Times;
+    private CheckBox cbLookForNeed;
+    private CheckBox cbLookForPlay;
+    private CheckBox cbLookForFeed;
+    private CheckBox cbLookForDiaper;
+    private CheckBox cbLookForRead;
+    private CheckBox cbLookForTalk;
+    private CheckBox cbLookForEye;
+    private CheckBox cbLookFor5Times;
     private ImageView ivQ141;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fourteenth_question);
 
-        isLookForNeed = findViewById(R.id.cb_look_need);
-        isLookForPlay = findViewById(R.id.cb_look_play);
-        isLookForFeed = findViewById(R.id.cb_look_feeding);
-        isLookForDiaper = findViewById(R.id.cb_look_diaper);
-        isLookForRead = findViewById(R.id.cb_look_reading);
-        isLookForTalk = findViewById(R.id.cb_look_talk);
-        isLookForEye = findViewById(R.id.cb_look_eye);
-        isLookFor5Times = findViewById(R.id.cb_look_5times);
+        cbLookForNeed = findViewById(R.id.cb_look_need);
+        cbLookForPlay = findViewById(R.id.cb_look_play);
+        cbLookForFeed = findViewById(R.id.cb_look_feeding);
+        cbLookForDiaper = findViewById(R.id.cb_look_diaper);
+        cbLookForRead = findViewById(R.id.cb_look_reading);
+        cbLookForTalk = findViewById(R.id.cb_look_talk);
+        cbLookForEye = findViewById(R.id.cb_look_eye);
+        cbLookFor5Times = findViewById(R.id.cb_look_5times);
         ivQ141 = findViewById(R.id.iv_q141);
         ivQ141.setOnClickListener(this);
 
     }
 
-   
+
     @Override
     public void onClick(View v) {
         if (v == ivQ141) {
 
-            rules.setRule14(new Rule14(isLookForNeed.isChecked(),
-                    isLookForPlay.isChecked(),
-                    isLookForFeed.isChecked(),
-                    isLookForDiaper.isChecked(),
-                    isLookForRead.isChecked(),
-                    isLookForTalk.isChecked(),
-                    isLookForEye.isChecked(),
-                    isLookFor5Times.isChecked()));
+            rules.setRule14(new Rule14(cbLookForNeed.isChecked(),
+                    cbLookForPlay.isChecked(),
+                    cbLookForFeed.isChecked(),
+                    cbLookForDiaper.isChecked(),
+                    cbLookForRead.isChecked(),
+                    cbLookForTalk.isChecked(),
+                    cbLookForEye.isChecked(),
+                    cbLookFor5Times.isChecked()));
 
             Log.d(TAG, "current score: " + rules.getScore());
 

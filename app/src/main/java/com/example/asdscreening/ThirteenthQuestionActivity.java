@@ -17,16 +17,16 @@ public class ThirteenthQuestionActivity extends AppCompatActivity implements Vie
     private final String TAG =  "Activity 13: ";
     private Rules rules = Rules.getInstance();
 
-    private CheckBox isWalk;
-    private CheckBox isWalkOn;
+    private CheckBox cbWalk;
+    private CheckBox cbWalkOn;
     private ImageView ivQ131;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thirteenth_question);
 
-        isWalk = findViewById(R.id.cb_walk);
-        isWalkOn = findViewById(R.id.cb_walk_on);
+        cbWalk = findViewById(R.id.cb_walk);
+        cbWalkOn = findViewById(R.id.cb_walk_on);
         ivQ131 = findViewById(R.id.iv_q131);
 
         ivQ131.setOnClickListener(this);
@@ -69,7 +69,7 @@ public class ThirteenthQuestionActivity extends AppCompatActivity implements Vie
     public void onClick(View v) {
         if (v == ivQ131) {
 
-            rules.setRule13(new Rule13(isWalk.isChecked(),isWalkOn.isChecked()));
+            rules.setRule13(new Rule13(cbWalk.isChecked(),cbWalkOn.isChecked()));
 
             Log.d(TAG, "current score: " + rules.getScore());
             Intent intent = new Intent(ThirteenthQuestionActivity.this, CalculateScoreActivity.class);
