@@ -17,6 +17,7 @@ public class Rules {
     private Rule11 rule11;
     private Rule12 rule12;
     private Rule13 rule13;
+    private Rule14 rule14;
 
 
     private Rules() {
@@ -60,45 +61,93 @@ public class Rules {
         return rule3;
     }
 
-    public void setRule4(Rule4 rule4) { this.rule4 = rule4; }
+    public void setRule4(Rule4 rule4) {
+        this.rule4 = rule4;
+    }
 
-    public Rule4 getRule4() { return rule4; }
+    public Rule4 getRule4() {
+        return rule4;
+    }
 
-    public void setRule5(Rule5 rule5) { this.rule5 = rule5; }
+    public void setRule5(Rule5 rule5) {
+        this.rule5 = rule5;
+    }
 
-    public Rule5 getRule5() { return rule5; }
+    public Rule5 getRule5() {
+        return rule5;
+    }
 
-    public void setRule6(Rule6 rule6) { this.rule6 = rule6; }
+    public void setRule6(Rule6 rule6) {
+        this.rule6 = rule6;
+    }
 
-    public Rule6 getRule6() { return rule6; }
+    public Rule6 getRule6() {
+        return rule6;
+    }
 
-    public void setRule7(Rule7 rule7) { this.rule7 = rule7; }
+    public void setRule7(Rule7 rule7) {
+        this.rule7 = rule7;
+    }
 
-    public Rule7 getRule7() { return rule7; }
+    public Rule7 getRule7() {
+        return rule7;
+    }
 
-    public void setRule8(Rule8 rule8) { this.rule8 = rule8; }
+    public void setRule8(Rule8 rule8) {
+        this.rule8 = rule8;
+    }
 
-    public Rule8 getRule8() { return rule8; }
+    public Rule8 getRule8() {
+        return rule8;
+    }
 
-    public void setRule9(Rule9 rule9) { this.rule9 = rule9; }
+    public void setRule9(Rule9 rule9) {
+        this.rule9 = rule9;
+    }
 
-    public Rule9 getRule9() { return rule9; }
+    public Rule9 getRule9() {
+        return rule9;
+    }
 
-    public void setRule10(Rule10 rule10) { this.rule10 = rule10; }
+    public void setRule10(Rule10 rule10) {
+        this.rule10 = rule10;
+    }
 
-    public Rule10 getRule10() { return rule10; }
+    public Rule10 getRule10() {
+        return rule10;
+    }
 
-    public void setRule11(Rule11 rule11) { this.rule11 = rule11; }
+    public void setRule11(Rule11 rule11) {
+        this.rule11 = rule11;
+    }
 
-    public Rule11 getRule11() { return rule11; }
+    public Rule11 getRule11() {
+        return rule11;
+    }
 
-    public void setRule12(Rule12 rule12) { this.rule12 = rule12; }
+    public void setRule12(Rule12 rule12) {
+        this.rule12 = rule12;
+    }
 
-    public Rule12 getRule12() { return rule12; }
+    public Rule12 getRule12() {
+        return rule12;
+    }
 
-    public void setRule13(Rule13 rule13) { this.rule13 = rule13; }
+    public void setRule13(Rule13 rule13) {
+        this.rule13 = rule13;
+    }
 
-    public Rule13 getRule13() { return rule13; }
+    public Rule13 getRule13() {
+        return rule13;
+    }
+
+    public void setRule14(Rule14 rule14) {
+        this.rule14 = rule14;
+    }
+
+    public Rule14 getRule14() {
+        return rule14;
+    }
 
     public int getScore() {
 
@@ -140,6 +189,9 @@ public class Rules {
             score++;
         }
         if (rule13 != null && !rule13.isPass()) {
+            score++;
+        }
+        if (rule14 != null && !rule14.isPass()) {
             score++;
         }
         return score;
