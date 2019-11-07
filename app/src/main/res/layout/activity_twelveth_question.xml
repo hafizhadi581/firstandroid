@@ -7,59 +7,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q121"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="548dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.886"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/buttonnext" />
-
-    <TextView
-        android:id="@+id/tv_q122"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Does your child get upset by everyday noises? "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q121" />
-
-    <TextView
-        android:id="@+id/txt_q123"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="FOR EXAMPLE, a vacuum cleaner or loud music"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q122" />
-
-    <TextView
-        android:id="@+id/tv_q121"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="TWELVETH QUESTION"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_qm121"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="230dp" />
+        app:layout_constraintGuide_begin="-299dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -123,7 +77,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/cb_sounds_hairdryer" />
 
                 <CheckBox
-                    android:id="@+id/cb_sounds_babies"
+                    android:id="@+id/cb_sounds_babies2"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
@@ -136,7 +90,7 @@
                     android:layout_height="35dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
                     app:layout_constraintStart_toStartOf="@+id/guide_q122"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_sounds_babies" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_sounds_babies2" />
 
 
                 <CheckBox
@@ -160,28 +114,31 @@
                     android:id="@+id/cb_react_ears"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="28dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
-                    app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q122"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq1211" />
+
+                <CheckBox
+                    android:id="@+id/cb_like_noise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_react_ears" />
 
                 <CheckBox
                     android:id="@+id/cb_react_scream"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
-                    app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q122"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_react_ears" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_like_noise" />
 
                 <CheckBox
                     android:id="@+id/cb_react_cry"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q122"
                     app:layout_constraintTop_toBottomOf="@+id/cb_react_scream" />
 
@@ -194,15 +151,47 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_q122"
                     app:layout_constraintTop_toBottomOf="@+id/cb_react_cry" />
 
+                <ImageView
+                    android:id="@+id/iv_q121"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_react_cover"
+                    app:srcCompat="@drawable/buttonnext" />
+
+                <TextView
+                    android:id="@+id/tv_q122"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Does your child get upset by everyday noises? "
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q121" />
+
+                <TextView
+                    android:id="@+id/tv_q121"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="TWELVETH QUESTION"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <TextView
                     android:id="@+id/tv_yq122"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="28dp"
                     android:gravity="center|left"
                     android:text="A washing machine?"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q121"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq121" />
 
@@ -296,6 +285,17 @@
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq1210" />
 
                 <TextView
+                    android:id="@+id/tv_yq1216"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Tell you he/she doesn't like the noise?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq1212" />
+
+                <TextView
                     android:id="@+id/tv_yq1213"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
@@ -303,13 +303,14 @@
                     android:text="Scream?"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q121"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq1212" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq1216" />
 
                 <TextView
                     android:id="@+id/tv_yq1214"
-                    android:layout_width="310dp"
-                    android:layout_height="35dp"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
                     android:gravity="center|left"
                     android:text="Cry?"
                     android:textSize="16sp"
@@ -319,8 +320,8 @@
 
                 <TextView
                     android:id="@+id/tv_yq1215"
-                    android:layout_width="310dp"
-                    android:layout_height="35dp"
+                    android:layout_width="0dp"
+                    android:layout_height="29dp"
                     android:gravity="center|left"
                     android:text="Cover his/her ears while upset?"
                     android:textSize="16sp"
@@ -330,9 +331,8 @@
 
                 <TextView
                     android:id="@+id/tv_yq1212"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="Calmly cover his/her ears?"
                     android:textSize="16sp"
@@ -340,6 +340,7 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q121"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq1211" />
+
 
                 <TextView
                     android:id="@+id/tv_yq1210"
@@ -352,26 +353,22 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_q121"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq129" />
 
-
                 <TextView
                     android:id="@+id/tv_yq120"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="If he/she is not involved in something fun or interesting, what does he/she do when you call his/her name? Does he/she..."
                     android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q121"
-                    app:layout_constraintTop_toTopOf="parent" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q122" />
 
                 <TextView
                     android:id="@+id/tv_yq121"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="For Example, Does your child have a negative reaction to the sound of…"
                     android:textSize="18sp"
@@ -403,6 +400,7 @@
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
