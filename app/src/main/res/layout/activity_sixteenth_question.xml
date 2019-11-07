@@ -11,24 +11,12 @@
         android:id="@+id/iv_q161"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q162"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView6"
         app:srcCompat="@drawable/buttonnext" />
-
-    <TextView
-        android:id="@+id/tv_q162"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:text="If you turn your head to look at something, does your child look around to see what you are looking at?"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q161" />
 
     <TextView
         android:id="@+id/tv_q161"
@@ -48,9 +36,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="271dp" />
+        app:layout_constraintGuide_begin="59dp" />
 
     <ScrollView
+        android:id="@+id/scrollView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +55,16 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+
+                <CheckBox
+                    android:id="@+id/cb_look_something"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:onClick="onCheckboxClicked"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q163"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q162"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
                     android:id="@+id/cb_look_toward"
@@ -114,13 +113,14 @@
                     android:id="@+id/tv_yq161"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="7dp"
                     android:gravity="center|left"
                     android:text="What does he/she do when you turn to look at something? Does your child…"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q163"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q161"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q162" />
 
                 <TextView
                     android:id="@+id/tv_yq162"
@@ -204,6 +204,16 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
+
+                <TextView
+                    android:id="@+id/tv_q162"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="If you turn your head to look at something, does your child look around to see what you are looking at?"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q162"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q161"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

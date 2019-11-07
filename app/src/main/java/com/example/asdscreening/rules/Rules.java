@@ -19,6 +19,7 @@ public class Rules {
     private Rule13 rule13;
     private Rule14 rule14;
     private Rule15 rule15;
+    private Rule16 rule16;
 
     private Rules() {
 
@@ -109,6 +110,10 @@ public class Rules {
 
     public Rule15 getRule15() { return rule15; }
 
+    public void setRule16(Rule16 rule16) { this.rule16 = rule16; }
+
+    public Rule16 getRule16() { return rule16; }
+
     public int getScore() {
 
         score = 0;
@@ -157,6 +162,10 @@ public class Rules {
         if (rule15 != null && !rule15.isPass()) {
             score++;
         }
+        if (rule16 != null && !rule16.isPass()) {
+            score++;
+        }
+
         return score;
     }
 
