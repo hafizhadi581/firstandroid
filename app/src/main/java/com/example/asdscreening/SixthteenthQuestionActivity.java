@@ -96,33 +96,33 @@ public class SixthteenthQuestionActivity extends AppCompatActivity implements Vi
 
     private void showCbLookSomething() {
 
-        View tvQ161Hide = findViewById(R.id.tv_yq161);
-        tvQ161Hide.setVisibility(View.VISIBLE);
+        View tvQ161Show = findViewById(R.id.tv_yq161);
+        tvQ161Show.setVisibility(View.VISIBLE);
 
-        View cbLookTorwardHide = findViewById(R.id.cb_look_toward);
-        cbLookTorwardHide.setVisibility(View.VISIBLE);
-        View tvYq162Hide = findViewById(R.id.tv_yq162);
-        tvYq162Hide.setVisibility(View.VISIBLE);
+        View cbLookTorwardShow = findViewById(R.id.cb_look_toward);
+        cbLookTorwardShow.setVisibility(View.VISIBLE);
+        View tvYq162Show = findViewById(R.id.tv_yq162);
+        tvYq162Show.setVisibility(View.VISIBLE);
 
-        View cbPointTorwardHide = findViewById(R.id.cb_point_toward);
-        cbPointTorwardHide.setVisibility(View.VISIBLE);
-        View tvYq163Hide = findViewById(R.id.tv_yq163);
-        tvYq163Hide.setVisibility(View.VISIBLE);
+        View cbPointTorwardShow = findViewById(R.id.cb_point_toward);
+        cbPointTorwardShow.setVisibility(View.VISIBLE);
+        View tvYq163Show = findViewById(R.id.tv_yq163);
+        tvYq163Show.setVisibility(View.VISIBLE);
 
-        View cbLookAroundHide = findViewById(R.id.cb_look_around);
-        cbLookAroundHide.setVisibility(View.VISIBLE);
-        View tvYq164Hide = findViewById(R.id.tv_yq164);
-        tvYq164Hide.setVisibility(View.VISIBLE);
+        View cbLookAroundShow = findViewById(R.id.cb_look_around);
+        cbLookAroundShow.setVisibility(View.VISIBLE);
+        View tvYq164Show = findViewById(R.id.tv_yq164);
+        tvYq164Show.setVisibility(View.VISIBLE);
 
-        View cbIgnoreHide = findViewById(R.id.cb_ignore);
-        cbIgnoreHide.setVisibility(View.VISIBLE);
-        View tvYq165Hide = findViewById(R.id.tv_yq165);
-        tvYq165Hide.setVisibility(View.VISIBLE);
+        View cbIgnoreShow = findViewById(R.id.cb_ignore);
+        cbIgnoreShow.setVisibility(View.VISIBLE);
+        View tvYq165Show = findViewById(R.id.tv_yq165);
+        tvYq165Show.setVisibility(View.VISIBLE);
 
-        View cbLookFaceHide = findViewById(R.id.cb_look_face);
-        cbLookFaceHide.setVisibility(View.VISIBLE);
-        View tvYq166Hide = findViewById(R.id.tv_yq166);
-        tvYq166Hide.setVisibility(View.VISIBLE);
+        View cbLookFaceShow = findViewById(R.id.cb_look_face);
+        cbLookFaceShow.setVisibility(View.VISIBLE);
+        View tvYq166Show = findViewById(R.id.tv_yq166);
+        tvYq166Show.setVisibility(View.VISIBLE);
 
     }
 

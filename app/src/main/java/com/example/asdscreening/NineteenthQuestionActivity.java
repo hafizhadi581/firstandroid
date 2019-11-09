@@ -17,19 +17,19 @@ public class NineteenthQuestionActivity extends AppCompatActivity implements Vie
     private Rules rules = Rules.getInstance();
     private final String TAG = "Activity 19: ";
 
-    private CheckBox isLookFeel;
-    private CheckBox isHearScary;
-    private CheckBox isApproach;
-    private CheckBox isUnfamilliar;
+    private CheckBox cbLookFeel;
+    private CheckBox cbHearScary;
+    private CheckBox cbApproach;
+    private CheckBox cbUnfamilliar;
     private ImageView ivQ191;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nineteenth_question);
-        isLookFeel = findViewById(R.id.cb_look_feel);
-        isHearScary = findViewById(R.id.cb_hear_scary);
-        isApproach = findViewById(R.id.cb_approach);
-        isUnfamilliar = findViewById(R.id.cb_unfamiliar);
+        cbLookFeel = findViewById(R.id.cb_look_feel);
+        cbHearScary = findViewById(R.id.cb_hear_scary);
+        cbApproach = findViewById(R.id.cb_approach);
+        cbUnfamilliar = findViewById(R.id.cb_unfamiliar);
 
         ivQ191 = findViewById(R.id.iv_q191);
         ivQ191.setOnClickListener(this);
@@ -103,18 +103,18 @@ public class NineteenthQuestionActivity extends AppCompatActivity implements Vie
 
     private void showCbFeel() {
 
-        View cbHearScaryshow = findViewById(R.id.cb_hear_scary);
-        cbHearScaryshow.setVisibility(View.VISIBLE);
+        View cbHearScaryShow = findViewById(R.id.cb_hear_scary);
+        cbHearScaryShow.setVisibility(View.VISIBLE);
         View tvYq192show = findViewById(R.id.tv_yq192);
         tvYq192show.setVisibility(View.VISIBLE);
 
-        View cbApproachshow = findViewById(R.id.cb_approach);
-        cbApproachshow.setVisibility(View.VISIBLE);
+        View cbApproachShow = findViewById(R.id.cb_approach);
+        cbApproachShow.setVisibility(View.VISIBLE);
         View tvYq193show = findViewById(R.id.tv_yq193);
         tvYq193show.setVisibility(View.VISIBLE);
 
-        View cbUnfamilliarshow = findViewById(R.id.cb_unfamiliar);
-        cbUnfamilliarshow.setVisibility(View.VISIBLE);
+        View cbUnfamilliarShow = findViewById(R.id.cb_unfamiliar);
+        cbUnfamilliarShow.setVisibility(View.VISIBLE);
         View tvYq194show = findViewById(R.id.tv_yq194);
         tvYq194show.setVisibility(View.VISIBLE);
 
@@ -136,13 +136,13 @@ public class NineteenthQuestionActivity extends AppCompatActivity implements Vie
 
     private void showCbHearScary() {
 
-        View cbApproachshow = findViewById(R.id.cb_approach);
-        cbApproachshow.setVisibility(View.VISIBLE);
+        View cbApproachShow = findViewById(R.id.cb_approach);
+        cbApproachShow.setVisibility(View.VISIBLE);
         View tvYq193show = findViewById(R.id.tv_yq193);
         tvYq193show.setVisibility(View.VISIBLE);
 
-        View cbUnfamilliarshow = findViewById(R.id.cb_unfamiliar);
-        cbUnfamilliarshow.setVisibility(View.VISIBLE);
+        View cbUnfamilliarShow = findViewById(R.id.cb_unfamiliar);
+        cbUnfamilliarShow.setVisibility(View.VISIBLE);
         View tvYq194show = findViewById(R.id.tv_yq194);
         tvYq194show.setVisibility(View.VISIBLE);
 
@@ -159,10 +159,10 @@ public class NineteenthQuestionActivity extends AppCompatActivity implements Vie
 
     private void showCbApproach() {
 
-        View cbUnfamilliarshow = findViewById(R.id.cb_unfamiliar);
-        cbUnfamilliarshow.setVisibility(View.VISIBLE);
-        View tvYq194show = findViewById(R.id.tv_yq194);
-        tvYq194show.setVisibility(View.VISIBLE);
+        View cbUnfamilliarShow = findViewById(R.id.cb_unfamiliar);
+        cbUnfamilliarShow.setVisibility(View.VISIBLE);
+        View tvYq194Show = findViewById(R.id.tv_yq194);
+        tvYq194Show.setVisibility(View.VISIBLE);
 
     }
 
@@ -170,10 +170,10 @@ public class NineteenthQuestionActivity extends AppCompatActivity implements Vie
     public void onClick(View v) {
         if (v == ivQ191) {
 
-            rules.setRule19(new Rule19(isLookFeel.isChecked(),
-                    isHearScary.isChecked(),
-                    isApproach.isChecked(),
-                    isUnfamilliar.isChecked()));
+            rules.setRule19(new Rule19(cbLookFeel.isChecked(),
+                    cbHearScary.isChecked(),
+                    cbApproach.isChecked(),
+                    cbUnfamilliar.isChecked()));
 
             Log.d(TAG, "current score: " + rules.getScore());
 

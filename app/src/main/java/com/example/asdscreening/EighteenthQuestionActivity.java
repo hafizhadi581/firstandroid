@@ -18,11 +18,11 @@ public class EighteenthQuestionActivity extends AppCompatActivity implements Vie
     private Rules rules = Rules.getInstance();
     private final String TAG = "Activity 18: ";
 
-    private CheckBox isCommand;
-    private CheckBox isSituation;
-    private CheckBox isDinnerTime;
-    private CheckBox isBlanket;
-    private CheckBox isBook;
+    private CheckBox cbCommand;
+    private CheckBox cbSituation;
+    private CheckBox cbDinnerTime;
+    private CheckBox cbBlanket;
+    private CheckBox cbBook;
 
     private ImageView ivQ181;
 
@@ -31,11 +31,11 @@ public class EighteenthQuestionActivity extends AppCompatActivity implements Vie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eighteenth_question);
 
-        isCommand = findViewById(R.id.cb_command);
-        isSituation = findViewById(R.id.cb_situation);
-        isDinnerTime = findViewById(R.id.cb_dinnertime);
-        isBlanket = findViewById(R.id.cb_blanket);
-        isBook = findViewById(R.id.cb_book);
+        cbCommand = findViewById(R.id.cb_command);
+        cbSituation = findViewById(R.id.cb_situation);
+        cbDinnerTime = findViewById(R.id.cb_dinnertime);
+        cbBlanket = findViewById(R.id.cb_blanket);
+        cbBook = findViewById(R.id.cb_book);
 
         ivQ181 = findViewById(R.id.iv_q181);
         ivQ181.setOnClickListener(this);
@@ -174,7 +174,7 @@ public class EighteenthQuestionActivity extends AppCompatActivity implements Vie
     public void onClick(View v) {
 
         if(v == ivQ181){
-            rules.setRule18(new Rule18(isCommand.isChecked(), isSituation.isChecked(), isDinnerTime.isChecked(), isBlanket.isChecked(), isBook.isChecked()));
+            rules.setRule18(new Rule18(cbCommand.isChecked(), cbSituation.isChecked(), cbDinnerTime.isChecked(), cbBlanket.isChecked(), cbBook.isChecked()));
 
             Log.d(TAG, "current score: " + rules.getScore());
 

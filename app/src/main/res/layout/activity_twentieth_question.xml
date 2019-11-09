@@ -11,26 +11,12 @@
         android:id="@+id/iv_q201"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/buttonnext" />
-
-    <TextView
-        android:id="@+id/tv_q202"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="20dp"
-        android:text="Does your child like movement activities? "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q201" />
 
     <TextView
         android:id="@+id/tv_q201"
@@ -50,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="119dp" />
+        app:layout_constraintGuide_begin="41dp" />
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -73,15 +59,24 @@
 
 
                 <CheckBox
+                    android:id="@+id/cb_movement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:onClick="onCheckboxClicked"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q203"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q202"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
                     android:id="@+id/cb_move_bounced"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="32dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q203"
-                    app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q202"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq201" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/cb_movement" />
 
                 <CheckBox
                     android:id="@+id/cb_laugh"
@@ -109,29 +104,18 @@
                     app:layout_constraintTop_toBottomOf="@+id/cb_babble" />
 
                 <TextView
-                    android:id="@+id/tv_yq201"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
-                    android:gravity="center|left"
-                    android:text="For Example..."
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_q203"
-                    app:layout_constraintStart_toStartOf="@+id/guide_q201"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
                     android:id="@+id/tv_yq202"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="28dp"
                     android:gravity="center|left"
                     android:text="Does he/she enjoy being bounced or swung?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q202"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q201"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq201" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q202" />
 
                 <TextView
                     android:id="@+id/tv_yq203"
@@ -173,7 +157,7 @@
                 <TextView
                     android:id="@+id/tv_yq206"
                     android:layout_width="0dp"
-                    android:layout_height="35dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center|left"
                     android:text="Request more by holding out his/her arms?"
                     android:textSize="16sp"
@@ -181,6 +165,18 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q201"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq205" />
+
+                <TextView
+                    android:id="@+id/tv_q202"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Does your child like movement activities? "
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q202"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q201"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q201"
