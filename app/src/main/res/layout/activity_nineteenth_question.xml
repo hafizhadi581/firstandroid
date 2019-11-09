@@ -7,29 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q191"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q192"
-        app:srcCompat="@drawable/buttonnext" />
-
-    <TextView
-        android:id="@+id/tv_q192"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="If something new happens, does your child look at your face to see how you feel about it?"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q191" />
-
     <TextView
         android:id="@+id/tv_q191"
         android:layout_width="0dp"
@@ -48,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="230dp" />
+        app:layout_constraintGuide_begin="68dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -64,25 +41,37 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
-                android:layout_width="match_parent"
+                android:layout_width="394dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
 
                 <CheckBox
+                    android:id="@+id/cb_look_feel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:onClick="onCheckboxClicked"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q193"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q192"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
                     android:id="@+id/cb_hear_scary"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="44dp"
+                    android:layout_marginTop="52dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q193"
                     app:layout_constraintStart_toStartOf="@+id/guide_q192"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq191" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_feel" />
 
                 <CheckBox
                     android:id="@+id/cb_approach"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="44dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q193"
                     app:layout_constraintStart_toStartOf="@+id/guide_q192"
                     app:layout_constraintTop_toBottomOf="@+id/cb_hear_scary" />
@@ -97,29 +86,17 @@
                     app:layout_constraintTop_toBottomOf="@+id/cb_approach" />
 
                 <TextView
-                    android:id="@+id/tv_yq191"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
-                    android:gravity="center|left"
-                    android:text="For Example..."
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_q193"
-                    app:layout_constraintStart_toStartOf="@+id/guide_q191"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
                     android:id="@+id/tv_yq192"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="28dp"
                     android:gravity="center|left"
                     android:text="If your child hears a strange or scary noise, will he/she look at you before responding?"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q192"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q191"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq191" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q192" />
 
                 <TextView
                     android:id="@+id/tv_yq193"
@@ -135,7 +112,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq192" />
 
                 <TextView
-                    android:id="@+id/tv_yq144"
+                    android:id="@+id/tv_yq194"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
@@ -146,6 +123,25 @@
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q191"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq193" />
+
+                <TextView
+                    android:id="@+id/tv_q192"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="If something new happens, does your child look at your face to see how you feel about it?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q192"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q191"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_q191"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q193"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q192"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq194"
+                    app:srcCompat="@drawable/buttonnext" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q191"
