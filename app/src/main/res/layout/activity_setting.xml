@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_setting1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#C0CA33"
+        android:gravity="center|left"
+        android:text="SOUND SETTING"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_sound"
+        android:layout_width="114dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_setting1"
+        app:layout_constraintVertical_bias="0.006"
+        app:srcCompat="@drawable/sound" />
+
+    <ImageView
+        android:id="@+id/iv_no_sound"
+        android:layout_width="114dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintStart_toEndOf="@+id/iv_sound"
+        app:layout_constraintTop_toBottomOf="@+id/tv_setting1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/nosound" />
+</androidx.constraintlayout.widget.ConstraintLayout>
