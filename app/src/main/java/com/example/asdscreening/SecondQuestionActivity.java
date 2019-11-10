@@ -28,7 +28,6 @@ public class SecondQuestionActivity extends AppCompatActivity implements View.On
         setContentView(R.layout.activity_second_question);
 
         ivq21 = findViewById(R.id.iv_q21);
-
         cbyq2y1 = findViewById(R.id.cb_yq2y1);
         cbyq2y2 = findViewById(R.id.cb_yq2y2);
 

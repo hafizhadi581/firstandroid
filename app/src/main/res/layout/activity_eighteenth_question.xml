@@ -7,69 +7,221 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_q181"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="EIGHTEENTH QUESTION"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_q182"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Does your child understand when you tell him or her to do something?"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q181" />
-
-    <TextView
-        android:id="@+id/txt_q183"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_qm181"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:text="FOR EXAMPLE, if you don’t point, can your child understand “put the book on the chair” or “bring me the blanket”?"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q182" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-202dp" />
 
-    <RadioButton
-        android:id="@+id/rb_q181"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TRUE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_q183" />
+        app:layout_constraintTop_toTopOf="@+id/guide_qm181">
 
-    <RadioButton
-        android:id="@+id/rb_q182"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q181" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q181"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q182"
-        app:srcCompat="@drawable/buttonnext" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linear_nq1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/cb_command"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="51dp"
+                    android:onClick="onCheckboxClicked"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q182"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q182" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_situation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="136dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q182"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_dinnertime" />
+
+                <CheckBox
+                    android:id="@+id/cb_dinnertime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="52dp"
+                    android:onClick="onCheckboxClicked"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q182"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_command" />
+
+                <CheckBox
+                    android:id="@+id/cb_blanket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="32dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q182"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_situation" />
+
+                <CheckBox
+                    android:id="@+id/cb_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="44dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q182"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_blanket" />
+
+                <TextView
+                    android:id="@+id/tv_yq187"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="When the situation does not give any clues, can he/she follow a command? For example..."
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q182"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q181"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq186" />
+
+                <TextView
+                    android:id="@+id/tv_yq181"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center|left"
+                    android:text="Can he/she follow a command? For example when you are dressed to go out and you tell him/her to get his/her shoes, does he/sheunderstand?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q182"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q181"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q182" />
+
+
+                <TextView
+                    android:id="@+id/tv_yq182"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center|left"
+                    android:text="1) When you are dressed to go out and you tell him/her to get his/her shoes, does he/she understand?"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q182"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q181"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq187" />
+
+                <TextView
+                    android:id="@+id/tv_yq184"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center|left"
+                    android:text="(2) If you say, “Bring me the blanket” or ask for another object without pointing, making gestures, or giving hints, does your child bring it to you?"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q182"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q181"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq182" />
+
+                <TextView
+                    android:id="@+id/tv_yq185"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center|left"
+                    android:text="(3) If you say, “Put the book on the chair”without pointing, making gestures, or giving any other hints , does your child put the book on the chair?"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q182"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q181"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq184" />
+
+                <TextView
+                    android:id="@+id/tv_yq186"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:text="If it is dinnertime and food is on the table, and you tell the child to sit down, will he/she come sit at the table?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q182"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q181"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq181" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q181"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q182"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="300dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q183"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="350dp" />
+
+                <TextView
+                    android:id="@+id/tv_q182"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:text="Does your child understand when you tell him or her to do something?"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q181"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q181" />
+
+                <TextView
+                    android:id="@+id/tv_q181"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="EIGHTEENTH QUESTION"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_q181"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q183"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q182"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq185"
+                    app:srcCompat="@drawable/buttonnext" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

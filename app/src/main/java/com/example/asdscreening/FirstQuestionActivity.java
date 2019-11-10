@@ -7,10 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
-
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.asdscreening.rules.Rule1;
 import com.example.asdscreening.rules.Rules;
 
@@ -57,7 +54,7 @@ public class FirstQuestionActivity extends AppCompatActivity implements View.OnC
 
 //            cbLookAtObject.isChecked(),cbPointAtObject.isChecked(),cbLookAndCommentToObject.isChecked(),
 //            cbParrentCommantLook.isChecked(),cbIgnoreParent.isChecked(),cbLookAroundRandomly.isChecked());
-            Intent intent = new Intent(FirstQuestionActivity.this, SecondQuestionActivity.class); //go to page 2
+            Intent intent = new Intent(FirstQuestionActivity.this, TwentiethQuestionActivity.class); //go to page 2
             startActivity(intent);
         }
     }

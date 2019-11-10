@@ -7,71 +7,400 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_q121"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="TWELVETH QUESTION"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_q122"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_qm121"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Does your child get upset by everyday noises? "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q121" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-299dp" />
 
-    <TextView
-        android:id="@+id/txt_q123"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="FOR EXAMPLE, a vacuum cleaner or loud music"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q122" />
-
-    <RadioButton
-        android:id="@+id/rb_q121"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TRUE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_q123" />
+        app:layout_constraintTop_toTopOf="@+id/guide_qm121">
 
-    <RadioButton
-        android:id="@+id/rb_q122"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q121" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q121"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q122"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/buttonnext" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linear_nq1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/cb_sounds_washing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="28dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintHorizontal_bias="0.484"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq121" />
+
+                <CheckBox
+                    android:id="@+id/cb_sound_babies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_sounds_washing" />
+
+                <CheckBox
+                    android:id="@+id/cb_sounds_vacuum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_sound_babies" />
+
+                <CheckBox
+                    android:id="@+id/cb_sounds_hairdryer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_sounds_vacuum" />
+
+                <CheckBox
+                    android:id="@+id/cb_sounds_traffic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_sounds_hairdryer" />
+
+                <CheckBox
+                    android:id="@+id/cb_sounds_babies2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_sounds_traffic" />
+
+                <CheckBox
+                    android:id="@+id/cb_sounds_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_sounds_babies2" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_sounds_doorbell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_sounds_music" />
+
+                <CheckBox
+                    android:id="@+id/cb_sounds_supermarket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_sounds_doorbell" />
+
+                <CheckBox
+                    android:id="@+id/cb_react_ears"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq1211" />
+
+                <CheckBox
+                    android:id="@+id/cb_like_noise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_react_ears" />
+
+                <CheckBox
+                    android:id="@+id/cb_react_scream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_like_noise" />
+
+                <CheckBox
+                    android:id="@+id/cb_react_cry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_react_scream" />
+
+                <CheckBox
+                    android:id="@+id/cb_react_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintHorizontal_bias="0.484"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_react_cry" />
+
+                <ImageView
+                    android:id="@+id/iv_q121"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q122"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_react_cover"
+                    app:srcCompat="@drawable/buttonnext" />
+
+                <TextView
+                    android:id="@+id/tv_q122"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Does your child get upset by everyday noises? "
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q121" />
+
+                <TextView
+                    android:id="@+id/tv_q121"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="TWELVETH QUESTION"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_yq122"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center|left"
+                    android:text="A washing machine?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq121" />
+
+                <TextView
+                    android:id="@+id/tv_yq123"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Babies crying?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq122" />
+
+                <TextView
+                    android:id="@+id/tv_yq124"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Vacuum cleaner?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq123" />
+
+                <TextView
+                    android:id="@+id/tv_yq125"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Hairdryer?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq124" />
+
+                <TextView
+                    android:id="@+id/tv_yq126"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Traffic?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq125" />
+
+                <TextView
+                    android:id="@+id/tv_yq127"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Babies squealing or screeching?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq126" />
+
+                <TextView
+                    android:id="@+id/tv_yq128"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Loud music?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq127" />
+
+                <TextView
+                    android:id="@+id/tv_yq129"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Telephone/ doorbell ringing?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq128" />
+
+                <TextView
+                    android:id="@+id/tv_yq1211"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center|left"
+                    android:text="How does your child react to those noises? For Example, Does your child..."
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq1210" />
+
+                <TextView
+                    android:id="@+id/tv_yq1216"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Tell you he/she doesn't like the noise?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq1212" />
+
+                <TextView
+                    android:id="@+id/tv_yq1213"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Scream?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq1216" />
+
+                <TextView
+                    android:id="@+id/tv_yq1214"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:gravity="center|left"
+                    android:text="Cry?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq1213" />
+
+                <TextView
+                    android:id="@+id/tv_yq1215"
+                    android:layout_width="0dp"
+                    android:layout_height="29dp"
+                    android:gravity="center|left"
+                    android:text="Cover his/her ears while upset?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq1214" />
+
+                <TextView
+                    android:id="@+id/tv_yq1212"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Calmly cover his/her ears?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq1211" />
+
+
+                <TextView
+                    android:id="@+id/tv_yq1210"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Noisy places such as a supermarket or restaurant?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q122"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq129" />
+
+                <TextView
+                    android:id="@+id/tv_yq120"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="If he/she is not involved in something fun or interesting, what does he/she do when you call his/her name? Does he/she..."
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q122" />
+
+                <TextView
+                    android:id="@+id/tv_yq121"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="For Example, Does your child have a negative reaction to the sound of…"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q123"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q121"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq120" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="300dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="350dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

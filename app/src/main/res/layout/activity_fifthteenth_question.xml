@@ -7,6 +7,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/iv_q151"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView7"
+        app:srcCompat="@drawable/buttonnext" />
+
+    <TextView
+        android:id="@+id/tv_q152"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:text="Does your child try to copy what you do? "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q151" />
+
     <TextView
         android:id="@+id/tv_q151"
         android:layout_width="0dp"
@@ -20,56 +43,191 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_q152"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Does your child try to copy what you do? "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q151" />
-
-    <TextView
-        android:id="@+id/tv_q153"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_qm151"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="FOR EXAMPLE, wave bye-bye, clap, or make a funny noise when you do"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q152" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="107dp" />
 
-    <RadioButton
-        android:id="@+id/rb_q151"
+    <ScrollView
+        android:id="@+id/scrollView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TRUE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q153" />
+        app:layout_constraintTop_toTopOf="@+id/guide_qm151">
 
-    <RadioButton
-        android:id="@+id/rb_q152"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q151" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q151"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q152"
-        app:srcCompat="@drawable/buttonnext" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linear_nq1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/cb_copy_tongue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q153"
+                    app:layout_constraintHorizontal_bias="0.484"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q152"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq151" />
+
+                <CheckBox
+                    android:id="@+id/cb_copy_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q153"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q152"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_copy_tongue" />
+
+                <CheckBox
+                    android:id="@+id/cb_copy_wave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q153"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q152"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_copy_sound" />
+
+                <CheckBox
+                    android:id="@+id/cb_copy_clap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q153"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q152"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_copy_wave" />
+
+                <CheckBox
+                    android:id="@+id/cb_copy_signal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q153"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q152"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_copy_clap" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_copy_kiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q153"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q152"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_copy_signal" />
+
+                <TextView
+                    android:id="@+id/tv_yq151"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="For Example, Does he/she try to copy you if you..."
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q153"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q151"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_yq152"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="Stick out your tongue?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q152"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q151"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq151" />
+
+                <TextView
+                    android:id="@+id/tv_yq153"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Make a funny sound?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q152"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q151"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq152" />
+
+                <TextView
+                    android:id="@+id/tv_yq154"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Wave good bye? "
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q152"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q151"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq153" />
+
+                <TextView
+                    android:id="@+id/tv_yq155"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Clap your hands?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q152"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q151"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq154" />
+
+                <TextView
+                    android:id="@+id/tv_yq156"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Put your fingers to your lips to signal “Shhh”?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q152"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q151"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq155" />
+
+                <TextView
+                    android:id="@+id/tv_yq157"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Blow a kiss?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q152"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q151"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq156" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q151"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q152"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="300dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q153"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="350dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

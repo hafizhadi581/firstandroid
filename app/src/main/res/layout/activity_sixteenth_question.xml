@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/iv_q161"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView6"
+        app:srcCompat="@drawable/buttonnext" />
+
     <TextView
         android:id="@+id/tv_q161"
         android:layout_width="0dp"
@@ -20,45 +31,192 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_q162"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:text="If you turn your head to look at something, does your child look around to see what you are looking at?"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q161" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="59dp" />
 
-    <RadioButton
-        android:id="@+id/rb_q161"
+    <ScrollView
+        android:id="@+id/scrollView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TRUE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q162" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
 
-    <RadioButton
-        android:id="@+id/rb_q162"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q161" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/iv_q161"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q162"
-        app:srcCompat="@drawable/buttonnext" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linear_nq1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/cb_look_something"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:onClick="onCheckboxClicked"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q163"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q162"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/cb_look_toward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q163"
+                    app:layout_constraintHorizontal_bias="0.484"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q162"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq161" />
+
+                <CheckBox
+                    android:id="@+id/cb_point_toward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q163"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q162"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_toward" />
+
+                <CheckBox
+                    android:id="@+id/cb_look_around"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q163"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q162"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_point_toward" />
+
+                <CheckBox
+                    android:id="@+id/cb_ignore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q163"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q162"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_look_around" />
+
+                <CheckBox
+                    android:id="@+id/cb_look_face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q163"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q162"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_ignore" />
+
+                <TextView
+                    android:id="@+id/tv_yq161"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center|left"
+                    android:text="What does he/she do when you turn to look at something? Does your child…"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q163"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q161"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q162" />
+
+                <TextView
+                    android:id="@+id/tv_yq162"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="Look toward the thing you are looking at?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q162"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q161"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq161" />
+
+                <TextView
+                    android:id="@+id/tv_yq163"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Point toward the thing you are looking at? "
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q162"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q161"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq162" />
+
+                <TextView
+                    android:id="@+id/tv_yq164"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Look around to see what you are looking at?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q162"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q161"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq163" />
+
+                <TextView
+                    android:id="@+id/tv_yq165"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center|left"
+                    android:text="Ignore you? "
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q162"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q161"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq164" />
+
+                <TextView
+                    android:id="@+id/tv_yq166"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Look at your face?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q162"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q161"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq165" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q161"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q162"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="300dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q163"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="350dp" />
+
+                <TextView
+                    android:id="@+id/tv_q162"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="If you turn your head to look at something, does your child look around to see what you are looking at?"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q162"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q161"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

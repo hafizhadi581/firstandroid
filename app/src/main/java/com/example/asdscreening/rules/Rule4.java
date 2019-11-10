@@ -45,4 +45,12 @@ public class Rule4 {
     public void setClimbPlayground(boolean climbPlayground) {
         isClimbPlayground = climbPlayground;
     }
+
+    public boolean isPass() {
+        if (isClimbStairs || isClimbChairs || isClimbFurniture || isClimbPlayground){
+            return true;
+        }
+        else
+            return false;
+    }
 }

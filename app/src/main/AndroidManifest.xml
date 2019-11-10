@@ -33,6 +33,12 @@
         <activity android:name=".FourteenthQuestionActivity" />
         <activity android:name=".FifthteenthQuestionActivity" />
         <activity android:name=".rules.Rules" />
+        <activity android:name=".FifthQuestionActivity" />
+        <activity android:name=".SixthteenthQuestionActivity" />
+        <activity android:name=".SeventhteenthQuestionActivity" />
+        <activity android:name=".EighteenthQuestionActivity" />
+        <activity android:name=".NineteenthQuestionActivity" />
+        <activity android:name=".TwentiethQuestionActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
