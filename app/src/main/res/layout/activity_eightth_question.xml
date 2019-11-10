@@ -49,26 +49,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_q82" />
 
-            <RadioButton
-                android:id="@+id/rb_q81"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TRUE"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_q83" />
-
-            <RadioButton
-                android:id="@+id/rb_q82"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="FALSE"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rb_q81" />
-
             <ImageView
                 android:id="@+id/iv_q81"
                 android:layout_width="50dp"
@@ -77,12 +57,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.955"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rb_q82"
+                app:layout_constraintTop_toBottomOf="@+id/tv_q83"
                 app:srcCompat="@drawable/buttonnext" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -94,6 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="30dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -112,10 +91,10 @@
                     android:id="@+id/cb_play"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.9"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq812" />
 
@@ -150,7 +129,7 @@
                     android:layout_height="35dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_shy" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_watch" />
 
                 <CheckBox
                     android:id="@+id/cb_shy"
@@ -158,7 +137,7 @@
                     android:layout_height="35dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_watch" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_smile" />
 
                 <CheckBox
                     android:id="@+id/cb_excited"
@@ -166,7 +145,7 @@
                     android:layout_height="35dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_smile" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_shy" />
 
                 <CheckBox
                     android:id="@+id/cb_respond_2"
@@ -179,8 +158,8 @@
 
                 <TextView
                     android:id="@+id/tv_yq81"
-                    android:layout_width="310dp"
-                    android:layout_height="46dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="Is he/she interested in children who are not his/her brother or sister?
@@ -193,7 +172,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq82"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:gravity="center|left"
                     android:text="When you are at the playground or supermarket, does your child usually respond to other children?"
@@ -205,7 +184,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq83"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:gravity="center|left"
@@ -218,7 +197,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq84"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="1dp"
                     android:gravity="center|left"
@@ -230,7 +209,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq85"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Babble or make vocal noises?"
@@ -241,7 +220,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq86"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Watch another child?"
@@ -253,7 +232,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq87"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Smile at another child?"
@@ -265,7 +244,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq89"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Act shy at first but then smile?"
@@ -277,7 +256,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq810"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="Get excited about another child?"
@@ -289,7 +268,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq811"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
                     android:gravity="center|left"
@@ -302,7 +281,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq812"
-                    android:layout_width="375dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="24dp"
                     android:gravity="center|left"
@@ -324,14 +303,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq63"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

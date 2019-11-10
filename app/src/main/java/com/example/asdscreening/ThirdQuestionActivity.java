@@ -50,7 +50,6 @@ public class ThirdQuestionActivity extends AppCompatActivity implements View.OnC
         cbYq3y8 = findViewById(R.id.cb_yq3y8);
         cbYq3y9 = findViewById(R.id.cb_yq3y9);
         cbYq3y10 = findViewById(R.id.cb_yq3y10);
-        cbYq3y11 = findViewById(R.id.cb_yq3y11);
 
         ivQ31.setOnClickListener(this);
 

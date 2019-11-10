@@ -7,8 +7,10 @@ public class Rule6 {
     private boolean isTryToGetObject;
     private boolean isAskUsingWordOrSound;
     private boolean isPointWhenYouSayShowMe;
+    private boolean condition;
 
     public Rule6(boolean isReachObjectWithHand, boolean isLeadYouToObject, boolean isTryToGetObject, boolean isAskUsingWordOrSound, boolean isPointWhenYouSayShowMe) {
+
         this.isReachObjectWithHand = isReachObjectWithHand;
         this.isLeadYouToObject = isLeadYouToObject;
         this.isTryToGetObject = isTryToGetObject;
@@ -20,9 +22,7 @@ public class Rule6 {
         return isReachObjectWithHand;
     }
 
-    public void setReachObjectWithHand(boolean reachObjectWithHand) {
-        isReachObjectWithHand = reachObjectWithHand;
-    }
+    public void setReachObjectWithHand(boolean reachObjectWithHand) { isReachObjectWithHand = reachObjectWithHand; }
 
     public boolean isLeadYouToObject() {
         return isLeadYouToObject;
@@ -44,15 +44,28 @@ public class Rule6 {
         return isAskUsingWordOrSound;
     }
 
-    public void setAskUsingWordOrSound(boolean askUsingWordOrSound) {
-        isAskUsingWordOrSound = askUsingWordOrSound;
-    }
+    public void setAskUsingWordOrSound(boolean askUsingWordOrSound) { isAskUsingWordOrSound = askUsingWordOrSound; }
 
     public boolean isPointWhenYouSayShowMe() {
         return isPointWhenYouSayShowMe;
     }
 
-    public void setPointWhenYouSayShowMe(boolean pointWhenYouSayShowMe) {
-        isPointWhenYouSayShowMe = pointWhenYouSayShowMe;
+    public void setPointWhenYouSayShowMe(boolean pointWhenYouSayShowMe) { isPointWhenYouSayShowMe = pointWhenYouSayShowMe; }
+
+    public boolean isPass(){
+
+        if (isReachObjectWithHand || isLeadYouToObject || isTryToGetObject || isAskUsingWordOrSound){
+            if(isPointWhenYouSayShowMe){
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        else {
+            return false;
+        }
     }
+
 }
+//if (isReachObjectWithHand || isLeadYouToObject || isTryToGetObject || isAskUsingWordOrSound || isPointWhenYouSayShowMe)

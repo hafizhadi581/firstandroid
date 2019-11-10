@@ -11,32 +11,12 @@
         android:id="@+id/iv_q91"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q92"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q93"
         app:srcCompat="@drawable/buttonnext" />
-
-    <RadioButton
-        android:id="@+id/rb_q92"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q91" />
-
-    <RadioButton
-        android:id="@+id/rb_q91"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="TRUE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q93" />
 
     <TextView
         android:id="@+id/tv_q91"
@@ -93,9 +73,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -107,6 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="36dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
@@ -116,6 +95,7 @@
                     android:id="@+id/cb_bring_drawing"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_picture" />
@@ -124,7 +104,7 @@
                     android:id="@+id/cb_bring_flower"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintStart_toEndOf="@+id/guide_q92"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_drawing" />
@@ -134,6 +114,7 @@
                     android:id="@+id/cb_bring_bug"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_flower" />
@@ -142,9 +123,8 @@
                     android:id="@+id/cb_bring_block"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="16dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_bug" />
 
@@ -152,7 +132,8 @@
                     android:id="@+id/cb_bring_help"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="64dp"
+                    android:layout_marginTop="30dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
@@ -160,8 +141,8 @@
 
                 <TextView
                     android:id="@+id/tv_yq91"
-                    android:layout_width="375dp"
-                    android:layout_height="40dp"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="Does your child sometimes bring you…"
@@ -174,8 +155,8 @@
 
                 <TextView
                     android:id="@+id/tv_yq92"
-                    android:layout_width="310dp"
-                    android:layout_height="41dp"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="A picture or toy just to show you?"
@@ -187,7 +168,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq93"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="A drawing he/she has done?"
@@ -199,7 +180,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq94"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="A flower he/she has picked?"
@@ -211,7 +192,7 @@
 
                 <TextView
                     android:id="@+id/tv_yq95"
-                    android:layout_width="310dp"
+                    android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="A bug he/she has found in the grass?"
@@ -223,8 +204,8 @@
 
                 <TextView
                     android:id="@+id/tv_yq96"
-                    android:layout_width="310dp"
-                    android:layout_height="37dp"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
                     android:gravity="center|left"
                     android:text="A few blocks he/she has put together?"
                     android:textSize="16sp"
@@ -235,12 +216,13 @@
 
                 <TextView
                     android:id="@+id/tv_yq97"
-                    android:layout_width="310dp"
-                    android:layout_height="45dp"
-                    android:layout_marginTop="64dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="Is this sometimes just to show you, not to get help?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q92"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q91"
@@ -258,14 +240,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="330dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q93"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

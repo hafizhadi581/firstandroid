@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/iv_q111"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/buttonnext" />
+
     <TextView
         android:id="@+id/tv_q111"
         android:layout_width="0dp"
@@ -20,49 +31,217 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_q112"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_qm11"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="When you smile at your child, does he or she smile back at you?"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q111" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="94dp" />
 
-    <RadioButton
-        android:id="@+id/rb_q111"
-        android:layout_width="0dp"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="TRUE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q112" />
+        app:layout_constraintTop_toTopOf="@+id/guide_qm11">
 
-    <RadioButton
-        android:id="@+id/rb_q112"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q111" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q111"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q112"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/buttonnext" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linear_nq1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/cb_smile_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:onClick="onCheckboxClicked"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q112"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/cb_smile_smile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q112"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq111" />
+
+                <CheckBox
+                    android:id="@+id/cb_smile_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q112"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_smile_smile" />
+
+                <CheckBox
+                    android:id="@+id/cb_smile_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
+                    app:layout_constraintStart_toEndOf="@+id/guide_q112"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_smile_enter" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_always_smile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q112"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_smile_return" />
+
+                <CheckBox
+                    android:id="@+id/cb_bring_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q112"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_always_smile" />
+
+                <CheckBox
+                    android:id="@+id/cb_smile_random"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
+                    app:layout_constraintHorizontal_bias="0.484"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q112"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_bring_block" />
+
+
+                <TextView
+                    android:id="@+id/tv_yq111"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center|left"
+                    android:text="What makes he/she smile? Does he/she ..."
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q111"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q112" />
+
+                <TextView
+                    android:id="@+id/tv_yq112"
+                    android:layout_width="0dp"
+                    android:layout_height="41dp"
+                    android:gravity="center|left"
+                    android:text="Smile when you smile?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q112"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q111"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq111" />
+
+                <TextView
+                    android:id="@+id/tv_yq113"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Smile when you enter the room? "
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q112"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q111"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq112" />
+
+                <TextView
+                    android:id="@+id/tv_yq114"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Smile when you return from being away?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q112"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q111"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq113" />
+
+                <TextView
+                    android:id="@+id/tv_yq115"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:gravity="center|left"
+                    android:text="Always smile?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q112"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q111"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq114" />
+
+                <TextView
+                    android:id="@+id/tv_yq116"
+                    android:layout_width="0dp"
+                    android:layout_height="37dp"
+                    android:gravity="center|left"
+                    android:text="Smile at a favorite toy or activity?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q112"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q111"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq115" />
+
+                <TextView
+                    android:id="@+id/tv_yq117"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:gravity="center|left"
+                    android:text="Smile randomly or at nothing in particular?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q112"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q111"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq116" />
+
+                <TextView
+                    android:id="@+id/tv_q112"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="24dp"
+                    android:text="When you smile at your child, does he or she smile back at you?"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q112"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q111"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q112"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="300dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q113"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="350dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

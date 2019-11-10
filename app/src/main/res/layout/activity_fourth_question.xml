@@ -21,89 +21,16 @@
         android:id="@+id/iv_q42"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q42"
-        app:layout_constraintVertical_bias="0.042"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4"
         app:srcCompat="@drawable/buttonnext" />
 
-    <RadioButton
-        android:id="@+id/rb_q42"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="FALSE"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_q41" />
-
-    <RadioButton
-        android:id="@+id/rb_q41"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="TRUE"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q42" />
-
-    <TextView
-        android:id="@+id/tv_q42"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="340dp"
-        android:background="#FFD180"
-        android:fontFamily="monospace"
-        android:text="FOR EXAMPLE, furniture, playground  equipment, or stairs?"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q41"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/tv_q43"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FOURTH QUESTION"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_q41"
-        app:layout_constraintEnd_toEndOf="@+id/iv_q41"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/iv_q41"
-        app:layout_constraintTop_toTopOf="@+id/iv_q41" />
-
-    <TextView
-        android:id="@+id/tv_q41"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:background="#FFD180"
-        android:fontFamily="monospace"
-        android:text="Does your child like climbing on things?"
-        android:textAlignment="textStart"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_q41" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="377dp" />
-
     <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
@@ -122,33 +49,33 @@
 
                 <CheckBox
                     android:id="@+id/cb_yq4y1"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:text="Yes"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq42"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq42" />
 
                 <CheckBox
                     android:id="@+id/cb_yq4y2"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:text="Yes"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq42"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq4y1" />
 
                 <CheckBox
                     android:id="@+id/cb_yq4y3"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:text="Yes"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq42"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq4y2" />
 
                 <CheckBox
                     android:id="@+id/cb_yq4y4"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:text="Yes"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq42"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq4y3" />
 
@@ -169,12 +96,13 @@
                     android:id="@+id/tv_yq42"
                     android:layout_width="0dp"
                     android:layout_height="43dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="28dp"
                     android:gravity="center|left"
                     android:text="Object"
                     android:textSize="18sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq41"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq41" />
 
@@ -235,14 +163,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="281dp" />
+                    app:layout_constraintGuide_begin="300dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq43"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="395dp" />
+                    app:layout_constraintGuide_begin="350dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -251,4 +179,42 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_q43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FOURTH QUESTION"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_q41"
+        app:layout_constraintEnd_toEndOf="@+id/iv_q41"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/iv_q41"
+        app:layout_constraintTop_toTopOf="@+id/iv_q41" />
+
+    <TextView
+        android:id="@+id/tv_q41"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#FFD180"
+        android:fontFamily="monospace"
+        android:text="Does your child like climbing on things?"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_q41" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="196dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
