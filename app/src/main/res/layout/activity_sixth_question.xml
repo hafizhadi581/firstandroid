@@ -11,13 +11,13 @@
         android:id="@+id/iv_q61"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="0.191"
         app:srcCompat="@drawable/buttonnext" />
 
     <TextView
@@ -36,26 +36,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_q62"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#FFEA00"
-        android:fontFamily="monospace"
-        android:text="Does your child point with one finger to ask for something or to get help? "
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q61" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_q61"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="134dp" />
+        app:layout_constraintGuide_begin="71dp" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -76,11 +62,23 @@
 
 
                 <CheckBox
+                    android:id="@+id/cb_point_finger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:onClick="onCheckboxClicked"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
                     android:id="@+id/cb_reach_object"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintHorizontal_bias="0.454"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
@@ -92,6 +90,7 @@
                     android:layout_height="35dp"
                     android:layout_marginTop="4dp"
                     android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintHorizontal_bias="0.454"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
@@ -102,6 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintHorizontal_bias="0.454"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
@@ -113,6 +113,7 @@
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintHorizontal_bias="0.454"
                     app:layout_constraintStart_toEndOf="@+id/guide_nq62"
@@ -121,26 +122,27 @@
                 <CheckBox
                     android:id="@+id/cb_point"
                     android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
-                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintHorizontal_bias="0.444"
                     app:layout_constraintStart_toEndOf="@+id/guide_nq62"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_get_object" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_sounds" />
 
                 <TextView
                     android:id="@+id/tv_yq61"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="40dp"
                     android:gravity="center|left"
                     android:text="If there is something your child wants that is out of reach how does he/she get it?"
                     android:textSize="18sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q62" />
 
                 <TextView
                     android:id="@+id/tv_yq62"
@@ -163,6 +165,7 @@
                     android:gravity="center|left"
                     android:text="Reach for the object with his/her whole hand?"
                     android:textSize="18sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
@@ -175,6 +178,7 @@
                     android:gravity="center|left"
                     android:text="Lead you to the object?"
                     android:textSize="18sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq63" />
@@ -186,6 +190,7 @@
                     android:gravity="center|left"
                     android:text="Try to get the object for him/herself?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq64" />
@@ -197,9 +202,21 @@
                     android:gravity="center|left"
                     android:text="Ask for it using words or sounds?"
                     android:textSize="18sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq65" />
+
+                <TextView
+                    android:id="@+id/tv_q62"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Does your child point with one finger to ask for something or to get help? "
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq61"

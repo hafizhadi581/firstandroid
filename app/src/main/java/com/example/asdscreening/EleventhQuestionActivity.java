@@ -144,7 +144,7 @@ public class EleventhQuestionActivity extends AppCompatActivity implements View.
 
 
             Log.d(TAG, "current score: " + rules.getScore());
-            Intent intent = new Intent(EleventhQuestionActivity.this, CalculateScoreActivity.class);
+            Intent intent = new Intent(EleventhQuestionActivity.this, TwelvethQuestionActivity.class);
             startActivity(intent);
         }
     }

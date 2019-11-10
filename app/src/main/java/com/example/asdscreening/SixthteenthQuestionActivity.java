@@ -134,7 +134,7 @@ public class SixthteenthQuestionActivity extends AppCompatActivity implements Vi
             rules.setRule16(new Rule16(cbLookSomething.isChecked(), cbLookToward.isChecked(),
                     cbPointToward.isChecked(), cbLookAround.isChecked(), cbIgnore.isChecked(), cbLookFace.isChecked()));
             Log.d(TAG, "current score: " + rules.getScore());
-            Intent intent = new Intent(SixthteenthQuestionActivity.this, CalculateScoreActivity.class);
+            Intent intent = new Intent(SixthteenthQuestionActivity.this, SeventhteenthQuestionActivity.class);
             startActivity(intent);
         }
     }

@@ -25,7 +25,7 @@
         android:layout_width="159dp"
         android:layout_height="33dp"
         android:layout_marginTop="16dp"
-        android:text="RISK TYPE  :D"
+        android:text="RISK TYPE  :"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,4 +46,15 @@
         app:layout_constraintStart_toEndOf="@+id/tv_final_score"
         app:layout_constraintTop_toTopOf="@+id/tv_final_score"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_risk"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_risk_type"
+        app:layout_constraintStart_toEndOf="@+id/tv_risk_type"
+        app:layout_constraintTop_toTopOf="@+id/tv_risk_type" />
 </androidx.constraintlayout.widget.ConstraintLayout>

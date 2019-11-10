@@ -52,7 +52,7 @@ public class FifthteenthQuestionActivity extends AppCompatActivity implements Vi
                     cbCopyKiss.isChecked()));
 
             Log.d(TAG, "current score: " + rules.getScore());
-            Intent intent = new Intent(FifthteenthQuestionActivity.this, CalculateScoreActivity.class);
+            Intent intent = new Intent(FifthteenthQuestionActivity.this, SixthteenthQuestionActivity.class);
             startActivity(intent);
         }
     }

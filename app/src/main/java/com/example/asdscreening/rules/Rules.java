@@ -4,6 +4,7 @@ public class Rules {
     private static Rules instance;
 
     private int score;
+    private String risk;
     private Rule1 rule1;
     private Rule2 rule2;
     private Rule3 rule3;
@@ -199,6 +200,19 @@ public class Rules {
         }
 
         return score;
+    }
+    public String getRisk(){
+
+        if(score >= 0 && score <= 2){
+            risk = "LOW RISK";
+        }
+        else if (score >= 3 && score <= 7){
+            risk = "MEDIUM RISK";
+        }
+        else {
+            risk = "HIGH RISK";
+        }
+        return risk;
     }
 
 

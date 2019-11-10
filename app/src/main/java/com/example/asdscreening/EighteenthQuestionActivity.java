@@ -178,7 +178,7 @@ public class EighteenthQuestionActivity extends AppCompatActivity implements Vie
 
             Log.d(TAG, "current score: " + rules.getScore());
 
-            Intent intent = new Intent(EighteenthQuestionActivity.this, CalculateScoreActivity.class);
+            Intent intent = new Intent(EighteenthQuestionActivity.this, NineteenthQuestionActivity.class);
             startActivity(intent);
         }
 

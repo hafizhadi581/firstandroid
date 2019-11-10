@@ -45,17 +45,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_q31" />
 
-            <ImageView
-                android:id="@+id/iv_q31"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="16dp"
-                android:scaleType="centerInside"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/buttonnext" />
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
@@ -313,6 +302,17 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
+
+                <ImageView
+                    android:id="@+id/iv_q31"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq33"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq32"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq3y10"
+                    app:srcCompat="@drawable/buttonnext" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@
                 android:id="@+id/tv_q81"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="EIGHT QUESTION"
+                android:text="EIGHTH QUESTION"
                 android:textAlignment="center"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -48,17 +48,6 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_q82" />
-
-            <ImageView
-                android:id="@+id/iv_q81"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.955"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_q83"
-                app:srcCompat="@drawable/buttonnext" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
@@ -311,6 +300,17 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
+
+                <ImageView
+                    android:id="@+id/iv_q81"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_respond_2"
+                    app:srcCompat="@drawable/buttonnext" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

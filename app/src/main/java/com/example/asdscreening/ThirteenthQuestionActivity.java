@@ -72,7 +72,7 @@ public class ThirteenthQuestionActivity extends AppCompatActivity implements Vie
             rules.setRule13(new Rule13(cbWalk.isChecked(),cbWalkOn.isChecked()));
 
             Log.d(TAG, "current score: " + rules.getScore());
-            Intent intent = new Intent(ThirteenthQuestionActivity.this, CalculateScoreActivity.class);
+            Intent intent = new Intent(ThirteenthQuestionActivity.this, FourteenthQuestionActivity.class);
             startActivity(intent);
         }
     }

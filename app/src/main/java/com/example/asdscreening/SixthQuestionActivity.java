@@ -18,6 +18,7 @@ public class SixthQuestionActivity extends AppCompatActivity implements View.OnC
     private Rules rules = Rules.getInstance();
 
     private ImageView ivq61;
+    private CheckBox cbPointFinger;
     private CheckBox cbReachObject;
     private CheckBox cbLeadObject;
     private CheckBox cbGetObject;
@@ -30,6 +31,7 @@ public class SixthQuestionActivity extends AppCompatActivity implements View.OnC
         setContentView(R.layout.activity_sixth_question);
 
         ivq61 = findViewById(R.id.iv_q61);
+        cbPointFinger = findViewById(R.id.cb_point_finger);
         cbReachObject = findViewById(R.id.cb_reach_object);
         cbLeadObject = findViewById(R.id.cb_lead_object);
         cbGetObject = findViewById(R.id.cb_get_object);
@@ -59,6 +61,66 @@ public class SixthQuestionActivity extends AppCompatActivity implements View.OnC
                 break;
 
         }
+        switch (view.getId()) {
+            case R.id.cb_point_finger:
+                if (checked)
+                    showCbFinger();
+                    //do things when checked
+                else
+                    hideCbFinger();
+                // do things when unchecked
+                break;
+
+        }
+    }
+    private void showCbFinger(){
+
+        View tvYq61Show = findViewById(R.id.tv_yq61);
+        tvYq61Show.setVisibility(View.VISIBLE);
+
+        View cbReachObjectShow = findViewById(R.id.cb_reach_object);
+        cbReachObjectShow.setVisibility(View.VISIBLE);
+        View tvYq63Show = findViewById(R.id.tv_yq63);
+        tvYq63Show.setVisibility(View.VISIBLE);
+
+        View cbLeadObjectShow = findViewById(R.id.cb_lead_object);
+        cbLeadObjectShow.setVisibility(View.VISIBLE);
+        View tvYq64Show = findViewById(R.id.tv_yq64);
+        tvYq64Show.setVisibility(View.VISIBLE);
+
+        View cbGetObjectShow = findViewById(R.id.cb_get_object);
+        cbGetObjectShow.setVisibility(View.VISIBLE);
+        View tvYq65Show = findViewById(R.id.tv_yq65);
+        tvYq65Show.setVisibility(View.VISIBLE);
+
+        View cbSoundsShow = findViewById(R.id.cb_sounds);
+        cbSoundsShow.setVisibility(View.VISIBLE);
+        View tvYq66Show = findViewById(R.id.tv_yq66);
+        tvYq66Show.setVisibility(View.VISIBLE);
+    }
+    private void hideCbFinger(){
+        View tvYq61Hide = findViewById(R.id.tv_yq61);
+        tvYq61Hide.setVisibility(View.GONE);
+
+        View cbReachObjectHide = findViewById(R.id.cb_reach_object);
+        cbReachObjectHide.setVisibility(View.GONE);
+        View tvYq63Hide = findViewById(R.id.tv_yq63);
+        tvYq63Hide.setVisibility(View.GONE);
+
+        View cbLeadObjectHide = findViewById(R.id.cb_lead_object);
+        cbLeadObjectHide.setVisibility(View.GONE);
+        View tvYq64Hide = findViewById(R.id.tv_yq64);
+        tvYq64Hide.setVisibility(View.GONE);
+
+        View cbGetObjectHide = findViewById(R.id.cb_get_object);
+        cbGetObjectHide.setVisibility(View.GONE);
+        View tvYq65Hide = findViewById(R.id.tv_yq65);
+        tvYq65Hide.setVisibility(View.GONE);
+
+        View cbSoundsHide = findViewById(R.id.cb_sounds);
+        cbSoundsHide.setVisibility(View.GONE);
+        View tvYq66Hide = findViewById(R.id.tv_yq66);
+        tvYq66Hide.setVisibility(View.GONE);
     }
 
     private void showCbPoint(){
@@ -79,7 +141,7 @@ public class SixthQuestionActivity extends AppCompatActivity implements View.OnC
 
         if (view == ivq61){
 
-            rules.setRule6(new Rule6(cbReachObject.isChecked(), cbLeadObject.isChecked(), cbGetObject.isChecked(), cbSound.isChecked(), cbPoint.isChecked()));
+            rules.setRule6(new Rule6(cbPointFinger.isChecked(),cbReachObject.isChecked(), cbLeadObject.isChecked(), cbGetObject.isChecked(), cbSound.isChecked(), cbPoint.isChecked()));
 
             Log.d(TAG, "current score: " + rules.getScore());
 

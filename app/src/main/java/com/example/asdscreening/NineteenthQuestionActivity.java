@@ -177,7 +177,7 @@ public class NineteenthQuestionActivity extends AppCompatActivity implements Vie
 
             Log.d(TAG, "current score: " + rules.getScore());
 
-            Intent intent = new Intent(NineteenthQuestionActivity.this, CalculateScoreActivity.class);
+            Intent intent = new Intent(NineteenthQuestionActivity.this, TwentiethQuestionActivity.class);
             startActivity(intent);
         }
     }

@@ -21,10 +21,10 @@
         android:id="@+id/iv_q42"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintHorizontal_bias="0.836"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView4"
         app:srcCompat="@drawable/buttonnext" />
@@ -215,6 +215,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="196dp" />
+        app:layout_constraintGuide_begin="159dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

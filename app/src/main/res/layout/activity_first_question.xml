@@ -6,32 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/iv_q11"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q12"
-        app:srcCompat="@drawable/buttonnext" />
-
-    <TextView
-        android:id="@+id/tv_q12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:fontFamily="monospace"
-        android:text="If you point something across the room, does your child look at it?"
-        android:textAlignment="textStart"
-        android:textColor="#0C0C0C"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q11" />
-
     <TextView
         android:id="@+id/tv_q11"
         android:layout_width="match_parent"
@@ -50,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="240dp" />
+        app:layout_constraintGuide_begin="67dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -76,10 +50,10 @@
                     android:id="@+id/cb_look_at_object"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:layout_marginTop="48dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
-                    app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq12"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_ncq12" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_nq11" />
 
                 <CheckBox
                     android:id="@+id/cb_point_at_object"
@@ -109,9 +83,10 @@
                     android:id="@+id/cb_ignore_parent"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:layout_marginTop="44dp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq12"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_ncq11" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_parrent_commant_look" />
 
                 <CheckBox
                     android:id="@+id/cb_look_around_randomly"
@@ -130,11 +105,20 @@
                     app:layout_constraintTop_toBottomOf="@+id/cb_look_around_randomly" />
 
 
+                <ImageView
+                    android:id="@+id/iv_q11"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq12"
+                    app:layout_constraintTop_toBottomOf="@+id/cd_look_at_parent_finger"
+                    app:srcCompat="@drawable/buttonnext" />
+
                 <TextView
                     android:id="@+id/tv_nq11"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="48dp"
+                    android:layout_marginTop="16dp"
                     android:text="If you point at something, what does your child typically do?"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
@@ -143,42 +127,17 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/tv_ncq11"
-                    android:layout_width="0dp"
-                    android:layout_height="43dp"
-                    android:gravity="center|left"
-                    android:text="Category Fail"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq11"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_nq18" />
-
-                <TextView
-                    android:id="@+id/tv_ncq12"
-                    android:layout_width="0dp"
-                    android:layout_height="43dp"
-                    android:gravity="center|left"
-                    android:text="Category Pass"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq11"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_nq11" />
-
-                <TextView
                     android:id="@+id/tv_nq12"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
+                    android:layout_marginTop="44dp"
                     android:gravity="center|left"
                     android:text="Ignores parent "
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq12"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq11"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_ncq11" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_nq18" />
 
                 <TextView
                     android:id="@+id/tv_nq13"
@@ -208,13 +167,14 @@
                     android:id="@+id/tv_nq15"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
+                    android:layout_marginTop="48dp"
                     android:gravity="center|left"
                     android:text="Looks at object"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq12"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq11"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_ncq12" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_nq11" />
 
                 <TextView
                     android:id="@+id/tv_nq16"

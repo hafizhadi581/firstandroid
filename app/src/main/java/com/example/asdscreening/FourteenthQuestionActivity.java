@@ -73,7 +73,7 @@ public class FourteenthQuestionActivity extends AppCompatActivity implements Vie
 
             Log.d(TAG, "current score: " + rules.getScore());
 
-            Intent intent = new Intent(FourteenthQuestionActivity.this, CalculateScoreActivity.class);
+            Intent intent = new Intent(FourteenthQuestionActivity.this, FifthteenthQuestionActivity.class);
             startActivity(intent);
         }
     }

@@ -18,20 +18,6 @@
         app:srcCompat="@drawable/btn4" />
 
 
-    <ImageView
-        android:id="@+id/iv_q52"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="31dp"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/guide_q51"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q53"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/buttonnext" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,23 +33,36 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="542dp"
                 android:orientation="vertical">
 
+
+                <CheckBox
+                    android:id="@+id/cb_yq5y8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:onClick="onCheckboxClicked"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+                    app:layout_constraintStart_toEndOf="@+id/tv_q52"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
                     android:id="@+id/cb_yq5y1"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:layout_marginTop="28dp"
                     android:checked="false"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq52"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq510" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq51" />
 
                 <CheckBox
                     android:id="@+id/cb_yq5y2"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq52"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq5y1" />
@@ -72,16 +71,20 @@
                     android:id="@+id/cb_yq5y3"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="28dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq52"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq511" />
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq5y2" />
 
                 <CheckBox
                     android:id="@+id/cb_yq5y6"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq52"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq5y5" />
@@ -91,6 +94,7 @@
                     android:id="@+id/cb_yq5y7"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
                     app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq52"
@@ -101,6 +105,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="4dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq52"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq5y3" />
@@ -110,34 +116,52 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="4dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq52"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq5y4" />
 
 
+                <ImageView
+                    android:id="@+id/iv_q52"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq52"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq5y7"
+                    app:srcCompat="@drawable/buttonnext" />
+
                 <TextView
                     android:id="@+id/tv_yq51"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="16dp"
                     android:gravity="center|left"
                     android:text="Does he/she usually… "
                     android:textSize="18sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q52" />
 
                 <TextView
                     android:id="@+id/tv_yq53"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
+                    android:layout_marginTop="28dp"
                     android:gravity="center|left"
                     android:text="Look at hands?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq510" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq51" />
 
                 <TextView
                     android:id="@+id/tv_yq54"
@@ -146,6 +170,7 @@
                     android:gravity="center|left"
                     android:text="Move fingers when playing peek-a-boo?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq51"
@@ -155,12 +180,15 @@
                     android:id="@+id/tv_yq55"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
+                    android:layout_marginTop="28dp"
                     android:gravity="center|left"
                     android:text="Wiggle his/her fingers near his/her eyes?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq511" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_yq54" />
 
                 <TextView
                     android:id="@+id/tv_yq56"
@@ -169,6 +197,7 @@
                     android:gravity="center|left"
                     android:text="Hold his/her hands up close to his/her eyes?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq51"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq55" />
@@ -180,10 +209,12 @@
                     android:gravity="center|left"
                     android:text="Hold his/her hands off to the side of his/her eyes?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq51"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq56" />
+
 
                 <TextView
                     android:id="@+id/tv_yq58"
@@ -192,11 +223,11 @@
                     android:gravity="center|left"
                     android:text="Flap his/her hands near his/her face?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq51"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq57" />
-
 
                 <TextView
                     android:id="@+id/tv_yq59"
@@ -206,35 +237,11 @@
                     android:gravity="center|left"
                     android:text="Does this happened twice a week?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq51"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq58" />
-
-                <TextView
-                    android:id="@+id/tv_yq510"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
-                    android:gravity="center|left"
-                    android:text="Category Pass"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq51" />
-
-                <TextView
-                    android:id="@+id/tv_yq511"
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
-                    android:gravity="center|left"
-                    android:text="Category Fail"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_yq54" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq51"
@@ -257,25 +264,23 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
 
+                <TextView
+                    android:id="@+id/tv_q52"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Does your child make unusual finger movements near his or her eyes? "
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+                    app:layout_constraintTop_toTopOf="parent" />
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/tv_q52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FFE57F"
-        android:fontFamily="monospace"
-        android:text="Does your child make unusual finger movements near his or her eyes? "
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_q51" />
 
     <TextView
         android:id="@+id/tv_q51"
@@ -293,25 +298,11 @@
         app:layout_constraintTop_toTopOf="@+id/iv_q51"
         app:layout_constraintVertical_bias="0.271" />
 
-    <TextView
-        android:id="@+id/tv_q53"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FFE57F"
-        android:fontFamily="monospace"
-        android:text="FOR EXAMPLE, does your child wiggle his or her fingers close to his or her eyes?"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q52" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_q51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="330dp" />
+        app:layout_constraintGuide_begin="114dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

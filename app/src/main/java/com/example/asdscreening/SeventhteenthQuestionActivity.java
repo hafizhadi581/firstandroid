@@ -44,7 +44,7 @@ public class SeventhteenthQuestionActivity extends AppCompatActivity implements 
 
             Log.d(TAG, "current score: " + rules.getScore());
 
-            Intent intent = new Intent(SeventhteenthQuestionActivity.this, CalculateScoreActivity.class);
+            Intent intent = new Intent(SeventhteenthQuestionActivity.this, EighteenthQuestionActivity.class);
             startActivity(intent);
         }
 

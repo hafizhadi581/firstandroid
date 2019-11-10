@@ -11,11 +11,11 @@
         android:id="@+id/iv_q101"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="68dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView9"
         app:srcCompat="@drawable/buttonnext" />
 
     <TextView
@@ -60,6 +60,7 @@
         app:layout_constraintGuide_begin="178dp" />
 
     <ScrollView
+        android:id="@+id/scrollView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"

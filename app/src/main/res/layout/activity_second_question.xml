@@ -35,7 +35,7 @@
             <TextView
                 android:id="@+id/tv_q22"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:background="#A8E49F"
                 android:fontFamily="monospace"
                 android:text="Have you ever wondered if your child might be deaf? "
@@ -82,7 +82,7 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_yq22"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq2y2"
-                    app:layout_constraintVertical_bias="0.66"
+                    app:layout_constraintVertical_bias="0.444"
                     app:srcCompat="@drawable/buttonnext" />
 
                 <TextView
