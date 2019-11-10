@@ -114,6 +114,7 @@
                     android:id="@+id/cb_react_ears"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
                     app:layout_constraintStart_toStartOf="@+id/guide_q122"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq1211" />
@@ -122,6 +123,7 @@
                     android:id="@+id/cb_like_noise"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
                     app:layout_constraintStart_toStartOf="@+id/guide_q122"
                     app:layout_constraintTop_toBottomOf="@+id/cb_react_ears" />
@@ -130,6 +132,7 @@
                     android:id="@+id/cb_react_scream"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
                     app:layout_constraintStart_toStartOf="@+id/guide_q122"
                     app:layout_constraintTop_toBottomOf="@+id/cb_like_noise" />
@@ -138,6 +141,7 @@
                     android:id="@+id/cb_react_cry"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
                     app:layout_constraintStart_toStartOf="@+id/guide_q122"
                     app:layout_constraintTop_toBottomOf="@+id/cb_react_scream" />
@@ -146,6 +150,7 @@
                     android:id="@+id/cb_react_cover"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
                     app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_q122"
@@ -280,6 +285,7 @@
                     android:gravity="center|left"
                     android:text="How does your child react to those noises? For Example, Does your child..."
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q123"
                     app:layout_constraintStart_toStartOf="@+id/guide_q121"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq1210" />
@@ -291,6 +297,7 @@
                     android:gravity="center|left"
                     android:text="Tell you he/she doesn't like the noise?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q122"
                     app:layout_constraintStart_toStartOf="@+id/guide_q121"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq1212" />
@@ -302,6 +309,7 @@
                     android:gravity="center|left"
                     android:text="Scream?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q122"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q121"
@@ -314,6 +322,7 @@
                     android:gravity="center|left"
                     android:text="Cry?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q122"
                     app:layout_constraintStart_toStartOf="@+id/guide_q121"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq1213" />
@@ -325,6 +334,7 @@
                     android:gravity="center|left"
                     android:text="Cover his/her ears while upset?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q122"
                     app:layout_constraintStart_toStartOf="@+id/guide_q121"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq1214" />
@@ -336,6 +346,7 @@
                     android:gravity="center|left"
                     android:text="Calmly cover his/her ears?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q122"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q121"

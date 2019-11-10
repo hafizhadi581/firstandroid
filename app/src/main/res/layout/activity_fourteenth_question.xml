@@ -124,6 +124,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="30dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q143"
                     app:layout_constraintStart_toStartOf="@+id/guide_q142"
                     app:layout_constraintTop_toBottomOf="@+id/cb_look_talk" />
@@ -133,6 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="12dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q143"
                     app:layout_constraintStart_toStartOf="@+id/guide_q142"
                     app:layout_constraintTop_toBottomOf="@+id/cb_look_eye" />
@@ -230,6 +232,7 @@
                     android:gravity="center|left"
                     android:text="Does your child look you in the eye every day?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q142"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q141"
@@ -242,6 +245,7 @@
                     android:gravity="center|left"
                     android:text="On a day when you are together all day, does he/she look you in the eye at least 5 times?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q142"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q141"

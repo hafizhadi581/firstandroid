@@ -54,7 +54,7 @@ public class FirstQuestionActivity extends AppCompatActivity implements View.OnC
 
 //            cbLookAtObject.isChecked(),cbPointAtObject.isChecked(),cbLookAndCommentToObject.isChecked(),
 //            cbParrentCommantLook.isChecked(),cbIgnoreParent.isChecked(),cbLookAroundRandomly.isChecked());
-            Intent intent = new Intent(FirstQuestionActivity.this, TwelvethQuestionActivity.class); //go to page 2
+            Intent intent = new Intent(FirstQuestionActivity.this, FourteenthQuestionActivity.class); //go to page 2
             startActivity(intent);
         }
     }
