@@ -5,17 +5,23 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RadioGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.asdscreening.rules.Rule12;
 import com.example.asdscreening.rules.Rules;
 
-public class TwelvethQuestionActivity extends AppCompatActivity implements View.OnClickListener {
+public class TwelvethQuestionActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
-    private final String TAG =  "Activity 12: ";
+    private final String TAG = "Activity 12: ";
     private Rules rules = Rules.getInstance();
+
+
+    private int numberOfTick = 0;
 
     private CheckBox cbReactSoundWashing;
     private CheckBox cbReactSoundBabies;
@@ -32,7 +38,9 @@ public class TwelvethQuestionActivity extends AppCompatActivity implements View.
     private CheckBox cbReactSoundScream;
     private CheckBox cbReactSoundCry;
     private CheckBox cbReactSoundCover;
+
     private ImageView ivQ121;
+
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,23 +62,62 @@ public class TwelvethQuestionActivity extends AppCompatActivity implements View.
         cbReactSoundScream = findViewById(R.id.cb_react_scream);
         cbReactSoundCry = findViewById(R.id.cb_react_cry);
         cbReactSoundCover = findViewById(R.id.cb_react_cover);
-        ivQ121 = findViewById(R.id.iv_q121);
+
+
+
+        cbReactSoundWashing.setOnCheckedChangeListener(this);
+        cbReactSoundBabies.setOnCheckedChangeListener(this);
+        cbReactSoundVaccuum.setOnCheckedChangeListener(this);
+        cbReactSoundHairDryer.setOnCheckedChangeListener(this);
+        cbReactSoundTraffic.setOnCheckedChangeListener(this);
+        cbReactSoundBabies2.setOnCheckedChangeListener(this);
+        cbReactSoundMusic.setOnCheckedChangeListener(this);
+        cbReactSoundDoorBell.setOnCheckedChangeListener(this);
+        cbReactSoundSuperMarket.setOnCheckedChangeListener(this);
+
         ivQ121.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if(v == ivQ121){
+        if (v == ivQ121) {
 
 
             rules.setRule12(new Rule12(cbReactSoundWashing.isChecked(), cbReactSoundBabies.isChecked(), cbReactSoundVaccuum.isChecked(), cbReactSoundHairDryer.isChecked(),
-            cbReactSoundTraffic.isChecked(), cbReactSoundBabies2.isChecked(), cbReactSoundMusic.isChecked(), cbReactSoundDoorBell.isChecked(),
-            cbReactSoundSuperMarket .isChecked(), cbReactCoverEars.isChecked(), cbReactLikingNoise.isChecked(), cbReactSoundScream.isChecked(),
-            cbReactSoundCry.isChecked(), cbReactSoundCover.isChecked()));
+                    cbReactSoundTraffic.isChecked(), cbReactSoundBabies2.isChecked(), cbReactSoundMusic.isChecked(), cbReactSoundDoorBell.isChecked(),
+                    cbReactSoundSuperMarket.isChecked(), cbReactCoverEars.isChecked(), cbReactLikingNoise.isChecked(), cbReactSoundScream.isChecked(),
+                    cbReactSoundCry.isChecked(), cbReactSoundCover.isChecked()));
 
             Log.d(TAG, "current score: " + rules.getScore());
             Intent intent = new Intent(TwelvethQuestionActivity.this, ThirteenthQuestionActivity.class);
             startActivity(intent);
         }
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+        if (b) {
+            numberOfTick++;
+        } else {
+            numberOfTick--;
+        }
+
+
+        if (numberOfTick >= 2) {
+            setVisibleItem();
+        } else {
+            setInvisibleItem();
+            cbReactCoverEars.setChecked(false);
+            cbReactLikingNoise.setChecked(false);
+            cbReactSoundScream.setChecked(false);
+            cbReactSoundCry.setChecked(false);
+            cbReactSoundCover.setChecked(false);
+        }
+    }
+
+    private void setVisibleItem() {
+    }
+
+    private void setInvisibleItem() {
     }
 }
