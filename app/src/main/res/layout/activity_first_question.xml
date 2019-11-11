@@ -6,25 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_q11"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#C0CA33"
-        android:text="FIRST QUESTION"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_mq11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="67dp" />
+        app:layout_constraintGuide_begin="-100dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -118,13 +105,13 @@
                     android:id="@+id/tv_nq11"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="20dp"
                     android:text="If you point at something, what does your child typically do?"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq11"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_kid_1" />
 
                 <TextView
                     android:id="@+id/tv_nq12"
@@ -232,6 +219,31 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
+
+                <ImageView
+                    android:id="@+id/tv_kid_1"
+                    android:layout_width="343dp"
+                    android:layout_height="202dp"
+                    android:layout_marginTop="76dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq13"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/kid1" />
+
+                <TextView
+                    android:id="@+id/tv_q11"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#C0CA33"
+                    android:gravity="center|left"
+                    android:text="FIRST QUESTION"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

@@ -179,7 +179,7 @@
                     android:id="@+id/tv_q121"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="TWELVETH QUESTION"
+                    android:text="TWELFTH QUESTION"
                     android:textAlignment="center"
                     android:textSize="30sp"
                     android:textStyle="bold"

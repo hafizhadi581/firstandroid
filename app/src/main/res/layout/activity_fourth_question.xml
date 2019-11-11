@@ -17,18 +17,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/btn3" />
 
-    <ImageView
-        android:id="@+id/iv_q42"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.836"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView4"
-        app:srcCompat="@drawable/buttonnext" />
-
     <ScrollView
         android:id="@+id/scrollView4"
         android:layout_width="match_parent"
@@ -171,6 +159,16 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
+
+                <ImageView
+                    android:id="@+id/iv_q42"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq43"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq42"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_yq4y4"
+                    app:srcCompat="@drawable/buttonnext" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

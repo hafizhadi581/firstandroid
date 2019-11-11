@@ -7,18 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q71"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="12dp"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView5"
-        app:srcCompat="@drawable/buttonnext" />
-
     <TextView
         android:id="@+id/tv_q73"
         android:layout_width="wrap_content"
@@ -119,7 +107,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="40dp"
-                    android:visibility="invisible"
+                    android:visibility="gone"
                     android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintHorizontal_bias="0.555"
@@ -131,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="16dp"
-                    android:visibility="invisible"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintHorizontal_bias="0.555"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
@@ -204,7 +192,7 @@
                     android:gravity="center|left"
                     android:text="How does your child draw your attention to it? Would he/she point with one finger?"
                     android:textSize="16sp"
-                    android:visibility="invisible"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq76" />
@@ -216,7 +204,7 @@
                     android:gravity="center|left"
                     android:text="Is this to show their interest, not to get help? "
                     android:textSize="16sp"
-                    android:visibility="invisible"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq77" />
@@ -241,6 +229,16 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
+
+                <ImageView
+                    android:id="@+id/iv_q71"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_show_interest"
+                    app:srcCompat="@drawable/buttonnext" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

@@ -54,7 +54,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="336dp"
                 android:orientation="vertical">
 
 
@@ -117,6 +117,16 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_q92"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_block" />
 
+
+                <ImageView
+                    android:id="@+id/iv_q91"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q93"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q92"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_bring_help"
+                    app:srcCompat="@drawable/buttonnext" />
+
                 <TextView
                     android:id="@+id/tv_yq91"
                     android:layout_width="0dp"
@@ -129,7 +139,6 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q91"
                     app:layout_constraintTop_toTopOf="parent" />
-
 
                 <TextView
                     android:id="@+id/tv_yq92"
@@ -226,17 +235,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
-
-                <ImageView
-                    android:id="@+id/iv_q91"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="12dp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_q93"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_q92"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_bring_block"
-                    app:srcCompat="@drawable/buttonnext" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

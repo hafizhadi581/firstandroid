@@ -11,10 +11,12 @@
         android:id="@+id/tv_about_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="#C6FF00"
         android:text="Learn More About Autism"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,9 +37,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:background="#C6FF00"
         android:text="Symptom of Autism"
         android:textAlignment="center"
         android:textAllCaps="true"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -46,42 +50,39 @@
 
     <TextView
         android:id="@+id/tv_about_4"
-        android:layout_width="0dp"
+        android:layout_width="390dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="2) A narrow range of interests or intense interest in certain topics"
+        android:layout_marginTop="8dp"
+        android:text="A narrow range of interests or intense interest in certain topics"
         android:textAllCaps="false"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_about_5" />
 
     <TextView
         android:id="@+id/tv_about_5"
-        android:layout_width="0dp"
+        android:layout_width="390dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
-        android:text="1) A lack of eye contact"
+        android:text="A lack of eye contact"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_about_3" />
 
     <TextView
         android:id="@+id/tv_about_6"
-        android:layout_width="0dp"
+        android:layout_width="390dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="3) Not looking at or listening to other people"
+        android:text="Not looking at or listening to other people"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_about_4" />
 
@@ -89,19 +90,32 @@
         android:id="@+id/tv_about_7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:autoLink="web"
         android:text="https://www.webmd.com/brain/autism/understanding-autism-basics#1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_about_8" />
+
+    <TextView
+        android:id="@+id/tv_about_8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#E2798B"
+        android:text="CLICK THE LINK BELOW"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_about_6" />
 
     <ImageView
         android:id="@+id/iv_about_bg"
-        android:layout_width="410dp"
-        android:layout_height="283dp"
+        android:layout_width="391dp"
+        android:layout_height="262dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_about_1"
         app:srcCompat="@drawable/autism_child" />

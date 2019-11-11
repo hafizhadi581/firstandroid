@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.music);
-        mediaPlayer.start();
+//        MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.music);
+//        mediaPlayer.start();
 
         btnStart = findViewById(R.id.btn_start); //start button
         btnAbout = findViewById(R.id.btn_about);

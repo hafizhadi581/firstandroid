@@ -7,17 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q171"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.831"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView8"
-        app:srcCompat="@drawable/buttonnext" />
-
     <TextView
         android:id="@+id/tv_q172"
         android:layout_width="0dp"
@@ -184,6 +173,15 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
+
+                <ImageView
+                    android:id="@+id/iv_q171"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q173"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q172"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_watch_look"
+                    app:srcCompat="@drawable/buttonnext" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
