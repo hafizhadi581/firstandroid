@@ -15,36 +15,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_q31"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="#82B1FF"
-                android:text="THIRD QUESTION"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/tv_q32"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:fontFamily="monospace"
-                android:text="Does your child play pretend or make-believe?"
-                android:textAlignment="textStart"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_q31" />
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
@@ -145,17 +115,27 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_nq32"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq3y9" />
 
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="314dp"
+                    android:layout_height="233dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq33"
+                    app:layout_constraintHorizontal_bias="0.437"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q31"
+                    app:srcCompat="@drawable/kid3" />
+
                 <TextView
                     android:id="@+id/tv_yq31"
                     android:layout_width="375dp"
                     android:layout_height="43dp"
-                    android:layout_marginTop="30dp"
                     android:text="Please give an example of his/her pretend play"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq33"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq31"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q32" />
 
                 <TextView
                     android:id="@+id/tv_yq32"
@@ -313,6 +293,35 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_nq32"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq3y10"
                     app:srcCompat="@drawable/buttonnext" />
+
+                <TextView
+                    android:id="@+id/tv_q32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Does your child play pretend or make-believe?"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq33"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq31"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/tv_q31"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#82B1FF"
+                    android:gravity="center|left"
+                    android:text="THIRD QUESTION"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

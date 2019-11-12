@@ -7,40 +7,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_q73"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="monospace"
-        android:text="Does your child point with one finger to show you something interesting? "
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q71" />
-
-    <TextView
-        android:id="@+id/tv_q71"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#C6FF00"
-        android:text="SEVENTH QUESTION"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_q71"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="161dp" />
+        app:layout_constraintGuide_begin="-1dp" />
 
     <ScrollView
         android:id="@+id/scrollView5"
@@ -57,7 +29,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="648dp"
                 android:orientation="vertical">
 
 
@@ -107,8 +79,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="40dp"
-                    android:visibility="gone"
                     android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintHorizontal_bias="0.555"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
@@ -125,18 +97,39 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_attention" />
 
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="343dp"
+                    android:layout_height="204dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.307"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q71"
+                    app:srcCompat="@drawable/kid7" />
+
+                <ImageView
+                    android:id="@+id/iv_q71"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_show_interest"
+                    app:srcCompat="@drawable/buttonnext" />
+
                 <TextView
                     android:id="@+id/tv_yq71"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="28dp"
                     android:gravity="center|left"
                     android:text="Does your child sometimes want you to see something interesting such as…."
                     android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
                 <TextView
                     android:id="@+id/tv_yq73"
@@ -230,15 +223,20 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
 
-                <ImageView
-                    android:id="@+id/iv_q71"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:scaleType="centerInside"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_show_interest"
-                    app:srcCompat="@drawable/buttonnext" />
+                <TextView
+                    android:id="@+id/tv_q71"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#C6FF00"
+                    android:gravity="center|left"
+                    android:text="SEVENTH QUESTION"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

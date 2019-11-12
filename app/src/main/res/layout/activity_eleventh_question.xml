@@ -7,26 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_q111"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:text="ELEVENTH QUESTION"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_qm11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="94dp" />
-
     <ScrollView
         android:id="@+id/scrollView11"
         android:layout_width="match_parent"
@@ -51,11 +31,11 @@
                     android:id="@+id/cb_smile_back"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="30dp"
                     android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q113"
                     app:layout_constraintStart_toStartOf="@+id/guide_q112"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid11" />
 
                 <CheckBox
                     android:id="@+id/cb_smile_smile"
@@ -110,6 +90,28 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_q112"
                     app:layout_constraintTop_toBottomOf="@+id/cb_bring_block" />
 
+
+                <ImageView
+                    android:id="@+id/iv_kid11"
+                    android:layout_width="328dp"
+                    android:layout_height="187dp"
+                    android:layout_marginTop="28dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q111"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q111"
+                    app:srcCompat="@drawable/kid11" />
+
+                <ImageView
+                    android:id="@+id/iv_q111"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q112"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_smile_random"
+                    app:srcCompat="@drawable/buttonnext" />
 
                 <TextView
                     android:id="@+id/tv_yq111"
@@ -200,13 +202,13 @@
                     android:id="@+id/tv_q112"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="28dp"
                     android:text="When you smile at your child, does he or she smile back at you?"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q112"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q111"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid11" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q111"
@@ -229,20 +231,30 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
 
-                <ImageView
-                    android:id="@+id/iv_q111"
-                    android:layout_width="50dp"
+                <TextView
+                    android:id="@+id/tv_q111"
+                    android:layout_width="411dp"
                     android:layout_height="50dp"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_q113"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_q112"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_smile_random"
-                    app:srcCompat="@drawable/buttonnext" />
+                    android:background="#B2FF59"
+                    android:gravity="center|left"
+                    android:text="ELEVENTH QUESTION"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_qm11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

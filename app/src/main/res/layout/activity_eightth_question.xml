@@ -15,40 +15,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_q81"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="EIGHTH QUESTION"
-                android:textAlignment="center"
-                android:textSize="30sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/tv_q82"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Is your child interested in other children?"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_q81" />
-
-            <TextView
-                android:id="@+id/tv_q83"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="FOR EXAMPLE, does your child watch other children, smile at them, or go to them?"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_q82" />
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
@@ -57,22 +23,34 @@
 
 
                 <CheckBox
-                    android:id="@+id/cb_interest"
+                    android:id="@+id/cb_interest_child"
                     android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
                     android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid8" />
+
+                <CheckBox
+                    android:id="@+id/cb_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="16dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
+
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_interest_child" />
 
                 <CheckBox
                     android:id="@+id/cb_respond"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="12dp"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
-                    app:layout_constraintHorizontal_bias="0.484"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_interest" />
 
@@ -82,6 +60,8 @@
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintHorizontal_bias="0.9"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
@@ -92,6 +72,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="1dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_play" />
@@ -100,6 +82,8 @@
                     android:id="@+id/cb_noise"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_talk" />
@@ -108,6 +92,8 @@
                     android:id="@+id/cb_watch"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_noise" />
@@ -116,6 +102,8 @@
                     android:id="@+id/cb_smile"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_watch" />
@@ -124,6 +112,8 @@
                     android:id="@+id/cb_shy"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_smile" />
@@ -132,6 +122,8 @@
                     android:id="@+id/cb_excited"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
+                    android:onClick="onCheckboxClicked"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_shy" />
@@ -141,23 +133,45 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginTop="40dp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_excited" />
+
+                <ImageView
+                    android:id="@+id/iv_kid8"
+                    android:layout_width="378dp"
+                    android:layout_height="222dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.416"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q81"
+                    app:srcCompat="@drawable/kid8" />
+
+                <ImageView
+                    android:id="@+id/iv_q81"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_respond_2"
+                    app:srcCompat="@drawable/buttonnext" />
 
                 <TextView
                     android:id="@+id/tv_yq81"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
-                    android:text="Is he/she interested in children who are not his/her brother or sister?
-"
+                    android:text="Is he/she interested in children who are not his/her brother or sister?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q82" />
 
                 <TextView
                     android:id="@+id/tv_yq82"
@@ -179,6 +193,7 @@
                     android:gravity="center|left"
                     android:text="Play with another child?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
@@ -192,6 +207,7 @@
                     android:gravity="center|left"
                     android:text="Talk to another child?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq83" />
@@ -203,6 +219,7 @@
                     android:gravity="center|left"
                     android:text="Babble or make vocal noises?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq84" />
@@ -214,6 +231,7 @@
                     android:gravity="center|left"
                     android:text="Watch another child?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
@@ -226,6 +244,7 @@
                     android:gravity="center|left"
                     android:text="Smile at another child?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
@@ -238,6 +257,7 @@
                     android:gravity="center|left"
                     android:text="Act shy at first but then smile?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
@@ -250,6 +270,7 @@
                     android:gravity="center|left"
                     android:text="Get excited about another child?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
@@ -263,6 +284,7 @@
                     android:gravity="center|left"
                     android:text="Does he/she respond to other children more than half of the time?"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
@@ -276,9 +298,22 @@
                     android:gravity="center|left"
                     android:text="Does your child..."
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq82" />
+
+                <TextView
+                    android:id="@+id/tv_q82"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:text="Is your child interested in other children?"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid8" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq61"
@@ -301,16 +336,19 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
 
-                <ImageView
-                    android:id="@+id/iv_q81"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="16dp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                <TextView
+                    android:id="@+id/tv_q81"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFD740"
+                    android:text="EIGHTH QUESTION"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_respond_2"
-                    app:srcCompat="@drawable/buttonnext" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

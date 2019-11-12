@@ -7,29 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_q61"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:background="#84FFFF"
-        android:fontFamily="monospace"
-        android:text="SIXTH QUESTION"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_q61"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="71dp" />
-
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
@@ -52,12 +29,11 @@
                     android:id="@+id/cb_point_finger"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="28dp"
                     android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
-                    app:layout_constraintHorizontal_bias="0.444"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid6" />
 
                 <CheckBox
                     android:id="@+id/cb_reach_object"
@@ -116,6 +92,29 @@
                     app:layout_constraintHorizontal_bias="0.444"
                     app:layout_constraintStart_toEndOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_sounds" />
+
+                <ImageView
+                    android:id="@+id/iv_kid6"
+                    android:layout_width="343dp"
+                    android:layout_height="204dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.307"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q61"
+                    app:srcCompat="@drawable/kid6" />
+
+                <ImageView
+                    android:id="@+id/iv_q61"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_point"
+                    app:srcCompat="@drawable/buttonnext" />
 
                 <TextView
                     android:id="@+id/tv_yq61"
@@ -198,11 +197,27 @@
                     android:id="@+id/tv_q62"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
                     android:text="Does your child point with one finger to ask for something or to get help? "
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq62"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid6" />
+
+                <TextView
+                    android:id="@+id/tv_q61"
+                    android:layout_width="411dp"
+                    android:layout_height="50dp"
+                    android:background="#00B0FF"
+                    android:gravity="center|left"
+                    android:text="SIXTH QUESTION"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.constraintlayout.widget.Guideline
@@ -226,20 +241,17 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
 
-                <ImageView
-                    android:id="@+id/iv_q61"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:scaleType="centerInside"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq62"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_point"
-                    app:srcCompat="@drawable/buttonnext" />
-
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_q61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-286dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

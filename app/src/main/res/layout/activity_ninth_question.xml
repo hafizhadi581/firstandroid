@@ -7,36 +7,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_q91"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="NINTH QUESTION"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_q92"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Does your child show you things by bringing them to you or holding them up Pass Fail for you to see, not to get help, but just to share?"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q91" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_q94"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="139dp" />
+        app:layout_constraintGuide_begin="0dp" />
 
     <ScrollView
 
@@ -54,7 +30,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
-                android:layout_height="336dp"
+                android:layout_height="575dp"
                 android:orientation="vertical">
 
 
@@ -119,6 +95,17 @@
 
 
                 <ImageView
+                    android:id="@+id/iv_kid9"
+                    android:layout_width="322dp"
+                    android:layout_height="171dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q93"
+                    app:layout_constraintHorizontal_bias="0.307"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q91"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q91"
+                    app:srcCompat="@drawable/kid9" />
+
+                <ImageView
                     android:id="@+id/iv_q91"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -130,15 +117,14 @@
                 <TextView
                     android:id="@+id/tv_yq91"
                     android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center|left"
-                    android:text="Does your child sometimes bring you…"
+                    android:text="For example, does your child sometimes bring you…"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q93"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q91"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/txt_q92" />
 
                 <TextView
                     android:id="@+id/tv_yq92"
@@ -214,6 +200,31 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q91"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq96" />
+
+                <TextView
+                    android:id="@+id/txt_q92"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="Does your child show you things by bringing them to you or holding them up Pass Fail for you to see, not to get help, but just to share?"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q93"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q91"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid9" />
+
+                <TextView
+                    android:id="@+id/tv_q91"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFD740"
+                    android:text="NINTH QUESTION"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q91"

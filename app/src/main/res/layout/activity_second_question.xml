@@ -17,40 +17,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_q21"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="#C0CA33"
-                android:text="SECOND QUESTION"
-                android:textAlignment="center"
-                android:textColor="#030303"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/tv_q22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#A8E49F"
-                android:fontFamily="monospace"
-                android:text="Have you ever wondered if your child might be deaf? "
-                android:textAlignment="viewStart"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_q21" />
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
-                android:layout_height="334dp"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <CheckBox
@@ -69,6 +39,17 @@
                     app:layout_constraintEnd_toStartOf="@+id/guide_yq23"
                     app:layout_constraintStart_toStartOf="@+id/guide_yq22"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq2y1" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="311dp"
+                    android:layout_height="175dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_yq23"
+                    app:layout_constraintHorizontal_bias="0.526"
+                    app:layout_constraintStart_toStartOf="@+id/guide_yq21"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q21"
+                    app:srcCompat="@drawable/kid2" />
 
                 <ImageView
                     android:id="@+id/iv_q21"
@@ -114,12 +95,41 @@
                     android:id="@+id/tv_yq21"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="48dp"
+                    android:layout_marginTop="20dp"
                     android:text="You reported that you have wondered if you child is deaf. What led you to wonder that? Does he/she .."
                     android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_yq23"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_yq21"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q22" />
+
+                <TextView
+                    android:id="@+id/tv_q22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Have you ever wondered if your child might be deaf? "
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_yq23"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_yq21"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <TextView
+                    android:id="@+id/tv_q21"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#C0CA33"
+                    android:gravity="center|left"
+                    android:text="SECOND QUESTION"
+                    android:textAlignment="center"
+                    android:textColor="#030303"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.constraintlayout.widget.Guideline

@@ -8,14 +8,25 @@
     android:orientation="vertical">
 
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#3D5AFE"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="26dp" />
+        app:layout_constraintGuide_begin="50dp" />
 
     <ScrollView
+        android:id="@+id/scrollView12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
@@ -36,7 +47,7 @@
                     android:id="@+id/btn_start"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="28dp"
                     android:scaleType="centerInside"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -48,7 +59,6 @@
                     android:id="@+id/btn_about"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:layout_marginTop="12dp"
                     android:scaleType="centerInside"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -62,6 +72,7 @@
                     android:layout_height="100dp"
                     android:scaleType="centerInside"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_m6"
                     app:srcCompat="@drawable/settings" />
@@ -72,6 +83,7 @@
                     android:layout_height="100dp"
                     android:scaleType="centerInside"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_m7"
                     app:srcCompat="@drawable/btn2" />
@@ -80,8 +92,9 @@
                     android:id="@+id/logo_1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.7"
+                    app:layout_constraintHorizontal_bias="0.704"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/logo2" />
@@ -91,6 +104,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="44dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="sans-serif-condensed-light"
                     android:text="AUTISM "
                     android:textAlignment="viewStart"
@@ -98,7 +112,7 @@
                     android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/logo_1"
-                    app:layout_constraintHorizontal_bias="0.626"
+                    app:layout_constraintHorizontal_bias="0.619"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:layout_conversion_absoluteHeight="32dp"
@@ -127,7 +141,7 @@
                     android:id="@+id/tv_m5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#7CB342"
+                    android:background="#C0CA33"
                     android:text="EXIT"
                     android:textAlignment="center"
                     android:textSize="24sp"
@@ -177,6 +191,7 @@
                     android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/btn_about" />
 

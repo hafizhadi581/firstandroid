@@ -1,6 +1,7 @@
 package com.example.asdscreening.rules;
 
 public class Rule8 {
+    private boolean isInterestedInOtherChildren;
     private boolean isInterestedNotBrotherSister;
     private boolean isRespondToOtherChildren;
     private boolean isPlayingWithOtherChildren;
@@ -12,7 +13,8 @@ public class Rule8 {
     private boolean isGettingExcitedAtOtherChildren;
     private boolean isRespondToOtherChildrenHalfOfTime;
 
-    public Rule8(boolean isInterestedNotBrotherSister, boolean isRespondToOtherChildren, boolean isPlayingWithOtherChildren, boolean isTalkingToOtherChildren, boolean isBabbleOrMakeNoise, boolean isWatchingOtherChildren, boolean isSmillingAtOtherChildren, boolean isActingShyAtOtherChildren, boolean isGettingExcitedAtOtherChildren, boolean isRespondToOtherChildrenHalfOfTime) {
+    public Rule8(boolean isInterestedInOtherChildren, boolean isInterestedNotBrotherSister, boolean isRespondToOtherChildren, boolean isPlayingWithOtherChildren, boolean isTalkingToOtherChildren, boolean isBabbleOrMakeNoise, boolean isWatchingOtherChildren, boolean isSmillingAtOtherChildren, boolean isActingShyAtOtherChildren, boolean isGettingExcitedAtOtherChildren, boolean isRespondToOtherChildrenHalfOfTime) {
+        this.isInterestedInOtherChildren = isInterestedInOtherChildren;
         this.isInterestedNotBrotherSister = isInterestedNotBrotherSister;
         this.isRespondToOtherChildren = isRespondToOtherChildren;
         this.isPlayingWithOtherChildren = isPlayingWithOtherChildren;
@@ -23,6 +25,14 @@ public class Rule8 {
         this.isActingShyAtOtherChildren = isActingShyAtOtherChildren;
         this.isGettingExcitedAtOtherChildren = isGettingExcitedAtOtherChildren;
         this.isRespondToOtherChildrenHalfOfTime = isRespondToOtherChildrenHalfOfTime;
+    }
+
+    public boolean isInterestedInOtherChildren() {
+        return isInterestedInOtherChildren;
+    }
+
+    public void setInterestedInOtherChildren(boolean interestedInOtherChildren) {
+        isInterestedInOtherChildren = interestedInOtherChildren;
     }
 
     public boolean isInterestedNotBrotherSister() {
@@ -106,26 +116,34 @@ public class Rule8 {
     }
 
     public boolean isPass() {
-        if (isInterestedNotBrotherSister) {
-            return true;
-        } else {
-            if (isRespondToOtherChildren) {
-                if (isPlayingWithOtherChildren || isPlayingWithOtherChildren || isTalkingToOtherChildren || isBabbleOrMakeNoise || isWatchingOtherChildren || isSmillingAtOtherChildren || isActingShyAtOtherChildren || isGettingExcitedAtOtherChildren) {
-                    if (isRespondToOtherChildrenHalfOfTime) {
-                        return true;
+
+        if (isInterestedInOtherChildren) {
+            if (isInterestedNotBrotherSister) {
+                return true;
+            } else {
+                if (isRespondToOtherChildren) {
+                    if (isPlayingWithOtherChildren || isPlayingWithOtherChildren || isTalkingToOtherChildren || isBabbleOrMakeNoise || isWatchingOtherChildren || isSmillingAtOtherChildren || isActingShyAtOtherChildren || isGettingExcitedAtOtherChildren) {
+                        if (isRespondToOtherChildrenHalfOfTime) {
+                            return true;
+                        } else {
+                            return false;
+                        }
                     } else {
                         return false;
                     }
-                } else {
+                } else
                     return false;
-                }
-            } else
-                return false;
+            }
+        } else {
+            return false;
         }
+
     }
 
 }
-//if (isInterestedNotBrotherSister|| isRespondToOtherChildren || isPlayingWithOtherChildren || isTalkingToOtherChildren ||
+//        if (isInterestedNotBrotherSister|| isRespondToOtherChildren || isPlayingWithOtherChildren || isTalkingToOtherChildren ||
 //        isBabbleOrMakeNoise || isWatchingOtherChildren || isSmillingAtOtherChildren ||
 //        isActingShyAtOtherChildren || isGettingExcitedAtOtherChildren ||
 //        isRespondToOtherChildrenHalfOfTime )
+
+

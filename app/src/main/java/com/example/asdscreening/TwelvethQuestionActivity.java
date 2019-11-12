@@ -23,6 +23,7 @@ public class TwelvethQuestionActivity extends AppCompatActivity implements View.
 
     private int numberOfTick = 0;
 
+    private CheckBox cbIsUpset;
     private CheckBox cbReactSoundWashing;
     private CheckBox cbReactSoundBabies;
     private CheckBox cbReactSoundVaccuum;
@@ -46,7 +47,7 @@ public class TwelvethQuestionActivity extends AppCompatActivity implements View.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_twelveth_question);
 
-
+        cbIsUpset = findViewById(R.id.cb_upset);
         cbReactSoundWashing = findViewById(R.id.cb_sounds_washing);
         cbReactSoundBabies = findViewById(R.id.cb_sound_babies);
         cbReactSoundVaccuum = findViewById(R.id.cb_sounds_vacuum);
@@ -80,12 +81,137 @@ public class TwelvethQuestionActivity extends AppCompatActivity implements View.
         ivQ121.setOnClickListener(this);
     }
 
+    public void onCheckboxClicked(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which checkbox was clicked
+        switch (view.getId()) {
+
+            case R.id.cb_upset:
+
+                if (checked)
+                    showCbUpset();
+                    //do things when checked
+                else
+                    hideCbUpset();
+                // do things when unchecked
+                break;
+
+        }
+
+    }
+
+
+    public void showCbUpset(){
+
+        View tvYq121Show = findViewById(R.id.tv_yq121);
+        tvYq121Show.setVisibility(View.VISIBLE);
+
+        View cbSoundsWashingShow = findViewById(R.id.cb_sounds_washing);
+        cbSoundsWashingShow.setVisibility(View.VISIBLE);
+        View tvYq122Show = findViewById(R.id.tv_yq122);
+        tvYq122Show.setVisibility(View.VISIBLE);
+
+        View cbSoundsBabiesShow = findViewById(R.id.cb_sound_babies);
+        cbSoundsBabiesShow.setVisibility(View.VISIBLE);
+        View tvYq123Show = findViewById(R.id.tv_yq123);
+        tvYq123Show.setVisibility(View.VISIBLE);
+
+        View cbSoundsVacuumShow = findViewById(R.id.cb_sounds_vacuum);
+        cbSoundsVacuumShow.setVisibility(View.VISIBLE);
+        View tvYq124Show = findViewById(R.id.tv_yq124);
+        tvYq124Show.setVisibility(View.VISIBLE);
+
+        View cbSoundsHairDryerShow = findViewById(R.id.cb_sounds_hairdryer);
+        cbSoundsHairDryerShow.setVisibility(View.VISIBLE);
+        View tvYq125Show = findViewById(R.id.tv_yq125);
+        tvYq125Show.setVisibility(View.VISIBLE);
+
+        View cbSoundsTrafficShow = findViewById(R.id.cb_sounds_traffic);
+        cbSoundsTrafficShow.setVisibility(View.VISIBLE);
+        View tvYq126Show = findViewById(R.id.tv_yq126);
+        tvYq126Show.setVisibility(View.VISIBLE);
+
+        View cbSoundsBabies2Show = findViewById(R.id.cb_sounds_babies2);
+        cbSoundsBabies2Show.setVisibility(View.VISIBLE);
+        View tvYq127Show = findViewById(R.id.tv_yq127);
+        tvYq127Show.setVisibility(View.VISIBLE);
+
+        View cbSoundsMusicShow = findViewById(R.id.cb_sounds_music);
+        cbSoundsMusicShow.setVisibility(View.VISIBLE);
+        View tvYq128Show = findViewById(R.id.tv_yq128);
+        tvYq128Show.setVisibility(View.VISIBLE);
+
+        View cbSoundsDoorBellShow = findViewById(R.id.cb_sounds_doorbell);
+        cbSoundsDoorBellShow.setVisibility(View.VISIBLE);
+        View tvYq129Show = findViewById(R.id.tv_yq129);
+        tvYq129Show.setVisibility(View.VISIBLE);
+
+        View cbSoundsSuperMarketShow = findViewById(R.id.cb_sounds_supermarket);
+        cbSoundsSuperMarketShow.setVisibility(View.VISIBLE);
+        View tvYq1210Show = findViewById(R.id.tv_yq1210);
+        tvYq1210Show.setVisibility(View.VISIBLE);
+
+    }
+    public void hideCbUpset(){
+
+        View tvYq121Hide = findViewById(R.id.tv_yq121);
+        tvYq121Hide.setVisibility(View.GONE);
+
+        View cbSoundsWashingHide = findViewById(R.id.cb_sounds_washing);
+        cbSoundsWashingHide.setVisibility(View.GONE);
+        View tvYq122Hide = findViewById(R.id.tv_yq122);
+        tvYq122Hide.setVisibility(View.GONE);
+
+        View cbSoundsBabiesHide = findViewById(R.id.cb_sound_babies);
+        cbSoundsBabiesHide.setVisibility(View.GONE);
+        View tvYq123Hide = findViewById(R.id.tv_yq123);
+        tvYq123Hide.setVisibility(View.GONE);
+
+        View cbSoundsVacuumHide = findViewById(R.id.cb_sounds_vacuum);
+        cbSoundsVacuumHide.setVisibility(View.GONE);
+        View tvYq124Hide = findViewById(R.id.tv_yq124);
+        tvYq124Hide.setVisibility(View.GONE);
+
+        View cbSoundsHairDryerHide = findViewById(R.id.cb_sounds_hairdryer);
+        cbSoundsHairDryerHide.setVisibility(View.GONE);
+        View tvYq125Hide = findViewById(R.id.tv_yq125);
+        tvYq125Hide.setVisibility(View.GONE);
+
+        View cbSoundsTrafficHide = findViewById(R.id.cb_sounds_traffic);
+        cbSoundsTrafficHide.setVisibility(View.GONE);
+        View tvYq126Hide = findViewById(R.id.tv_yq126);
+        tvYq126Hide.setVisibility(View.GONE);
+
+        View cbSoundsBabies2Hide = findViewById(R.id.cb_sounds_babies2);
+        cbSoundsBabies2Hide.setVisibility(View.GONE);
+        View tvYq127Hide = findViewById(R.id.tv_yq127);
+        tvYq127Hide.setVisibility(View.GONE);
+
+        View cbSoundsMusicHide = findViewById(R.id.cb_sounds_music);
+        cbSoundsMusicHide.setVisibility(View.GONE);
+        View tvYq128Hide = findViewById(R.id.tv_yq128);
+        tvYq128Hide.setVisibility(View.GONE);
+
+        View cbSoundsDoorBellHide = findViewById(R.id.cb_sounds_doorbell);
+        cbSoundsDoorBellHide.setVisibility(View.GONE);
+        View tvYq129Hide = findViewById(R.id.tv_yq129);
+        tvYq129Hide.setVisibility(View.GONE);
+
+        View cbSoundsSuperMarketHide = findViewById(R.id.cb_sounds_supermarket);
+        cbSoundsSuperMarketHide.setVisibility(View.GONE);
+        View tvYq1210Hide = findViewById(R.id.tv_yq1210);
+        tvYq1210Hide.setVisibility(View.GONE);
+
+    }
+
     @Override
     public void onClick(View v) {
         if (v == ivQ121) {
 
 
-            rules.setRule12(new Rule12(cbReactSoundWashing.isChecked(), cbReactSoundBabies.isChecked(), cbReactSoundVaccuum.isChecked(), cbReactSoundHairDryer.isChecked(),
+            rules.setRule12(new Rule12(cbIsUpset.isChecked(),cbReactSoundWashing.isChecked(), cbReactSoundBabies.isChecked(), cbReactSoundVaccuum.isChecked(), cbReactSoundHairDryer.isChecked(),
                     cbReactSoundTraffic.isChecked(), cbReactSoundBabies2.isChecked(), cbReactSoundMusic.isChecked(), cbReactSoundDoorBell.isChecked(),
                     cbReactSoundSuperMarket.isChecked(), cbReactCoverEars.isChecked(), cbReactLikingNoise.isChecked(), cbReactSoundScream.isChecked(),
                     cbReactSoundCry.isChecked(), cbReactSoundCover.isChecked()));

@@ -7,16 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_q51"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/btn4" />
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -33,7 +23,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
-                android:layout_height="542dp"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
 
@@ -41,11 +31,12 @@
                     android:id="@+id/cb_yq5y8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="40dp"
                     android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+                    app:layout_constraintHorizontal_bias="0.444"
                     app:layout_constraintStart_toEndOf="@+id/tv_q52"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid5" />
 
                 <CheckBox
                     android:id="@+id/cb_yq5y1"
@@ -124,6 +115,15 @@
 
 
                 <ImageView
+                    android:id="@+id/iv_kid5"
+                    android:layout_width="358dp"
+                    android:layout_height="231dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_q51"
+                    app:srcCompat="@drawable/kid5" />
+
+                <ImageView
                     android:id="@+id/iv_q52"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -134,6 +134,15 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_nq52"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq5y7"
                     app:srcCompat="@drawable/buttonnext" />
+
+                <ImageView
+                    android:id="@+id/iv_q51"
+                    android:layout_width="0dp"
+                    android:layout_height="73dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+                    app:srcCompat="@drawable/btn4"
+                    tools:layout_editor_absoluteY="27dp" />
 
                 <TextView
                     android:id="@+id/tv_yq51"
@@ -202,6 +211,7 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_nq51"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq55" />
 
+
                 <TextView
                     android:id="@+id/tv_yq57"
                     android:layout_width="0dp"
@@ -214,7 +224,6 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq51"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq56" />
-
 
                 <TextView
                     android:id="@+id/tv_yq58"
@@ -243,6 +252,33 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_nq51"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq58" />
 
+                <TextView
+                    android:id="@+id/tv_q52"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Does your child make unusual finger movements near his or her eyes? "
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid5" />
+
+                <TextView
+                    android:id="@+id/tv_q51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FIFTH QUESTION"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_q51"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+                    app:layout_constraintHorizontal_bias="0.486"
+                    app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+                    app:layout_constraintTop_toTopOf="@+id/iv_q51"
+                    app:layout_constraintVertical_bias="0.228" />
+
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq51"
                     android:layout_width="wrap_content"
@@ -264,45 +300,17 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
 
-                <TextView
-                    android:id="@+id/tv_q52"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Does your child make unusual finger movements near his or her eyes? "
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-                    app:layout_constraintTop_toTopOf="parent" />
-
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
 
-    <TextView
-        android:id="@+id/tv_q51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
-        android:text="FIFTH QUESTION"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_q51"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.978"
-        app:layout_constraintStart_toStartOf="@+id/iv_q51"
-        app:layout_constraintTop_toTopOf="@+id/iv_q51"
-        app:layout_constraintVertical_bias="0.271" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_q51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="114dp" />
+        app:layout_constraintGuide_begin="-123dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

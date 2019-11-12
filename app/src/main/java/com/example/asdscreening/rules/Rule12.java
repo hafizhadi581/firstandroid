@@ -2,6 +2,7 @@ package com.example.asdscreening.rules;
 
 public class Rule12 {
 
+    private boolean isUpset;
     private boolean isReactSoundWashing;
     private boolean isReactSoundBabies;
     private boolean isReactSoundVaccuum;
@@ -22,7 +23,8 @@ public class Rule12 {
     private int passCount;
     private int count;
 
-    public Rule12(boolean isReactSoundWashing, boolean isReactSoundBabies, boolean isReactSoundVaccuum, boolean isReactSoundHairDryer, boolean isReactSoundTraffic, boolean isReactSoundBabies2, boolean isReactSoundMusic, boolean isReactSoundDoorBell, boolean isReactSoundSuperMarket, boolean isReactCoverEars, boolean isReactLikingNoise, boolean isReactSoundScream, boolean isReactSoundCry, boolean isReactSoundCover) {
+    public Rule12(boolean isUpset, boolean isReactSoundWashing, boolean isReactSoundBabies, boolean isReactSoundVaccuum, boolean isReactSoundHairDryer, boolean isReactSoundTraffic, boolean isReactSoundBabies2, boolean isReactSoundMusic, boolean isReactSoundDoorBell, boolean isReactSoundSuperMarket, boolean isReactCoverEars, boolean isReactLikingNoise, boolean isReactSoundScream, boolean isReactSoundCry, boolean isReactSoundCover) {
+        this.isUpset = isUpset;
         this.isReactSoundWashing = isReactSoundWashing;
         this.isReactSoundBabies = isReactSoundBabies;
         this.isReactSoundVaccuum = isReactSoundVaccuum;
@@ -37,6 +39,14 @@ public class Rule12 {
         this.isReactSoundScream = isReactSoundScream;
         this.isReactSoundCry = isReactSoundCry;
         this.isReactSoundCover = isReactSoundCover;
+    }
+
+    public boolean isUpset() {
+        return isUpset;
+    }
+
+    public void setUpset(boolean upset) {
+        isUpset = upset;
     }
 
     public boolean isReactSoundWashing() {
@@ -154,41 +164,73 @@ public class Rule12 {
     public boolean isPass() {
         failCount = 0;
         passCount = 0;
+        count = 0;
 
-        // bawah
-        if (isReactCoverEars) {
-            passCount++;
-        }
-        if (isReactLikingNoise) {
-            passCount++;
-        }
-        if (isReactSoundScream) {
-            failCount++;
-        }
-        if (isReactSoundCry) {
-            failCount++;
-        }
-        if (isReactSoundCover) {
-            failCount++;
-        }
-        return passCount >= failCount;
+        if (isUpset) {
 
+            if (isReactSoundWashing) {
+                count++;
+            }
+            if (isReactSoundBabies) {
+                count++;
+            }
+            if (isReactSoundVaccuum) {
+                count++;
+            }
+            if (isReactSoundHairDryer) {
+                count++;
+            }
+            if (isReactSoundTraffic) {
+                count++;
+            }
+            if (isReactSoundBabies2) {
+                count++;
+            }
+            if (isReactSoundMusic) {
+                count++;
+            }
+            if (isReactSoundDoorBell) {
+                count++;
+            }
+            if (isReactSoundSuperMarket) {
+                count++;
+            }
+
+            if (count >= 2) {
+                if (isReactCoverEars) {
+                    passCount++;
+                }
+                if (isReactLikingNoise) {
+                    passCount++;
+                }
+                if (isReactSoundScream) {
+                    failCount++;
+                }
+                if (isReactSoundCry) {
+                    failCount++;
+                }
+                if (isReactSoundCover) {
+                    failCount++;
+                }
+                return passCount >= failCount;
+            } else {
+                return true;
+            }
+        } else {
+            return true;
+        }
 
     }
 }
 
-//isReactCoverEars;
-//        isReactLikingNoise;
-//        isReactSoundScream;
-//        isReactSoundCry;
-//        isReactSoundCover;
+//        isReactSoundWashing
+//        isReactSoundBabies
+//        isReactSoundVaccuum
+//        isReactSoundHairDryer
+//        isReactSoundTraffic
+//        isReactSoundBabies2
+//        isReactSoundMusic
+//        isReactSoundDoorBell
+//        isReactSoundSuperMarket
 
-//isReactSoundWashing;
-//        isReactSoundBabies;
-//        isReactSoundVaccuum;
-//        isReactSoundHairDryer;
-//        isReactSoundTraffic;
-//        isReactSoundBabies2;
-//        isReactSoundMusic;
-//        isReactSoundDoorBell;
-//        isReactSoundSuperMarket;
+
