@@ -7,38 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_q172"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Does your child try to get you to watch him or her?"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q171" />
-
-    <TextView
-        android:id="@+id/tv_q171"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="SEVENTEENTH QUESTION"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_mq171"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="100dp" />
-
     <ScrollView
         android:id="@+id/scrollView8"
         android:layout_width="match_parent"
@@ -92,17 +60,37 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_q172"
                     app:layout_constraintTop_toBottomOf="@+id/cb_praise" />
 
+                <ImageView
+                    android:id="@+id/iv_kid17"
+                    android:layout_width="322dp"
+                    android:layout_height="178dp"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q173"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q171"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q171"
+                    app:srcCompat="@drawable/kid17" />
+
+                <ImageView
+                    android:id="@+id/iv_q171"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q173"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q172"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_watch_look"
+                    app:srcCompat="@drawable/buttonnext" />
+
                 <TextView
                     android:id="@+id/tv_yq171"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="For Example, how he/she would try to get you to watch him/her"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q173"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q171"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q172" />
 
                 <TextView
                     android:id="@+id/tv_yq172"
@@ -174,17 +162,40 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
 
-                <ImageView
-                    android:id="@+id/iv_q171"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                <TextView
+                    android:id="@+id/tv_q172"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Does your child try to get you to watch him or her?"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q173"
-                    app:layout_constraintStart_toStartOf="@+id/guide_q172"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_watch_look"
-                    app:srcCompat="@drawable/buttonnext" />
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q171"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid17" />
+
+                <TextView
+                    android:id="@+id/tv_q171"
+                    android:layout_width="411dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFAB40"
+                    android:text="SEVENTEENTH QUESTION"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_mq171"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

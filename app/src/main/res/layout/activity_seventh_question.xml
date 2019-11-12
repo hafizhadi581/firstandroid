@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="-1dp" />
+        app:layout_constraintGuide_begin="-364dp" />
 
     <ScrollView
         android:id="@+id/scrollView5"
@@ -29,7 +29,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
-                android:layout_height="648dp"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
 
@@ -202,6 +202,21 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_nq61"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq77" />
 
+                <TextView
+                    android:id="@+id/tv_q71"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#C6FF00"
+                    android:gravity="center|left"
+                    android:text="SEVENTH QUESTION"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_nq61"
                     android:layout_width="wrap_content"
@@ -222,21 +237,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
-
-                <TextView
-                    android:id="@+id/tv_q71"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="#C6FF00"
-                    android:gravity="center|left"
-                    android:text="SEVENTH QUESTION"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
