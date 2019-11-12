@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/iconlogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".CalculateScoreActivity"></activity>
@@ -24,7 +24,6 @@
         <activity android:name=".SixthQuestionActivity" />
         <activity android:name=".SeventhQuestionActivity" />
         <activity android:name=".EighthQuestionActivity" />
-        <activity android:name=".Fifth_Question" />
         <activity android:name=".NinthQuestionActivity" />
         <activity android:name=".TenthQuestionActivity" />
         <activity android:name=".EleventhQuestionActivity" />
