@@ -6,25 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_q131"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:text="THIRTHEENTH QUESTION"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_m131"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="60dp" />
+        app:layout_constraintGuide_begin="0dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -40,7 +27,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linear_nq1"
                 android:layout_width="match_parent"
-                android:layout_height="194dp"
+                android:layout_height="411dp"
                 android:orientation="vertical">
 
 
@@ -48,13 +35,12 @@
                     android:id="@+id/cb_walk"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginTop="0dp"
+                    android:layout_marginTop="18dp"
                     android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q133"
-                    app:layout_constraintHorizontal_bias="0.484"
+                    app:layout_constraintHorizontal_bias="0.611"
                     app:layout_constraintStart_toStartOf="@+id/guide_q132"
-                    app:layout_constraintTop_toTopOf="parent" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid13" />
 
                 <CheckBox
                     android:id="@+id/cb_walk_on"
@@ -64,6 +50,15 @@
                     app:layout_constraintEnd_toStartOf="@+id/guide_q133"
                     app:layout_constraintStart_toStartOf="@+id/guide_q132"
                     app:layout_constraintTop_toBottomOf="@+id/cb_walk" />
+
+                <ImageView
+                    android:id="@+id/iv_kid13"
+                    android:layout_width="351dp"
+                    android:layout_height="208dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q133"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q131"
+                    app:srcCompat="@drawable/kid13" />
 
                 <ImageView
                     android:id="@+id/iv_q131"
@@ -92,21 +87,28 @@
                     android:id="@+id/tv_yq131"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
-                    android:layout_marginTop="0dp"
+                    android:layout_marginTop="20dp"
                     android:gravity="center|left"
                     android:text="Does he/she walk?"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q132"
-                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q131"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid13" />
 
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guide_q132"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="300dp" />
+                <TextView
+                    android:id="@+id/tv_q131"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FFD740"
+                    android:gravity="center|left"
+                    android:text="THIRTHEENTH QUESTION"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guide_q133"
@@ -121,6 +123,13 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_q132"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="300dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -7,38 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_q152"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="24dp"
-        android:text="Does your child try to copy what you do? "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_q151" />
-
-    <TextView
-        android:id="@+id/tv_q151"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="FIFTHTEENTH QUESTION"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_qm151"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="107dp" />
-
     <ScrollView
         android:id="@+id/scrollView7"
         android:layout_width="match_parent"
@@ -110,17 +78,39 @@
                     app:layout_constraintStart_toStartOf="@+id/guide_q152"
                     app:layout_constraintTop_toBottomOf="@+id/cb_copy_signal" />
 
+                <ImageView
+                    android:id="@+id/iv_kid15"
+                    android:layout_width="321dp"
+                    android:layout_height="179dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q153"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q151"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q151"
+                    app:srcCompat="@drawable/kid15" />
+
+                <ImageView
+                    android:id="@+id/iv_q151"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guide_q153"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guide_q152"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_copy_kiss"
+                    app:srcCompat="@drawable/buttonnext" />
+
                 <TextView
                     android:id="@+id/tv_yq151"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
-                    android:layout_marginTop="30dp"
                     android:gravity="center|left"
                     android:text="For Example, Does he/she try to copy you if you..."
                     android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q153"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guide_q151"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_q152" />
 
                 <TextView
                     android:id="@+id/tv_yq152"
@@ -216,19 +206,40 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="350dp" />
 
-                <ImageView
-                    android:id="@+id/iv_q151"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="12dp"
+                <TextView
+                    android:id="@+id/tv_q152"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Does your child try to copy what you do? "
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q153"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide_q152"
-                    app:layout_constraintTop_toBottomOf="@+id/cb_copy_kiss"
-                    app:srcCompat="@drawable/buttonnext" />
+                    app:layout_constraintStart_toStartOf="@+id/guide_q151"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_kid15" />
+
+                <TextView
+                    android:id="@+id/tv_q151"
+                    android:layout_width="411dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF00"
+                    android:text="FIFTHTEENTH QUESTION"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_qm151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
