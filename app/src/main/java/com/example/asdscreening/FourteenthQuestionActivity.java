@@ -56,6 +56,37 @@ public class FourteenthQuestionActivity extends AppCompatActivity implements Vie
         ivQ141.setOnClickListener(this);
 
     }
+    public void onCheckboxClicked(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which checkbox was clicked
+        switch (view.getId()) {
+
+            case R.id.cb_look_eye:
+
+                if (checked)
+                    showLook5Times();
+                    //do things when checked
+                else
+                    hideLook5Times();
+                // do things when unchecked
+                break;
+
+        }
+    }
+    public void showLook5Times(){
+        View cbLook5TimesShow = findViewById(R.id.cb_look_5times);
+        cbLook5TimesShow.setVisibility(View.VISIBLE);
+        View tvYq149Show = findViewById(R.id.tv_yq149);
+        tvYq149Show.setVisibility(View.VISIBLE);
+    }
+    public void hideLook5Times(){
+        View cbLook5TimesHide = findViewById(R.id.cb_look_5times);
+        cbLook5TimesHide.setVisibility(View.GONE);
+        View tvYq149Hide = findViewById(R.id.tv_yq149);
+        tvYq149Hide.setVisibility(View.GONE);
+    }
 
 
     @Override
@@ -103,10 +134,6 @@ public class FourteenthQuestionActivity extends AppCompatActivity implements Vie
         View cbReactEarsShow = findViewById(R.id.cb_look_eye);
         cbReactEarsShow.setVisibility(View.VISIBLE);
 
-        View tYq149Show = findViewById(R.id.tv_yq149);
-        tYq149Show.setVisibility(View.VISIBLE);
-        View cbLook5TimesShow = findViewById(R.id.cb_look_5times);
-        cbLook5TimesShow.setVisibility(View.VISIBLE);
     }
 
     public void setInvisibleItem(){

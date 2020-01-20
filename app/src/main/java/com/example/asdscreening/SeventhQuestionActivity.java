@@ -25,7 +25,7 @@ public class SeventhQuestionActivity extends AppCompatActivity implements View.O
     private CheckBox cbAnimal;
     private CheckBox cbAttention;
     private CheckBox cbShowInterest;
-
+    private int Num = 0;
 
     public void onCreate(Bundle savedInstanceState) {
 
@@ -53,15 +53,66 @@ public class SeventhQuestionActivity extends AppCompatActivity implements View.O
         switch (view.getId()) {
 
             case R.id.cb_airplane:
+                if (checked) {
+                    Num++;
+                    showCbAttention();
+                }
+                    //do things when checked
+                else {
+                    Num--;
+                    hideCbAttention();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+
             case R.id.cb_truck:
+
+                if (checked) {
+                    Num++;
+                    showCbAttention();
+                }
+                    //do things when checked
+                else {
+                    Num--;
+                    hideCbAttention();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+
             case R.id.cb_bug:
+
+                if (checked) {
+                    Num++;
+                    showCbAttention();
+                }
+                    //do things when checked
+                else {
+                    Num--;
+                    hideCbAttention();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+
             case R.id.cb_animal:
 
-                if (checked)
+                if (checked) {
+                    Num++;
                     showCbAttention();
+                }
                     //do things when checked
-                else
+                else {
+                    Num--;
                     hideCbAttention();
+                }
                 // do things when unchecked
                 break;
 
@@ -81,16 +132,24 @@ public class SeventhQuestionActivity extends AppCompatActivity implements View.O
     }
 
     private void showCbAttention(){
-        View cbPointShow = findViewById(R.id.cb_attention);
-        cbPointShow.setVisibility(View.VISIBLE);
-        View tvYq62Show = findViewById(R.id.tv_yq77);
-        tvYq62Show.setVisibility(View.VISIBLE);
+        if(Num >= 1) {
+            View cbPointShow = findViewById(R.id.cb_attention);
+            cbPointShow.setVisibility(View.VISIBLE);
+            View tvYq77Show = findViewById(R.id.tv_yq77);
+            tvYq77Show.setVisibility(View.VISIBLE);
+        }
     }
     private void hideCbAttention(){
-        View cbPointHide = findViewById(R.id.cb_attention);
-        cbPointHide.setVisibility(View.GONE);
-        View tvYq62Show = findViewById(R.id.tv_yq77);
-        tvYq62Show.setVisibility(View.GONE);
+        if(Num == 0) {
+            View cbPointHide = findViewById(R.id.cb_attention);
+            cbPointHide.setVisibility(View.GONE);
+            View tvYq77Show = findViewById(R.id.tv_yq77);
+            tvYq77Show.setVisibility(View.GONE);
+            View cbShowInterest = findViewById(R.id.cb_show_interest);
+            cbShowInterest.setVisibility(View.GONE);
+            View tvYq72Show = findViewById(R.id.tv_yq72);
+            tvYq72Show.setVisibility(View.GONE);
+        }
     }
     private void showCbInterest(){
         View cbPointShow = findViewById(R.id.cb_show_interest);
@@ -101,8 +160,8 @@ public class SeventhQuestionActivity extends AppCompatActivity implements View.O
     private void hideCbInterest(){
         View cbPointHide = findViewById(R.id.cb_show_interest);
         cbPointHide.setVisibility(View.GONE);
-        View tvYq62Show = findViewById(R.id.tv_yq72);
-        tvYq62Show.setVisibility(View.GONE);
+        View tvYq72Show = findViewById(R.id.tv_yq72);
+        tvYq72Show.setVisibility(View.GONE);
     }
 
     @Override

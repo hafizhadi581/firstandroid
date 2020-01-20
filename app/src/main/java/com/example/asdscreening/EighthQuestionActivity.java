@@ -29,6 +29,7 @@ public class EighthQuestionActivity extends AppCompatActivity implements View.On
     private CheckBox cbActingShyAtOtherChildren;
     private CheckBox cbGettingExcitedAtOtherChildren;
     private CheckBox cbRespondToOtherChildrenHalfOfTime;
+    private int Num=0;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,36 +99,114 @@ public class EighthQuestionActivity extends AppCompatActivity implements View.On
         }
 
         switch (view.getId()) {
-
             case R.id.cb_play:
-            case R.id.cb_talk:
-            case R.id.cb_noise:
-            case R.id.cb_watch:
-            case R.id.cb_smile:
-            case R.id.cb_shy:
-            case R.id.cb_excited:
-
-                if (checked)
+                if (checked) {
+                    Num++;
                     showCbRespond2();
-                    //do things when checked
+                }
+                else {
+                    Num--;
+                    hideCbRespond2();
+                }
                 // do things when unchecked
                 break;
-
         }
+        switch (view.getId()) {
+            case R.id.cb_talk:
+                if (checked) {
+                    Num++;
+                    showCbRespond2();
+                }
+                else {
+                    Num--;
+                    hideCbRespond2();
+                }
+                // do things when unchecked
+                break;
+        }
+        switch (view.getId()) {
+            case R.id.cb_noise:
+                if (checked) {
+                    Num++;
+                    showCbRespond2();
+                }
+                else {
+                    Num--;
+                    hideCbRespond2();
+                }
+                // do things when unchecked
+                break;
+        }
+        switch (view.getId()) {
+            case R.id.cb_watch:
+                if (checked) {
+                    Num++;
+                    showCbRespond2();
+                }
+                else {
+                    Num--;
+                    hideCbRespond2();
+                }
+                // do things when unchecked
+                break;
+        }
+        switch (view.getId()) {
+            case R.id.cb_smile:
+                if (checked) {
+                    Num++;
+                    showCbRespond2();
+                }
+                else {
+                    Num--;
+                    hideCbRespond2();
+                }
+                // do things when unchecked
+                break;
+        }
+        switch (view.getId()) {
+            case R.id.cb_shy:
+                if (checked) {
+                    Num++;
+                    showCbRespond2();
+                }
+                else {
+                    Num--;
+                    hideCbRespond2();
+                }
+                // do things when unchecked
+                break;
+        }
+        switch (view.getId()) {
+            case R.id.cb_excited:
 
+                if (checked) {
+                    Num++;
+                    showCbRespond2();
+                }
+                else {
+                    Num--;
+                    hideCbRespond2();
+                }
+                // do things when unchecked
+                break;
+        }
 
     }
     private void showCbRespond2(){
-        View cbRespond2Show = findViewById(R.id.cb_respond_2);
-        cbRespond2Show.setVisibility(View.VISIBLE);
-        View tvYq811Show= findViewById(R.id.tv_yq811);
-        tvYq811Show.setVisibility(View.VISIBLE);
+        if(Num >= 1) {
+            View cbRespond2Show = findViewById(R.id.cb_respond_2);
+            cbRespond2Show.setVisibility(View.VISIBLE);
+            View tvYq811Show = findViewById(R.id.tv_yq811);
+            tvYq811Show.setVisibility(View.VISIBLE);
+        }
     }
     private void hideCbRespond2(){
-        View cbRespond2Hide = findViewById(R.id.cb_respond_2);
-        cbRespond2Hide.setVisibility(View.GONE);
-        View tvYq811Hide= findViewById(R.id.tv_yq811);
-        tvYq811Hide.setVisibility(View.GONE);
+        if(Num == 0) {
+            View cbRespond2Hide = findViewById(R.id.cb_respond_2);
+            cbRespond2Hide.setVisibility(View.GONE);
+            View tvYq811Hide = findViewById(R.id.tv_yq811);
+            tvYq811Hide.setVisibility(View.GONE);
+        }
     }
 
     private void showCbRespond(){
@@ -228,48 +307,48 @@ public class EighthQuestionActivity extends AppCompatActivity implements View.On
         tvYq82Hide.setVisibility(View.GONE);
 
 
-//        View tvYq812Hide= findViewById(R.id.tv_yq812);
-//        tvYq812Hide.setVisibility(View.GONE);
-//
-//        View cbPlayHide = findViewById(R.id.cb_play);
-//        cbPlayHide.setVisibility(View.GONE);
-//        View tvYq83Hide= findViewById(R.id.tv_yq83);
-//        tvYq83Hide.setVisibility(View.GONE);
-//
-//        View cbTalkHide = findViewById(R.id.cb_talk);
-//        cbTalkHide.setVisibility(View.GONE);
-//        View tvYq84Hide= findViewById(R.id.tv_yq84);
-//        tvYq84Hide.setVisibility(View.GONE);
-//
-//        View cbNoisesHide = findViewById(R.id.cb_noise);
-//        cbNoisesHide.setVisibility(View.GONE);
-//        View tvYq85Hide= findViewById(R.id.tv_yq85);
-//        tvYq85Hide.setVisibility(View.GONE);
-//
-//        View cbWatchHide = findViewById(R.id.cb_watch);
-//        cbWatchHide.setVisibility(View.GONE);
-//        View tvYq86Hide= findViewById(R.id.tv_yq86);
-//        tvYq86Hide.setVisibility(View.GONE);
-//
-//        View cbSmileHide = findViewById(R.id.cb_smile);
-//        cbSmileHide.setVisibility(View.GONE);
-//        View tvYq87Hide= findViewById(R.id.tv_yq87);
-//        tvYq87Hide.setVisibility(View.GONE);
-//
-//        View cbShyHide = findViewById(R.id.cb_shy);
-//        cbShyHide.setVisibility(View.GONE);
-//        View tvYq89Hide= findViewById(R.id.tv_yq89);
-//        tvYq89Hide.setVisibility(View.GONE);
-//
-//        View cbExcitedShyHide = findViewById(R.id.cb_excited);
-//        cbExcitedShyHide.setVisibility(View.GONE);
-//        View tvYq810Hide= findViewById(R.id.tv_yq810);
-//        tvYq810Hide.setVisibility(View.GONE);
-//
-//        View cbRespond2Hide = findViewById(R.id.cb_respond_2);
-//        cbRespond2Hide.setVisibility(View.GONE);
-//        View tvYq811Hide= findViewById(R.id.tv_yq811);
-//        tvYq811Hide.setVisibility(View.GONE);
+        View tvYq812Hide= findViewById(R.id.tv_yq812);
+        tvYq812Hide.setVisibility(View.GONE);
+
+        View cbPlayHide = findViewById(R.id.cb_play);
+        cbPlayHide.setVisibility(View.GONE);
+        View tvYq83Hide= findViewById(R.id.tv_yq83);
+        tvYq83Hide.setVisibility(View.GONE);
+
+        View cbTalkHide = findViewById(R.id.cb_talk);
+        cbTalkHide.setVisibility(View.GONE);
+        View tvYq84Hide= findViewById(R.id.tv_yq84);
+        tvYq84Hide.setVisibility(View.GONE);
+
+        View cbNoisesHide = findViewById(R.id.cb_noise);
+        cbNoisesHide.setVisibility(View.GONE);
+        View tvYq85Hide= findViewById(R.id.tv_yq85);
+        tvYq85Hide.setVisibility(View.GONE);
+
+        View cbWatchHide = findViewById(R.id.cb_watch);
+        cbWatchHide.setVisibility(View.GONE);
+        View tvYq86Hide= findViewById(R.id.tv_yq86);
+        tvYq86Hide.setVisibility(View.GONE);
+
+        View cbSmileHide = findViewById(R.id.cb_smile);
+        cbSmileHide.setVisibility(View.GONE);
+        View tvYq87Hide= findViewById(R.id.tv_yq87);
+        tvYq87Hide.setVisibility(View.GONE);
+
+        View cbShyHide = findViewById(R.id.cb_shy);
+        cbShyHide.setVisibility(View.GONE);
+        View tvYq89Hide= findViewById(R.id.tv_yq89);
+        tvYq89Hide.setVisibility(View.GONE);
+
+        View cbExcitedShyHide = findViewById(R.id.cb_excited);
+        cbExcitedShyHide.setVisibility(View.GONE);
+        View tvYq810Hide= findViewById(R.id.tv_yq810);
+        tvYq810Hide.setVisibility(View.GONE);
+
+        View cbRespond2Hide = findViewById(R.id.cb_respond_2);
+        cbRespond2Hide.setVisibility(View.GONE);
+        View tvYq811Hide= findViewById(R.id.tv_yq811);
+        tvYq811Hide.setVisibility(View.GONE);
     }
     private void showCbInterest(){
 

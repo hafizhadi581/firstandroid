@@ -134,6 +134,7 @@
                     android:layout_height="35dp"
                     android:layout_marginTop="40dp"
                     android:visibility="gone"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq63"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq62"
                     app:layout_constraintTop_toBottomOf="@+id/cb_excited" />

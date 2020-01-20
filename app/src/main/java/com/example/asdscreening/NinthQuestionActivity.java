@@ -25,6 +25,7 @@ public class NinthQuestionActivity extends AppCompatActivity implements View.OnC
     private CheckBox cbBringBugsOnGrass;
     private CheckBox cbBringBlocks;
     private CheckBox cbBringOnlyToShow;
+    private int Num=0;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,16 +50,83 @@ public class NinthQuestionActivity extends AppCompatActivity implements View.OnC
         switch (view.getId()) {
 
             case R.id.cb_bring_picture:
+
+                if (checked) {
+                    Num++;
+                    showCbBringHelp();
+                }
+                    //do things when checked
+                else {
+                    Num--;
+                    hideCbBringHelp();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+
             case R.id.cb_bring_drawing:
+
+                if (checked) {
+                    Num++;
+                    showCbBringHelp();
+                }
+                //do things when checked
+                else {
+                    Num--;
+                    hideCbBringHelp();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+
             case R.id.cb_bring_flower:
+
+                if (checked) {
+                    Num++;
+                    showCbBringHelp();
+                }
+                //do things when checked
+                else {
+                    Num--;
+                    hideCbBringHelp();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+
             case R.id.cb_bring_bug:
+
+                if (checked) {
+                    Num++;
+                    showCbBringHelp();
+                }
+                //do things when checked
+                else {
+                    Num--;
+                    hideCbBringHelp();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
             case R.id.cb_bring_block:
 
-                if (checked)
+                if (checked) {
+                    Num++;
                     showCbBringHelp();
-                    //do things when checked
-                else
+                }
+                //do things when checked
+                else {
+                    Num--;
                     hideCbBringHelp();
+                }
                 // do things when unchecked
                 break;
 
@@ -66,16 +134,20 @@ public class NinthQuestionActivity extends AppCompatActivity implements View.OnC
     }
 
     private void showCbBringHelp(){
-        View cbBringHelpShow = findViewById(R.id.cb_bring_help);
-        cbBringHelpShow.setVisibility(View.VISIBLE);
-        View tvYq97Show = findViewById(R.id.tv_yq97);
-        tvYq97Show.setVisibility(View.VISIBLE);
+        if(Num >= 1) {
+            View cbBringHelpShow = findViewById(R.id.cb_bring_help);
+            cbBringHelpShow.setVisibility(View.VISIBLE);
+            View tvYq97Show = findViewById(R.id.tv_yq97);
+            tvYq97Show.setVisibility(View.VISIBLE);
+        }
     }
     private void hideCbBringHelp(){
-        View cbBringHelpHide = findViewById(R.id.cb_bring_help);
-        cbBringHelpHide.setVisibility(View.GONE);
-        View tvYq97Hide = findViewById(R.id.tv_yq97);
-        tvYq97Hide.setVisibility(View.GONE);
+        if(Num == 0) {
+            View cbBringHelpHide = findViewById(R.id.cb_bring_help);
+            cbBringHelpHide.setVisibility(View.GONE);
+            View tvYq97Hide = findViewById(R.id.tv_yq97);
+            tvYq97Hide.setVisibility(View.GONE);
+        }
     }
 
 

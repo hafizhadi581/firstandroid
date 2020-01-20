@@ -83,6 +83,7 @@
                     android:layout_height="35dp"
                     android:layout_marginTop="30dp"
                     android:visibility="gone"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_q143"
                     app:layout_constraintStart_toStartOf="@+id/guide_q142"
                     app:layout_constraintTop_toBottomOf="@+id/cb_look_talk" />
@@ -93,6 +94,7 @@
                     android:layout_height="35dp"
                     android:layout_marginTop="12dp"
                     android:visibility="gone"
+
                     app:layout_constraintEnd_toStartOf="@+id/guide_q143"
                     app:layout_constraintStart_toStartOf="@+id/guide_q142"
                     app:layout_constraintTop_toBottomOf="@+id/cb_look_eye" />
