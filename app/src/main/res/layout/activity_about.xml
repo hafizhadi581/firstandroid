@@ -110,7 +110,7 @@
                 android:layout_width="337dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="M-Chat is a modied checklist in Toddlers by Diana L. Robins. It is also known as parental report in order for the parents to diagnose whether their children are having ASD."
+                android:text="M-Chat is a modified checklist in Toddlers by Diana L. Robins. It is also known as parental report in order for the parents to diagnose whether their children are having ASD."
                 android:textAllCaps="false"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -24,7 +24,7 @@ public class SixthQuestionActivity extends AppCompatActivity implements View.OnC
     private CheckBox cbGetObject;
     private CheckBox cbSound;
     private CheckBox cbPoint;
-
+    private int Num = 0;
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -49,25 +49,71 @@ public class SixthQuestionActivity extends AppCompatActivity implements View.OnC
     // Check which checkbox was clicked
         switch (view.getId()) {
             case R.id.cb_reach_object:
-            case R.id.cb_lead_object:
-            case R.id.cb_get_object:
-            case R.id.cb_sounds:
-                if (checked)
+                if (checked) {
+                    Num++;
                     showCbPoint();
+                }
                     //do things when checked
-                else
+                else {
+                    Num--;
                     hideCbPoint();
+                }
                      // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+            case R.id.cb_lead_object:
+                if (checked) {
+                    Num++;
+                    showCbPoint();
+                }
+                //do things when checked
+                else {
+                    Num--;
+                    hideCbPoint();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+            case R.id.cb_get_object:
+                if (checked) {
+                    Num++;
+                    showCbPoint();
+                }
+                //do things when checked
+                else {
+                    Num--;
+                    hideCbPoint();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+            case R.id.cb_sounds:
+                if (checked) {
+                    Num++;
+                    showCbPoint();
+                }
+                //do things when checked
+                else {
+                    Num--;
+                    hideCbPoint();
+                }
+                // do things when unchecked
                 break;
 
         }
         switch (view.getId()) {
             case R.id.cb_point_finger:
                 if (checked)
-                    showCbFinger();
+                    hideCbFinger();
                     //do things when checked
                 else
-                    hideCbFinger();
+                    showCbFinger();
                 // do things when unchecked
                 break;
 
@@ -124,16 +170,22 @@ public class SixthQuestionActivity extends AppCompatActivity implements View.OnC
     }
 
     private void showCbPoint(){
-        View cbPointShow = findViewById(R.id.cb_point);
-        cbPointShow.setVisibility(View.VISIBLE);
-        View tvYq62Show = findViewById(R.id.tv_yq62);
-        tvYq62Show.setVisibility(View.VISIBLE);
+        if(Num >= 1){
+
+            View cbPointShow = findViewById(R.id.cb_point);
+            cbPointShow.setVisibility(View.VISIBLE);
+            View tvYq62Show = findViewById(R.id.tv_yq62);
+            tvYq62Show.setVisibility(View.VISIBLE);
+        }
     }
     private void hideCbPoint(){
-        View cbPointHide = findViewById(R.id.cb_point);
-        cbPointHide.setVisibility(View.GONE);
-        View tvYq62Show = findViewById(R.id.tv_yq62);
-        tvYq62Show.setVisibility(View.GONE);
+        if(Num == 0){
+
+            View cbPointHide = findViewById(R.id.cb_point);
+            cbPointHide.setVisibility(View.GONE);
+            View tvYq62Show = findViewById(R.id.tv_yq62);
+            tvYq62Show.setVisibility(View.GONE);
+        }
     }
 
     @Override

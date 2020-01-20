@@ -26,6 +26,9 @@ public class FifthQuestionActivity extends AppCompatActivity implements View.OnC
     private CheckBox cbYq5y6;
     private CheckBox cbYq5y7;
     private CheckBox cbYq5y8;
+    private int Num = 0;
+    private int Num2 = 0;
+
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +52,7 @@ public class FifthQuestionActivity extends AppCompatActivity implements View.OnC
     public void onClick(View v) {
         if (v == ivQ52) {
 
-            rules.setRule5(new Rule5(cbYq5y8.isChecked(),cbYq5y1.isChecked(),
+            rules.setRule5(new Rule5(cbYq5y8.isChecked(), cbYq5y1.isChecked(),
                     cbYq5y2.isChecked(),
                     cbYq5y3.isChecked(),
                     cbYq5y4.isChecked(),
@@ -86,38 +89,175 @@ public class FifthQuestionActivity extends AppCompatActivity implements View.OnC
         }
         switch (view.getId()) {
 
-            case R.id.cb_yq5y3:
-            case R.id.cb_yq5y4:
-            case R.id.cb_yq5y5:
-            case R.id.cb_yq5y6:
-
-                if (checked)
-                    showCbWeek();
-                    //do things when checked
-                else
-                    hideCbWeek();
+            case R.id.cb_yq5y1:
+                if (checked) {
+                    Num2++;
+                    hideCbYq5y3();
+                }
+                //do things when checked
+                else {
+                    Num2--;
+                    showCbYq5y3();
+                }
                 // do things when unchecked
                 break;
 
         }
-    }
-    public void showCbWeek(){
-        View cbYq5Y1Show = findViewById(R.id.cb_yq5y7);
-        cbYq5Y1Show.setVisibility(View.VISIBLE);
-        View tvYq53Show = findViewById(R.id.tv_yq59);
-        tvYq53Show.setVisibility(View.VISIBLE);
-    }
-    public void hideCbWeek(){
-        View cbYq5Y1Hide = findViewById(R.id.cb_yq5y7);
-        cbYq5Y1Hide.setVisibility(View.GONE);
-        View tvYq53Hide = findViewById(R.id.tv_yq59);
-        tvYq53Hide.setVisibility(View.GONE);
+        switch (view.getId()) {
+
+            case R.id.cb_yq5y2:
+
+                if (checked) {
+                    Num2++;
+                    hideCbYq5y3();
+                }
+                //do things when checked
+                else {
+                    Num2--;
+                    showCbYq5y3();
+                }
+                // do things when unchecked
+                break;
+
+        }
+//
+        switch (view.getId()) {
+
+            case R.id.cb_yq5y3:
+                if (checked) {
+                    Num++;
+                    showCbWeek();
+                }
+                //do things when checked
+                else {
+                    Num--;
+                    hideCbWeek();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+
+            case R.id.cb_yq5y4:
+                if (checked) {
+                    Num++;
+                    showCbWeek();
+                }
+                //do things when checked
+                else {
+                    Num--;
+                    hideCbWeek();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+
+            case R.id.cb_yq5y5:
+                if (checked) {
+                    Num++;
+                    showCbWeek();
+                }
+                //do things when checked
+                else {
+                    Num--;
+                    hideCbWeek();
+                }
+                // do things when unchecked
+                break;
+
+        }
+        switch (view.getId()) {
+
+            case R.id.cb_yq5y6:
+                if (checked) {
+                    Num++;
+                    showCbWeek();
+                }
+                //do things when checked
+                else {
+                    Num--;
+                    hideCbWeek();
+                }
+                // do things when unchecked
+                break;
+
+        }
+
     }
 
-    public void hideCbYq5y8(){
+    public void hideCbYq5y3() {
+        if (Num2 >= 1) {
+            View cbYq5Y3Show = findViewById(R.id.cb_yq5y3);
+            cbYq5Y3Show.setVisibility(View.GONE);
+            View tvYq55Show = findViewById(R.id.tv_yq55);
+            tvYq55Show.setVisibility(View.GONE);
+            View cbYq5Y4Show = findViewById(R.id.cb_yq5y4);
+            cbYq5Y4Show.setVisibility(View.GONE);
+            View tvYq56Show = findViewById(R.id.tv_yq56);
+            tvYq56Show.setVisibility(View.GONE);
+            View cbYq5Y5Show = findViewById(R.id.cb_yq5y5);
+            cbYq5Y5Show.setVisibility(View.GONE);
+            View tvYq57Show = findViewById(R.id.tv_yq57);
+            tvYq57Show.setVisibility(View.GONE);
+            View cbYq5Y6Show = findViewById(R.id.cb_yq5y6);
+            cbYq5Y6Show.setVisibility(View.GONE);
+            View tvYq58Show = findViewById(R.id.tv_yq58);
+            tvYq58Show.setVisibility(View.GONE);
+            View cbYq5Y7Hide = findViewById(R.id.cb_yq5y7);
+            cbYq5Y7Hide.setVisibility(View.GONE);
+            View tvYq59Hide = findViewById(R.id.tv_yq59);
+            tvYq59Hide.setVisibility(View.GONE);
+        }
+    }
+
+    public void showCbYq5y3() {
+        if (Num2 == 0) {
+            View cbYq5Y3Show = findViewById(R.id.cb_yq5y3);
+            cbYq5Y3Show.setVisibility(View.VISIBLE);
+            View tvYq55Show = findViewById(R.id.tv_yq55);
+            tvYq55Show.setVisibility(View.VISIBLE);
+            View cbYq5Y4Show = findViewById(R.id.cb_yq5y4);
+            cbYq5Y4Show.setVisibility(View.VISIBLE);
+            View tvYq56Show = findViewById(R.id.tv_yq56);
+            tvYq56Show.setVisibility(View.VISIBLE);
+            View cbYq5Y5Show = findViewById(R.id.cb_yq5y5);
+            cbYq5Y5Show.setVisibility(View.VISIBLE);
+            View tvYq57Show = findViewById(R.id.tv_yq57);
+            tvYq57Show.setVisibility(View.VISIBLE);
+            View cbYq5Y6Show = findViewById(R.id.cb_yq5y6);
+            cbYq5Y6Show.setVisibility(View.VISIBLE);
+            View tvYq58Show = findViewById(R.id.tv_yq58);
+            tvYq58Show.setVisibility(View.VISIBLE);
+
+        }
+    }
+
+    public void showCbWeek() {
+        if (Num >= 1) {
+            View cbYq5Y1Show = findViewById(R.id.cb_yq5y7);
+            cbYq5Y1Show.setVisibility(View.VISIBLE);
+            View tvYq53Show = findViewById(R.id.tv_yq59);
+            tvYq53Show.setVisibility(View.VISIBLE);
+        }
+    }
+
+    public void hideCbWeek() {
+        if (Num == 0) {
+
+            View cbYq5Y1Hide = findViewById(R.id.cb_yq5y7);
+            cbYq5Y1Hide.setVisibility(View.GONE);
+            View tvYq53Hide = findViewById(R.id.tv_yq59);
+            tvYq53Hide.setVisibility(View.GONE);
+        }
+    }
+
+    public void hideCbYq5y8() {
         View tvYq51Hide = findViewById(R.id.tv_yq51);
         tvYq51Hide.setVisibility(View.GONE);
-        
+
         View cbYq5Y1Hide = findViewById(R.id.cb_yq5y1);
         cbYq5Y1Hide.setVisibility(View.GONE);
         View tvYq53Hide = findViewById(R.id.tv_yq53);
@@ -147,8 +287,14 @@ public class FifthQuestionActivity extends AppCompatActivity implements View.OnC
         cbYq5Y6Hide.setVisibility(View.GONE);
         View tvYq58Hide = findViewById(R.id.tv_yq58);
         tvYq58Hide.setVisibility(View.GONE);
+
+        View cbYq5Y7Hide = findViewById(R.id.cb_yq5y7);
+        cbYq5Y7Hide.setVisibility(View.GONE);
+        View tvYq59Hide = findViewById(R.id.tv_yq59);
+        tvYq59Hide.setVisibility(View.GONE);
     }
-    public void showCbYq5y8(){
+
+    public void showCbYq5y8() {
         View tvYq51Show = findViewById(R.id.tv_yq51);
         tvYq51Show.setVisibility(View.VISIBLE);
 

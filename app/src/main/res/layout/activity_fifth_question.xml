@@ -45,6 +45,7 @@
                     android:layout_marginTop="28dp"
                     android:checked="false"
                     android:visibility="gone"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq52"
                     app:layout_constraintTop_toBottomOf="@+id/tv_yq51" />
@@ -54,6 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:visibility="gone"
+                    android:onClick="onCheckboxClicked"
                     app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
                     app:layout_constraintStart_toStartOf="@+id/guide_nq52"
                     app:layout_constraintTop_toBottomOf="@+id/cb_yq5y1" />
