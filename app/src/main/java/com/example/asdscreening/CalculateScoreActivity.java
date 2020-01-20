@@ -17,6 +17,7 @@ public class CalculateScoreActivity extends AppCompatActivity implements View.On
     private Rules rules = Rules.getInstance();
     private TextView tvScore;
     private TextView tvRisk;
+    private TextView tvDescription;
     private Button btnReturn;
 
     @Override
@@ -24,15 +25,17 @@ public class CalculateScoreActivity extends AppCompatActivity implements View.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculate_score);
 
+
         tvScore = findViewById(R.id.tv_score);
         tvRisk = findViewById(R.id.tv_risk);
+        tvDescription = findViewById(R.id.tv_description);
         btnReturn = findViewById(R.id.btn_return);
 
         btnReturn.setOnClickListener(this);
 
         tvRisk.setText(String.valueOf(rules.getRisk()));
         tvScore.setText(String.valueOf(rules.getScore()));
-
+        tvDescription.setText((String.valueOf(rules.getDescription())));
 
     }
 
@@ -42,7 +45,7 @@ public class CalculateScoreActivity extends AppCompatActivity implements View.On
         if(v ==  btnReturn){
             Intent intent = new Intent (CalculateScoreActivity.this, MainActivity.class);
             startActivity(intent);
-
+            finish();
         }
     }
 }

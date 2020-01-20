@@ -37,7 +37,7 @@
     <TextView
         android:id="@+id/tv_satisfy_no_2"
         android:layout_width="175dp"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:text="Previous doctor result"
@@ -48,7 +48,7 @@
     <TextView
         android:id="@+id/tv_satisfy_no_3"
         android:layout_width="175dp"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:text="Ask from surrounding"
@@ -59,7 +59,7 @@
     <TextView
         android:id="@+id/tv_satisfy_no_4"
         android:layout_width="175dp"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:text="Self result"
@@ -77,5 +77,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_not_satisfy_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_notsatisfy_self"
+        app:srcCompat="@drawable/buttonnext" />
+
+    <TextView
+        android:id="@+id/tv_test_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="RESULT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_not_satisfy_next" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,215 +1,224 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/linear_nq1"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout10"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <CheckBox
-        android:id="@+id/cb_yq5y1"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq510" />
-
-    <CheckBox
-        android:id="@+id/cb_yq5y2"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
-        app:layout_constraintTop_toBottomOf="@+id/cb_yq5y1" />
-
-    <CheckBox
-        android:id="@+id/cb_yq5y3"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq511" />
-
-    <CheckBox
-        android:id="@+id/cb_yq5y6"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
-        app:layout_constraintTop_toBottomOf="@+id/cb_yq5y5" />
-
-
-    <CheckBox
-        android:id="@+id/cb_yq5y7"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
-        app:layout_constraintTop_toBottomOf="@+id/cb_yq5y6" />
-
-    <CheckBox
-        android:id="@+id/cb_yq5y4"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
-        app:layout_constraintTop_toBottomOf="@+id/cb_yq5y3" />
-
-    <CheckBox
-        android:id="@+id/cb_yq5y5"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq52"
-        app:layout_constraintTop_toBottomOf="@+id/cb_yq5y4" />
-
-
     <TextView
-        android:id="@+id/tv_yq51"
+        android:id="@+id/tv_review_title"
         android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="30dp"
-        android:gravity="center|left"
-        android:text="Does he/she usually… "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
+        android:layout_height="wrap_content"
+        android:text="Review Result"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_yq53"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:gravity="center|left"
-        android:text="Look at hands?"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq510" />
-
-    <TextView
-        android:id="@+id/tv_yq54"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:gravity="center|left"
-        android:text="Move fingers when playing peek-a-boo?"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq53" />
-
-    <TextView
-        android:id="@+id/tv_yq55"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:gravity="center|left"
-        android:text="Wiggle his/her fingers near his/her eyes?"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq511" />
-
-    <TextView
-        android:id="@+id/tv_yq56"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center|left"
-        android:text="Hold his/her hands up close to his/her eyes?"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq55" />
-
-    <TextView
-        android:id="@+id/tv_yq57"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center|left"
-        android:text="Hold his/her hands off to the side of his/her eyes?"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq56" />
-
-    <TextView
-        android:id="@+id/tv_yq58"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:gravity="center|left"
-        android:text="Flap his/her hands near his/her face?"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq57" />
-
-
-    <TextView
-        android:id="@+id/tv_yq59"
+        android:id="@+id/tv_result_q1"
         android:layout_width="0dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
-        android:gravity="center|left"
-        android:text="Playground equipment?"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq52"
+        android:text="If you point at something across the room, does your child look at it? "
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq58" />
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_review_title" />
+
 
     <TextView
-        android:id="@+id/tv_yq510"
+        android:id="@+id/tv_result_q2"
         android:layout_width="0dp"
         android:layout_height="35dp"
-        android:layout_marginTop="30dp"
-        android:gravity="center|left"
-        android:text="Category Pass"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
+        android:layout_marginTop="8dp"
+        android:text="Have you ever wondered if your child might be deaf? "
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq51" />
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q1" />
 
     <TextView
-        android:id="@+id/tv_yq511"
+        android:id="@+id/tv_result_q3"
         android:layout_width="0dp"
         android:layout_height="35dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="8dp"
+        android:text="Does your child play pretend or make-believe?"
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q2" />
+
+    <TextView
+        android:id="@+id/tv_result_q4"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="Does your child like climbing on things?"
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q3" />
+
+    <TextView
+        android:id="@+id/tv_result_q5"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="Does your child make unusual finger movements near his or her eyes?"
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q4" />
+
+    <TextView
+        android:id="@+id/tv_result_q6"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="Does your child point with one finger to ask for something or to get help?"
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q5" />
+
+    <TextView
+        android:id="@+id/tv_result_q7"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="Does your child point with one finger to show you something interesting? "
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q6" />
+
+    <TextView
+        android:id="@+id/tv_result_q8"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="Is your child interested in other children?"
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q7" />
+
+    <TextView
+        android:id="@+id/tv_result_q9"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="If you point at something across the room, does your child look at it? "
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q8" />
+
+
+    <TextView
+        android:id="@+id/tv_result_q10"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="If you point at something across the room, does your child look at it? "
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q9" />
+
+    <TextView
+        android:id="@+id/tv_result_q11"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="If you point at something across the room, does your child look at it? "
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q10" />
+
+    <TextView
+        android:id="@+id/tv_result_q12"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="If you point at something across the room, does your child look at it? "
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q11" />
+
+    <TextView
+        android:id="@+id/tv_result_q13"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="If you point at something across the room, does your child look at it? "
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q12" />
+
+    <TextView
+        android:id="@+id/tv_result_q14"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="If you point at something across the room, does your child look at it? "
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q13" />
+
+    <TextView
+        android:id="@+id/tv_result_q15"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="If you point at something across the room, does your child look at it? "
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q14" />
+
+    <TextView
+        android:id="@+id/tv_result_q16"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="If you point at something across the room, does your child look at it? "
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gl_review_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_q15" />
+
+    <TextView
+        android:id="@+id/tv_review_n1"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="9dp"
         android:gravity="center|left"
-        android:text="Category Fail"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guide_nq53"
-        app:layout_constraintStart_toStartOf="@+id/guide_nq51"
-        app:layout_constraintTop_toBottomOf="@+id/tv_yq54" />
+        android:text="1."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/gl_review_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_review_title" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_nq51"
+        android:id="@+id/gl_review_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="360dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_nq52"
+        android:id="@+id/gl_review_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="330dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_nq53"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="395dp" />
-
-
+        app:layout_constraintGuide_begin="30dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

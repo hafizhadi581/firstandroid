@@ -8,6 +8,18 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="357dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_action" />
+
+    <TextView
         android:id="@+id/tv_result"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -71,16 +83,30 @@
         app:layout_constraintStart_toEndOf="@+id/tv_risk_type"
         app:layout_constraintTop_toTopOf="@+id/tv_risk_type" />
 
+    <TextView
+        android:id="@+id/tv_action"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:text="ACTION REQUIRED :"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_risk_type" />
+
     <Button
         android:id="@+id/btn_return"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="24dp"
         android:background="#00E5FF"
         android:text="Finish"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_risk_type" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

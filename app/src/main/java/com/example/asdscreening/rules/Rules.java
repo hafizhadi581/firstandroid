@@ -5,6 +5,7 @@ public class Rules {
 
     private int score;
     private String risk;
+    private String description;
     private Rule1 rule1;
     private Rule2 rule2;
     private Rule3 rule3;
@@ -25,6 +26,7 @@ public class Rules {
     private Rule18 rule18;
     private Rule19 rule19;
     private Rule20 rule20;
+    private Rule21 rule21;
 
     private Rules() {
 
@@ -42,6 +44,8 @@ public class Rules {
             return instance;
         }
     }
+
+
 
     public void setRule1(Rule1 rule1) {
         this.rule1 = rule1;
@@ -135,6 +139,11 @@ public class Rules {
 
     public Rule20 getRule20() { return rule20; }
 
+    public void setRule21(Rule21 rule21) { this.rule21 = rule21; }
+
+    public Rule21 getRule21() { return rule21; }
+
+
     public int getScore() {
 
         score = 0;
@@ -214,6 +223,23 @@ public class Rules {
         }
         return risk;
     }
+
+    public String getDescription(){
+        if(getRisk().equals("LOW RISK")){
+            description = "if child is younger than 24 months, screen again after second\n" +
+                    "birthday. No further action required unless surveillance indicates risk for ASD";
+        }
+        if(getRisk().equals("MEDIUM RISK")){
+            description = "refer child for diagnostic\n" +
+                    "evaluation and eligibility evaluation for early intervention";
+        }
+        if(getRisk().equals("HIGH RISK")){
+            description = "refer immediately for\n" +
+                    "diagnostic evaluation and eligibility evaluation for early intervention.";
+        }
+        return description;
+    }
+
 
 
     //    public void calculateFirstRules(boolean checked, boolean checked1, boolean checked2, boolean checked3, boolean checked4, boolean checked5) {

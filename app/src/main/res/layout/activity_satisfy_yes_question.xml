@@ -78,4 +78,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_satisfy_yes_2" />
 
+    <ImageView
+        android:id="@+id/iv_satisfy_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_satisfy_self"
+        app:srcCompat="@drawable/buttonnext" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

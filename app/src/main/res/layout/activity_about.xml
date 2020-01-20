@@ -2,122 +2,222 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraint"
+    android:id="@+id/linearLayout11"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_about_1"
-        android:layout_width="0dp"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#C6FF00"
-        android:text="Learn More About Autism"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="@android:color/background_dark"
-        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/tv_about_2"
-        android:layout_width="351dp"
-        android:layout_height="116dp"
-        android:layout_marginTop="12dp"
-        android:text="Autism, also called autism spectrum disorder (ASD), is a complicated condition that includes problems with communication and behavior. It can involve a wide range of symptoms and skills. ASD can be a minor problem or a disability that needs full-time care in a special facility."
-        android:textAlignment="viewStart"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_about_bg" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_about_3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:background="#C6FF00"
-        android:text="Symptom of Autism"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_about_2" />
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_about_bg"-->
+<!--                android:layout_width="392dp"-->
+<!--                android:layout_height="234dp"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.473"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_about_1"-->
+<!--                app:srcCompat="@drawable/autism_child" />-->
 
-    <TextView
-        android:id="@+id/tv_about_4"
-        android:layout_width="337dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="A narrow range of interests or intense interest in certain topics"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_about_5" />
+            <TextView
+                android:id="@+id/tv_about_2"
+                android:layout_width="351dp"
+                android:layout_height="116dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Autism, also called autism spectrum disorder (ASD), is a complicated condition that includes problems with communication and behavior. It can involve a wide range of symptoms and skills. ASD can be a minor problem or a disability that needs full-time care in a special facility."
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_1" />
 
-    <TextView
-        android:id="@+id/tv_about_5"
-        android:layout_width="332dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:text="A lack of eye contact"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_about_3" />
+            <TextView
+                android:id="@+id/tv_about_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#FFD740"
+                android:text="COMMON SYMTOMS OF AUTISM"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_2" />
 
-    <TextView
-        android:id="@+id/tv_about_6"
-        android:layout_width="335dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Not looking at or listening to other people"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_about_4" />
+            <TextView
+                android:id="@+id/tv_about_9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#EEFF41"
+                android:text="AUTISM: CLINICAL PRESENTATION"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_13" />
 
-    <TextView
-        android:id="@+id/tv_about_7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autoLink="web"
-        android:text="https://www.webmd.com/brain/autism/understanding-autism-basics#1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_about_8" />
+            <TextView
+                android:id="@+id/tv_about_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#FFD740"
+                android:text="M-CHAT"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_6" />
 
-    <TextView
-        android:id="@+id/tv_about_8"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="#E2798B"
-        android:text="CLICK THE LINK BELOW"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_about_6" />
+            <TextView
+                android:id="@+id/tv_about_4"
+                android:layout_width="337dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="A narrow range of interests or intense interest in certain topics"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_5" />
 
-    <ImageView
-        android:id="@+id/iv_about_bg"
-        android:layout_width="392dp"
-        android:layout_height="234dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_about_1"
-        app:srcCompat="@drawable/autism_child" />
+            <TextView
+                android:id="@+id/tv_about_11"
+                android:layout_width="337dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="M-Chat is a modied checklist in Toddlers by Diana L. Robins. It is also known as parental report in order for the parents to diagnose whether their children are having ASD."
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_10" />
+
+            <TextView
+                android:id="@+id/tv_about_13"
+                android:layout_width="337dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:autoLink="web"
+                android:text="https://mchatscreen.com/"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_11" />
+
+            <TextView
+                android:id="@+id/tv_about_5"
+                android:layout_width="332dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="A lack of eye contact"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_3" />
+
+            <TextView
+                android:id="@+id/tv_about_6"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Not looking at or listening to other people"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_4" />
+
+            <TextView
+                android:id="@+id/tv_about_7"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="https://www.webmd.com/brain/autism/understanding-autism-basics#1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.524"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_8" />
+
+            <TextView
+                android:id="@+id/tv_about_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#EEFF41"
+                android:text="Learn More About Autism"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_dark"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <view
+                android:id="@+id/vv_youtube"
+                class="com.google.android.youtube.player.YouTubePlayerView"
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.524"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_about_9" />
+
+            <TextView
+                android:id="@+id/tv_about_8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FF6E40"
+                android:text="MORE INFORMATION HERE"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_play" />
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="play"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vv_youtube" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
